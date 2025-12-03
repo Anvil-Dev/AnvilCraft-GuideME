@@ -71,4 +71,4 @@ jobs:
         uses: Anvil-Dev/dedicated-server-launch-test@1.21.1-neoforge
         with:
           mod: build/libs/${{ steps.properties.outputs.mod_id }}-neoforge-${{ steps.version.outputs.version }}.jar
-          extra-mods: patchouli:1.21-87-neoforge anvilcraft:1.21.1-1.5.0+pre-release.8
+          extra-mods: patchouli:1.21-87-neoforge anvilcraft:1.21.1-1.5.0+pre-release.8 guideme:21.1.15
