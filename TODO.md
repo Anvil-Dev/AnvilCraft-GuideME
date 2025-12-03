@@ -1,5 +1,4 @@
-- 实时预览 (y)
-- build时guidebook在resources内 (n)
 - 帕秋莉转GuideME (n)
+- 配方支持 (n)
 - GuideME内铁砧动画 (n)
 - 更多... (n)
