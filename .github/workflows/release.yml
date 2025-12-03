@@ -48,7 +48,7 @@ jobs:
       - name: capture build artifacts
         uses: actions/upload-artifact@v4.3.3
         with:
-          name: ${{ join(split(steps.properties.outputs.mod_name, ':'), '-') }} ${{ steps.version.outputs.version }}
+          name: "${{ steps.properties.outputs.mod_name }} ${{ steps.version.outputs.version }}"
           path: build/libs/${{ steps.properties.outputs.mod_id }}-neoforge-${{ steps.version.outputs.version }}.jar
 
       - name: Publish to maven
