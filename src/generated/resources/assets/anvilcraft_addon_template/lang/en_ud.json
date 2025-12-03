@@ -1,0 +1,14 @@
+{
+  "anvilcraft_addon_template.configuration.log_dirt_block": "ʞɔoןᗺ ʇɹıᗡ boꞀ",
+  "anvilcraft_addon_template.configuration.log_dirt_block.tooltip": "dnʇǝs uoɯɯoɔ uo ʞɔoןq ʇɹıp ǝɥʇ boן oʇ ɹǝɥʇǝɥM",
+  "anvilcraft_addon_template.configuration.magic_number": "ɹǝqɯnN ɔıbɐW",
+  "anvilcraft_addon_template.configuration.magic_number.tooltip": "ɹǝqɯnu ɔıbɐɯ Ɐ",
+  "anvilcraft_addon_template.configuration.magic_number_introduction": "uoıʇɔnpoɹʇuI ɹǝqɯnN ɔıbɐW",
+  "anvilcraft_addon_template.configuration.magic_number_introduction.tooltip": "ɹǝqɯnu ɔıbɐɯ ǝɥʇ ɹoɟ ǝq oʇ ǝbɐssǝɯ uoıʇɔnpoɹʇuı ǝɥʇ ʇuɐʍ noʎ ʇɐɥM",
+  "anvilcraft_addon_template.configuration.section.anvilcraft_addon_template.common.toml": "uoıʇɐɹnbıɟuoƆ uoɯɯoƆ ǝʇɐןdɯǝ⟘ uoppⱯ ʇɟɐɹɔןıʌuⱯ",
+  "anvilcraft_addon_template.configuration.section.anvilcraft_addon_template.common.toml.title": "uoıʇɐɹnbıɟuoƆ uoɯɯoƆ ǝʇɐןdɯǝ⟘ uoppⱯ ʇɟɐɹɔןıʌuⱯ",
+  "anvilcraft_addon_template.configuration.title": "uoıʇɐɹnbıɟuoƆ ǝʇɐןdɯǝ⟘ uoppⱯ ʇɟɐɹɔןıʌuⱯ",
+  "block.anvilcraft_addon_template.example_block": "ʞɔoןᗺ ǝןdɯɐxƎ",
+  "item.anvilcraft_addon_template.example_item": "ɯǝʇI ǝןdɯɐxƎ",
+  "itemGroup.anvilcraft_addon_template.addon_items": "ǝʇɐןdɯǝ⟘ uoppⱯ :ʇɟɐɹƆןıʌuⱯ"
+}

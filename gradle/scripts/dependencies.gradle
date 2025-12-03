@@ -1,0 +1,26 @@
+dependencies {
+    // Registrate
+    api(libs.registrate)
+
+    // Anvil Lib
+    implementation(libs.anvillib)
+    interfaceInjectionData(libs.anvillib)
+
+    // AnvilCraft
+    implementation(libs.anvilcraft) { transitive = false }
+    interfaceInjectionData(libs.anvilcraft) { transitive = false }
+
+    // Curios API
+    implementation(libs.curios)
+
+    // JEI
+    compileOnlyApi(libs.jeiCommonApi) { transitive = false }
+    compileOnlyApi(libs.jeiForgeApi) { transitive = false }
+    implementation(libs.jeiForgeImpl) { transitive = false }
+
+    // Jade
+    implementation(libs.jade)
+
+    // Patchouli
+    implementation(libs.patchouli)
+}

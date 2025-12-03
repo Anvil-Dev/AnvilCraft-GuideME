@@ -1,0 +1,27 @@
+[versions]
+minecraft = "1.21.1"
+neoForge = "21.1.152"
+registrate = "MC1.21-1.3.0+62"
+anvillib = "1.4.0+build.160"
+anvilcraft = "1.5.0+build.1357"
+curios = "9.0.15+1.21.1"
+jei = "19.21.0.247"
+jade = "15.3.4+neoforge"
+patchouli = "1.21-87-NEOFORGE"
+modDevGradle = "2.0.78"
+lombok = "8.7.1"
+
+[libraries]
+registrate = { group = "com.tterrag.registrate", name = "Registrate", version.ref = "registrate" }
+anvillib = { group = "dev.anvilcraft.lib", name = "anvillib-neoforge-1.21.1", version.ref = "anvillib" }
+anvilcraft = { group = "dev.dubhe", name = "anvilcraft-neoforge-1.21.1", version.ref = "anvilcraft" }
+curios = { group = "top.theillusivec4.curios", name = "curios-neoforge", version.ref = "curios" }
+jeiCommonApi = { group = "mezz.jei", name = "jei-1.21.1-common-api", version.ref = "jei" }
+jeiForgeApi = { group = "mezz.jei", name = "jei-1.21.1-neoforge-api", version.ref = "jei" }
+jeiForgeImpl = { group = "mezz.jei", name = "jei-1.21.1-neoforge", version.ref = "jei" }
+jade = { group = "maven.modrinth", name = "jade", version.ref = "jade" }
+patchouli = { group = "vazkii.patchouli", name = "Patchouli", version.ref = "patchouli" }
+
+[plugins]
+modDevGradle = { id = "net.neoforged.moddev", version.ref = "modDevGradle" }
+lombok = { id = "io.freefair.lombok", version.ref = "lombok" }
