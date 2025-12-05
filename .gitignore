@@ -120,3 +120,4 @@ runs/
 
 **/.cache/
 .kotlin/
+/.vscode/
