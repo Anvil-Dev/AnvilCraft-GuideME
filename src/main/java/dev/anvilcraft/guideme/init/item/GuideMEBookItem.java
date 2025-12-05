@@ -8,7 +8,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-import static dev.anvilcraft.guideme.init.guideme.GuideME.GID;
+import static dev.anvilcraft.guideme.AnvilCraftGuideME.GID;
 
 public class GuideMEBookItem extends Item {
 

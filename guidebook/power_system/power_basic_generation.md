@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "Basic Power Generation"
+  title: "基础发电"
   icon: "anvilcraft:charge_collector"
   position: 2002
   parent: anvilcraft_guideme:power_system_index.md
@@ -9,11 +9,11 @@ item_ids:
   - anvilcraft:piezoelectric_crystal
 ---
 
-# Basic Power Generation
+# 基础发电
 
-Use a charge collector to collect electrical charge to generate power. Some block behaviors generate charges: an anvil hits a piezoelectric crystal, a piston pushes and pulls a magnet next to a copper block, and a copper block is struck by lightning.
+使用集电器收集电荷发电。一些方块行为会产生电荷：铁砧砸到压电晶体、活塞推拉紧邻铜块的磁铁、铜块被雷劈。
 
-The *Charge Collector* is the core component of the power generation facility, with a power upper limit of 32KW. The scope of work is 5x5x5 centered on itself. The number of charges received by the charge collector in one cycle will become its power generation in the next cycle (piece → KW). The cycle is 2 seconds by default.
+*集电器*是发电设施的核心部件，发电功率上限为32KW。工作范围是以自己为中心5x5x5，集电器一个周期之内收到的电荷数量将成为它下个周期的发电功率（个→KW）。周期默认为2秒。
 
 <Recipe id="anvilcraft:charge_collector" />
 
@@ -23,9 +23,9 @@ The *Charge Collector* is the core component of the power generation facility, w
 
 <Recipe id="anvilcraft:piezoelectric_crystal_amethyst" />
 
-When the anvil hits the *Piezoelectric Crystal*, there are charges generated. The higher the anvil drops, the more charges it generates. Heights from 1 to 4 grids correspond to generating 1, 2, 4, and 8 charges respectively. Vertically stacked piezoelectric crystals can also increase the amount of charge generated. Each piezoelectric crystal generates half the charges of the piezoelectric crystal above it, rounded down.
+*压电晶体*被铁砧砸可以产生电荷。铁砧下落高度越高产生的电荷越多，1到4格的高度分别对应产生1，2，4，8个电荷。竖向堆叠的压电晶体也可以增加产电荷的量，每个压电晶体产生它上方压电晶体一半的电荷量，小数向下取整。
 
-When the *Magnet Block* is pushed and pulled by the piston, the copper block next to it can generate charges. That can generate 1/8 charge per move. Waxed copper blocks cannot generate the charge. Rusting of copper blocks will reduce charge generation. Charge generation in four stages: 1/8, 1/16, 1/32, 0. The number of charges is rounded down by the charge collector.
+*磁铁块*被活塞推拉时紧贴着的铜块可以产生电荷。每次移动产生1/8个电荷，涂蜡铜块无法产生电荷，铜块生锈会使电荷生产量减少，四个阶段的电荷产出：1/8，1/16，1/32，0。电荷数量被集电器汇总后向下取整。
 
-The *Lightning Rod* can generate 32 charges when struck by lightning each time.
+*避雷针*被雷劈可以产生电荷。每次产生32个电荷。
 

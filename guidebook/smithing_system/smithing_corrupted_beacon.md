@@ -1,45 +1,36 @@
 ---
 navigation:
-  title: "Corrupted Beacon"
+  title: "腐化信标"
   icon: "anvilcraft:corrupted_beacon"
-  position: 3002
+  position: 3003
   parent: anvilcraft_guideme:smithing_system_index.md
 ---
 
-# Corrupted Beacon
+# 腐化信标
 
-Release the Wither's power that been sealed in the normal beacon. Will give entities in its beam *Wither* effect. Some mobs will transform to another mob, and it can also go on with Anvils.
+释放了被封印在信标之中的凋灵之力。会赋予光柱内的生物*凋零*效果，部分生物会转化为另一种生物，还可以配合铁砧加工。
 
-Mob Transform: 
-*Pig*→*Hoglin*
-*Cow*→*Ravager*
-*Guardian*→*Elder Guardian*
-*Piglin*→*Piglin Brute*
-*Villager*→30%*Pillager*、60%*Vindicator*、10%*Evoker*
-*Allay*→*Vex*
-*Bat*→*Phantom*
-*Horse*→10%*Zombie Horse*、90%*Skeleton Horse*
-*Silverfish*→*Endermite*
+生物转化：
+*猪*→*疣猪兽*
+*牛*→*劫掠兽*
+*守卫者*→*远古守卫者*
+*猪灵*→*猪灵蛮兵*
+*村民*→30%*掠夺者*、60%*卫道士*、10%*唤魔者*
+*悦灵*→*恼鬼*
+*蝙蝠*→*幻翼*
+*马*→10%*僵尸马*、90%*骷髅马*
+*蠹虫*→*末影螨*
 
-## Time Warp
+<a name="time_warp"></a>
+## 时移
 
-<GameScene interactive={true} zoom={2}>
-  <Block x="1" y="0" z="1" id="anvilcraft:hollow_magnet_block"p:lit="false" />
-  <Block x="1" y="1" z="1" id="minecraft:anvil" />
-  <Block x="1" y="3" z="1" id="minecraft:cauldron" />
-  <Block x="1" y="4" z="1" id="anvilcraft:corrupted_beacon"p:lit="true" />
-  <Block x="0" y="5" z="0" id="anvilcraft:cursed_gold_block" />
-  <Block x="1" y="5" z="0" id="anvilcraft:cursed_gold_block" />
-  <Block x="2" y="5" z="0" id="anvilcraft:cursed_gold_block" />
-  <Block x="0" y="5" z="1" id="anvilcraft:cursed_gold_block" />
-  <Block x="1" y="5" z="1" id="anvilcraft:cursed_gold_block" />
-  <Block x="2" y="5" z="1" id="anvilcraft:cursed_gold_block" />
-  <Block x="0" y="5" z="2" id="anvilcraft:cursed_gold_block" />
-  <Block x="1" y="5" z="2" id="anvilcraft:cursed_gold_block" />
-  <Block x="2" y="5" z="2" id="anvilcraft:cursed_gold_block" />
+<GameScene interactive={true} zoom={3}>
+  <ImportStructure src="../ac_assets/sturcture/corrupted_beacon.snbt" />
+  <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-Time Warp operation requires lit Corrupted Beacon. This means if you want to use magnet block to control anvils on top, you need to use *Hollow Magnet Block*.
+
+想要实现时移操作，腐化信标必须是激活状态。这意味着如果你想使用磁铁块控制顶上的铁砧，你必须使用*空心磁铁块*。
 
 **TODO:** Unsupported Patchouli page type **anvilcraft:time_warp**
 

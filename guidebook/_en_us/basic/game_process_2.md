@@ -16,26 +16,8 @@ The *Magnet Block* will help you simply lift the anvil up and down it. There are
 
 ## Lightning Convert Magnets
 
-<GameScene interactive={true} zoom={2}>
-  <Block x="1" y="0" z="1" id="minecraft:lightning_rod" />
-  <Block x="0" y="1" z="0" id="minecraft:iron_block" />
-  <Block x="1" y="1" z="0" id="minecraft:iron_block" />
-  <Block x="2" y="1" z="0" id="minecraft:iron_block" />
-  <Block x="0" y="1" z="1" id="minecraft:iron_block" />
-  <Block x="1" y="1" z="1" id="minecraft:iron_block" />
-  <Block x="2" y="1" z="1" id="minecraft:iron_block" />
-  <Block x="0" y="1" z="2" id="minecraft:iron_block" />
-  <Block x="1" y="1" z="2" id="minecraft:iron_block" />
-  <Block x="2" y="1" z="2" id="minecraft:iron_block" />
-  <Block x="0" y="2" z="0" id="minecraft:iron_block" />
-  <Block x="1" y="2" z="0" id="minecraft:iron_block" />
-  <Block x="2" y="2" z="0" id="minecraft:iron_block" />
-  <Block x="0" y="2" z="1" id="minecraft:iron_block" />
-  <Block x="1" y="2" z="1" id="minecraft:iron_block" />
-  <Block x="2" y="2" z="1" id="minecraft:iron_block" />
-  <Block x="0" y="2" z="2" id="minecraft:iron_block" />
-  <Block x="1" y="2" z="2" id="minecraft:iron_block" />
-  <Block x="2" y="2" z="2" id="minecraft:iron_block" />
+<GameScene interactive={true} zoom={4}> 
+    <ImportStructure src="../ac_assets/sturcture/lightning_convert_magnets.snbt"></ImportStructure>
 </GameScene>
 
 Default lightning conversion magnet block range. After a lightning strike, the iron blocks in the picture will be converted into hollow magnet blocks.
@@ -49,9 +31,8 @@ If you can't wait for a thunderstorm, right-clicking a lightning rod with *Topaz
 
 ## Smash Geode
 
-<GameScene interactive={true} zoom={2}>
-  <Block x="0" y="0" z="0" id="minecraft:anvil" />
-  <Block x="0" y="2" z="0" id="anvilcraft:stamping_platform" />
+<GameScene interactive={true} zoom={4}>
+    <ImportStructure src="../ac_assets/sturcture/smash_geode.snbt"></ImportStructure>
 </GameScene>
 
 Place the geode on the *Stamping Platform*, and the anvil will smash the geode when it falls. There is a chance to obtain topaz.

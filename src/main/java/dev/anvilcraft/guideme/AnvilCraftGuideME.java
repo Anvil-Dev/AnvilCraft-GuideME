@@ -3,8 +3,11 @@ package dev.anvilcraft.guideme;
 import com.mojang.logging.LogUtils;
 import com.tterrag.registrate.Registrate;
 import dev.anvilcraft.guideme.data.ModDatagen;
-import dev.anvilcraft.guideme.init.guideme.GuideME;
+import dev.anvilcraft.guideme.element.ItemEntityShapeCompiler;
 import dev.anvilcraft.guideme.init.item.AddonItems;
+import guideme.Guide;
+import guideme.scene.element.SceneElementTagCompiler;
+import lombok.Getter;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
@@ -18,11 +21,18 @@ public class AnvilCraftGuideME {
     public static final Logger LOGGER = LogUtils.getLogger();
     public static final Registrate REGISTRATE = Registrate.create(MOD_ID);
 
+    @Getter
+    private static Guide guideme;
+    public static final ResourceLocation GID = AnvilCraftGuideME.of("guideme");
+
     public AnvilCraftGuideME(@NotNull IEventBus modEventBus, @NotNull ModContainer modContainer) {
         AddonItems.register();
         ModDatagen.init();
 
-        GuideME.init();
+        guideme = Guide.builder(GID)
+            .folder("ac_guidebook")
+            .extension(SceneElementTagCompiler.EXTENSION_POINT, new ItemEntityShapeCompiler())
+            .build();
     }
 
     public static @NotNull ResourceLocation of(String path) {

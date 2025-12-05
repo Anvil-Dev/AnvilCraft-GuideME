@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "Power Transmission"
+  title: "电能传输"
   icon: "anvilcraft:transmission_pole"
   position: 2001
   parent: anvilcraft_guideme:power_system_index.md
@@ -10,19 +10,19 @@ item_ids:
   - anvilcraft:load_monitor
 ---
 
-# Power Transmission
+# 电能传输
 
-Each transmission pole has its own range of power supply. The generators and consumers within the range are connected to the same power grid. Two transmission poles can be connected to the grid if they have any overlapping power supply range.
+每个输电杆有自己的供电范围，在范围内的发电器和用电器接入同一电网，两个输电杆有任意重合的供电范围即可并网。
 
-The *Transmission Pole*'s power supply distance is 8. The range is centered on the head 17 x 17 x 17.
+*输电杆*供电距离8，范围以头部为中心17x17x17。
 
 <Recipe id="anvilcraft:transmission_pole" />
 
-The *Remote Transmission Pole*'s power supply distance is 16. The range is centered on the head 33 x 33 x 33.
+*远程输电杆*供电距离16，范围以头部为中心33x33x33。
 
 <Recipe id="anvilcraft:remote_transmission_pole" />
 
-The *Load Monitor* can display the grid load. Use the comparator to output the redstone signal in proportion to the load. When overloaded, it will also directly output the redstone signal.
+*负载监视器*可以查看电网负载，用比较器按负载比例输出红石信号，过载时本身也将直接输出红石信号。
 
 <Recipe id="anvilcraft:load_monitor" />
 

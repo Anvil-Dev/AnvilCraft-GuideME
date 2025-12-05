@@ -1,127 +1,105 @@
 ---
 navigation:
-  title: "Basic Block Processing"
+  title: "基本方块处理"
   icon: "minecraft:stone"
   position: 1001
-  parent: anvilcraft_guideme:basic_gameplay.md
+  parent: anvilcraft_guideme:basic_gameplay_index.md
 ---
 
-# Basic Block Processing
+# 基本方块处理
 
-Let *anvil* fall on the block to process the block. A single block, multiple blocks, a block and a cauldron, a block and a stonecutter will all trigger different effects. The flowing pages of this entry will introduce relevant content in sequence. 
-Before that, understanding how magnets help anvil machining will make it easier for you to get started.
+让*铁砧*落在需要被加工的方块上就可以加工该方块。  
+单个方块、多个方块、方块和炼药锅、方块和切石机都会触发不同的效果，本条目的后续页面将会依次介绍。  
+在此之前，了解磁铁对铁砧加工的帮助会让你更方便地上手。  
 
-## Magnets Control Anvils
+## 使用磁铁升降铁砧
 
-<GameScene interactive={true} zoom={2}>
-  <Block x="0" y="0" z="1" id="anvilcraft:magnet_block"p:lit="true" />
-  <Block x="2" y="0" z="1" id="anvilcraft:magnet_block" />
-  <Block x="0" y="0" z="2" id="minecraft:lever"p:facing="east" p:powered="true" />
-  <Block x="2" y="0" z="2" id="minecraft:lever"p:facing="east" p:powered="false" />
-  <Block x="2" y="1" z="1" id="minecraft:anvil" />
-  <Block x="0" y="2" z="1" id="minecraft:anvil" />
-  <Block x="0" y="3" z="1" id="minecraft:gravel" />
-  <Block x="2" y="3" z="1" id="minecraft:cobblestone" />
+<GameScene interactive={true} zoom={3}>
+  <ImportStructure src="../ac_assets/sturcture/magnets_control_anvils.snbt" />
+  <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-The magnet is demagnetized when activated by a redstone signal, and the anvil is dropped to perform the operation.
+磁铁被红石信号激活而消磁，铁砧落下可以执行操作。  
 
-## Crush
+## 单方块处理：粉碎
 
-<GameScene interactive={true} zoom={2}>
-  <Block x="2" y="0" z="1" id="minecraft:anvil" />
-  <Block x="0" y="1" z="1" id="minecraft:anvil" />
-  <Block x="0" y="2" z="1" id="minecraft:sand" />
-  <Block x="1" y="2" z="1" id="anvilcraft:arrow" />
-  <Block x="2" y="2" z="1" id="minecraft:gravel" />
+<GameScene interactive={true} zoom={3}>
+  <ImportStructure src="../ac_assets/sturcture/block_crush.snbt" />
+  <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-The list on the right gives more examples of where such transformation can occur, some of which can occur consecutively.
+右侧列表给出了更多可以发生此种转化的例子，有些可连续发生转化。  
 
-*Cobblestone* → *Gravel* → *Sand*;
-*Polished Granite* → *Granite* → *Red Sand*;
-*Polished Andesite* → *Andesite* → *Cinerite*;
-*Polished Diorite* → *Diorite* → *Quartz Sand*;
-*Blocks with cracked variants* → *Their cracked variants*;
-*Netherrack* → *Nether Dust*;
-*End Stone* → *End Dust*;
-*Soul Soil* → *Soul Sand*;
-*Deepslate* → *Deepslate Chips*;
-*Blackstone* → *Black Sand*
+*圆石*→*沙砾*→*沙子*
+*磨制花岗岩*→*花岗岩*→*红沙*
+*磨制安山岩*→*安山岩*→*火山灰*
+*磨制闪长岩*→*闪长岩*→*石英砂*
+*有裂纹变种的方块*→*对应的裂纹变种*
+*下界岩*→*下界尘*
+*末地石*→*末地尘*
+*灵魂土*→*灵魂沙*
+*深板岩*→*深板岩碎*
+*黑石*→*黑沙*
 
-## Press
+## 双方块处理：压合
 
-<GameScene interactive={true} zoom={2}>
-  <Block x="2" y="0" z="1" id="minecraft:anvil" />
-  <Block x="0" y="2" z="1" id="minecraft:anvil" />
-  <Block x="2" y="2" z="1" id="minecraft:moss_block" />
-  <Block x="0" y="3" z="1" id="minecraft:grass_block" />
-  <Block x="1" y="3" z="1" id="anvilcraft:arrow" />
-  <Block x="2" y="3" z="1" id="minecraft:dirt" />
+<GameScene interactive={true} zoom={3}>
+  <ImportStructure src="../ac_assets/sturcture/press.snbt" />
+  <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-The list on the right gives more examples of where such transformation can occur.
+右侧列表给出了更多可以发生此种转化的例子。  
 
-*Moss Block* + *Dirt* → *Grass Block*;
-*Any Leaves* + *Dirt* → *Podzol*;
-*Any Mushroom Block* + *Dirt* → *Mycelium*;
-*Nether Wart Block* + *Netherrack* → *Crimson Nylium*;
-*Warped Wart Block* + *Netherrack* → *Warped Nylium*;
-*Stone* + *Stone* → *Deepslate*;
-*Ice* + *Ice* → *Packed Ice*;
-*Packed Ice* + *Packed Ice* → *Blue Ice*;
-*Basalt* + *Basalt* → *Blackstone*
+*苔藓块*+*泥土*→*草方块*
+*任意树叶*+*泥土*→*灰化土*
+*任意蘑菇块*+*泥土*→*菌丝体*
+*下界疣块*+*下界岩*→*绯红菌岩*
+*诡异疣块*+*下界岩*→*诡异菌岩*
+*石头*+*石头*→*深板岩*
+*冰*+*冰*→*浮冰*
+*浮冰*+*浮冰*→*蓝冰*
+*玄武岩*+*玄武岩*→*黑石*
 
-## Daub
+## 双方块处理：涂抹
 
-<GameScene interactive={true} zoom={2}>
-  <Block x="2" y="0" z="1" id="minecraft:anvil" />
-  <Block x="0" y="1" z="1" id="minecraft:anvil" />
-  <Block x="0" y="2" z="1" id="minecraft:moss_block" />
-  <Block x="2" y="2" z="1" id="minecraft:moss_block" />
-  <Block x="0" y="3" z="1" id="minecraft:mossy_cobblestone" />
-  <Block x="1" y="3" z="1" id="anvilcraft:arrow" />
-  <Block x="2" y="3" z="1" id="minecraft:cobblestone" />
+<GameScene interactive={true} zoom={3}>
+  <ImportStructure src="../ac_assets/sturcture/smear.snbt" />
+  <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-Unlike pressing, the block above will not be consumed. The list on the right gives more examples of where such transformation can occur.
+与压合不同的是上方的方块不会消耗。右侧列表给出了更多可以发生此种转化的例子。  
 
-*Moss Block* + *Cobblestone* → *Mossy Stone*;
-*Moss Block* + *Stone Bricks* → *Moss Stone Bricks*;
-*Honeycomb Block* + *Any Copper Block* → *Their Waxed variants*
+*苔藓块*+*圆石*→*苔石*  
+*苔藓块*+*石砖*→*苔石砖*  
+*蜜脾块*+*任意铜制方块*→*对应的涂蜡铜制方块*  
 
-## Squeeze
+## 方块+炼药锅：压榨
 
-<GameScene interactive={true} zoom={2}>
-  <Block x="2" y="0" z="1" id="minecraft:anvil" />
-  <Block x="0" y="1" z="1" id="minecraft:anvil" />
-  <Block x="0" y="2" z="1" id="minecraft:sponge" />
-  <Block x="2" y="2" z="1" id="minecraft:wet_sponge" />
-  <Block x="0" y="3" z="1" id="minecraft:water_cauldron"p:level="1" />
-  <Block x="1" y="3" z="1" id="anvilcraft:arrow" />
-  <Block x="2" y="3" z="1" id="minecraft:cauldron" />
+<GameScene interactive={true} zoom={3}>
+  <ImportStructure src="../ac_assets/sturcture/squeeze.snbt" />
+  <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-A single layer of liquid will appear in the cauldron. The list on the right gives more examples of where such transformation can occur, some of which can occur consecutively.
+使炼药锅中出现对应的单层液体。  
+右侧列表给出了更多可以发生此种转化的例子。 
 
-*Wet Sponge* → *Sponge* + *Water*;
-*Moss blocks* → *Moss Carpet* + *Water*;
-*Magma Block* → *Netherrack* + *Lava*;
-*Snow Block* → *Ice* + *Powder Snow*;
-*Full Bee Nest* → *Empty Bee Nest* + *Honey*(Specially, when there are three layers of *Honey* below, if you continue to squeeze the *Full Bee Nest*, it will be crushed into a *Honey Block*. The above *Bee Nest* can be replaced with *Beehive*)
+*湿海绵*→*海绵*+*水*  
+*苔藓块*→*覆地苔藓*+*水*  
+*岩浆块*→*下界岩*+*熔岩*  
+*雪块*→*冰*+*细雪*  
+*满蜂巢*→*空蜂巢*+*蜂蜜*（特殊地，当下方是三层*蜂蜜*时，继续砸*满蜂巢*会将所有*蜂蜜*压成一个*蜂蜜块*。上述*蜂巢*皆可换成*蜂箱*）
 
-## break
+## 方块+切石机：破坏
 
-<GameScene interactive={true} zoom={2}>
-  <Block x="2" y="0" z="1" id="minecraft:anvil" />
-  <Block x="0" y="1" z="1" id="minecraft:anvil" />
-  <Block x="2" y="2" z="1" id="minecraft:cobblestone" />
-  <Block x="0" y="3" z="1" id="minecraft:stonecutter" />
-  <Block x="1" y="3" z="1" id="anvilcraft:arrow" />
-  <Block x="2" y="3" z="1" id="minecraft:stonecutter" />
+<GameScene interactive={true} zoom={3}>
+  <ImportStructure src="../ac_assets/sturcture/break.snbt" />
+  <ItemEntity id="minecraft:cobblestone" count="1" pos="2 0.75 0" />
 </GameScene>
 
-Block becomes dropped item. Detailed instructions on the right.
+使方块变为掉落物。  
 
-When use normal *Anvil* to trigger this, the block destruction will follows the drop table of TNT destruction, i.e. it has no *Fortune* or *Silk Touch* enchantment. Use *Royal Anvil* will contain fortune affection, and *Ember Anvil* will contain silk touch affection. If the block can not be break by normal TNT explosion, such as obsidian, it can still be broken, but the anvil will be damaged by one durability level. In order to prevent the anvil from falling on the stonecutter and becoming the drop after the block is broken, you need to control the timing of the redstone circuit.
-
+下面详细说明。  
+使用普通*铁砧*执行时，方块破坏遵循TNT破坏的掉落物表。  
+即没有*时运*或*精准采集*效果。使用*皇家铁砧*执行则附带时运效果，*余烬铁砧*则为精准采集效果。  
+如果方块无法被普通TNT爆炸破坏如*黑曜石*，仍然可以破坏，但是铁砧将固定损坏一个耐久等级。  
+为了防止方块破坏后铁砧掉在切石机上变为掉落物，你需要控制电路的时序。  

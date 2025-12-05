@@ -1,12 +1,11 @@
 ---
 navigation:
-  title: "Power System"
+  title: "电力系统"
   icon: "anvilcraft:magnetoelectric_core"
-  position: 3
 ---
 
-# Power System
+# 电力系统
 
-Stronger automation.
+更强的自动化。
 
 <SubPages />

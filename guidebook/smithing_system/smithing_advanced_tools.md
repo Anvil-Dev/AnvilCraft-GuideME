@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "Advanced Tools"
+  title: "高级工具"
   icon: "anvilcraft:jewelcrafting_table"
   position: 3005
   parent: anvilcraft_guideme:smithing_system_index.md
@@ -12,13 +12,13 @@ item_ids:
   - anvilcraft:resonator_core
 ---
 
-# Advanced Tools
+# 高级工具
 
-This page shows all available *Advanced Tools*.
+本页面展示了目前所有可用的*高级工具*。
 
 <ItemImage id="tag:anvilcraft:tools/dragon_rod" />
 
-*Dragon Rod* is basically simplified "Put down *Block Devourer*→Punch it with *Anvil Hammer*→Take the devourer back" to a tool.
+*龙杖*本质上是为了将你“放下*方块吞噬器*→*铁砧锤*敲击→收回方块吞噬器”的流程简化至一个工具内。
 
 
 
@@ -26,8 +26,8 @@ This page shows all available *Advanced Tools*.
 
 <Recipe id="anvilcraft:royal_dragon_rod" />
 
-The three dragon rods are the same, only except the durability.
-They can also upgrade by smithing.
+三种龙杖的功能是相同的，只是耐久不同。
+同样可以通过锻造升级。
 
 <Recipe id="anvilcraft:ember_dragon_rod" />
 
@@ -37,16 +37,16 @@ They can also upgrade by smithing.
 {"type":"patchouli:smithing","recipe":"anvilcraft:smithing/royal_dragon_rod","recipe2":"anvilcraft:smithing/ember_dragon_rod"}
 ```
 
-The ability of dragon rods is very simple. Left click to devour blocks in the range, and right click to change the range size. There are four range sizes: 3x3, 5x5, 7x7, and 9x9. When targeting a block while holding dragon rods, the range box will display. The 3x3 size will not damage the dragon rods, but 5x5 will damage 1, 7x7 will damage 2, and 9x9 will damage 4. The dragon rod will not be fully broken; instead, it will lose all its abilities, similar to *Elytra*.
+龙杖的操作十分简单。左键破坏一定范围内的方块，右键切换范围大小。有3x3、5x5、7x7、9x9四个范围，当手持龙杖准星指向方块时会显示范围框。3x3范围不消耗耐久，往后依次消耗1、2、4点耐久。当龙杖耐久消耗殆尽时不会完全损坏，而是失去所有功能，类似于*鞘翅*。
 
-The devouring of dragon rods is similar to the Block Devourer. When devouring the base blocks of worlds (like *Stone*, *Netherrack*, *End Stone*), there is a 5% chance to drop. But it cannot chain devour the fallible blocks. 
-There will be a cooldown after mining; the default is 1 second. The length of the cooldown is only affected by *Haste* and *Mining Fatigue* effects. Haste will reduce 4 ticks, and Mining Fatigue will increase 1 second.
+龙杖遵循方块吞噬器的规则，当挖掘世界基底方块（*石头*、*下界岩*、*末地石*）时，只有5%的概率掉落。但是它无法连锁顶部的可下落方块。
+龙杖在挖掘一次后会有一段冷却时间，默认为1秒。这段冷却时长只受*急迫*效果和*挖掘疲劳*效果影响，每级急迫会减少4tick，每级挖掘疲劳会增加1秒。
 
 <ItemImage id="tag:anvilcraft:tools/heavy_halberd" />
 
-*Heavy Halberd* fused the attacking abilities from Sword, Axe, Mace and Trident. It's a powerful weapon.
+*重戟*融合了剑、斧、重锤和三叉戟的特性，是一个强力的武器。
 
-*Heavy Halberd Core* is the core ingredient of crafting Heavy Halberd.
+*重戟核心*是合成重戟的核心材料。
 
 <Recipe id="anvilcraft:heavy_halberd_core" />
 
@@ -56,15 +56,15 @@ There will be a cooldown after mining; the default is 1 second. The length of th
 {"type":"anvilcraft:multiple_to_one_smithing","recipe":"anvilcraft:four_to_one_smithing/frost_metal_heavy_halberd","recipe2":"anvilcraft:four_to_one_smithing/ember_metal_heavy_halberd"}
 ```
 
-Heavy Halberd can be used with any one of the four weapons consumed while crafting. It can compat with all enchantments for Sword, Mace, and Trident. Its attack damage is the same as Axe's, its attack speed is the same as Sword's, and it can mine all they can. Falling from a height can trigger the smash. It can also be thrown when holding right click like Tridents, but the damage will be calculated by the speed, similar to Arrows. When it has the Royalty enchantment and it touches the void, it will come back to the player.
+重戟可以作为合成它所需的四件武器中的任意一件使用。它能兼容剑、重锤和三叉戟的所有附魔。它的攻击伤害值与斧相同，攻击速度与剑相同，还具有它们的挖掘特性。从高处落下可以触发重锤的猛击。长按右键也可以像三叉戟一样投掷，但是投掷伤害根据速度计算，与箭类似。当它拥有忠诚魔咒时，掷入虚空会回到玩家处。
 
-Heavy Halberd will not be fully broken too; similar to Dragon Rods, it will lose all bonuses, abilities, attack damage will become 0, most enchantments will lose efficacy, and the [Merciless](../advanced_features/advanced_tool_properties.md#merciless) only in Frost Heavy Halberd will also lose efficacy.
+重戟同样不会完全损坏，类似于鞘翅，它会失去所有增益、功能等效果，攻击伤害变为0，附魔大部分失效，浮霜带来的[无情](../advanced_features/advanced_tool_properties.md#merciless)也会失效。
 
 <ItemImage id="tag:anvilcraft:tools/resonator" />
 
-*Resonator* fused the mining abilities from Axe, Pickaxe, Shovel and Hoe. It's a powerful tool.
+*共振器*融合了斧、镐、锹、锄的特性，是一个强力的工具。
 
-*Resonator Core* is the core ingredient of crafting Resonator.
+*共振器核心*是合成共振器的核心材料。
 
 <Recipe id="anvilcraft:resonator_core" />
 
@@ -74,9 +74,9 @@ Heavy Halberd will not be fully broken too; similar to Dragon Rods, it will lose
 {"type":"anvilcraft:multiple_to_one_smithing","recipe":"anvilcraft:four_to_one_smithing/frost_metal_resonator","recipe2":"anvilcraft:four_to_one_smithing/ember_metal_resonator"}
 ```
 
-Resonators have five modes: Auto and four tool modes. Different modes have different models. You can mine any minable blocks in Auto mode, but you don't have any special abilities when right-clicking. In tool-specific modes, you can only mine what the tool can, but you can also get their special abilities when right-clicking. For example, Axe mode can strip logs, remove one layer of oxidization or wax.
+共振器有五个模式：自动，和四种工具对应的模式。不同的模式有不同的模型。在自动模式下可以快速挖掘任意可挖掘方块，但是没有右键功能。在每种工具对应的模式下只能快速挖掘该工具允许的方块，但是拥有它们对应的右键功能，如斧模式可以去皮、脱蜡、除锈等。
 
-Hold [<KeyBind id="key.anvilcraft.switch_resonate_mode" />] while holding resonators to open a wheel; it contains five modes of resonators. You can switch the resonator's mode by scrolling the mouse or dragging the cursor to a mode.
+手持共振器按住[<KeyBind id="key.anvilcraft.switch_resonate_mode" />]可以打开一个轮盘选择界面，包含共振器的五个模式，将鼠标拖到对应的位置就可以选中该模式并切换。
 
-Resonator will not be fully broken too; similar to Dragon Rods, it will lose all bonuses, abilities, attack damage will become 0, most enchantments will lose efficacy, and the [Merciless](advanced_tool_properties.mderciless) only in Frost Resonator will also lose efficacy.
+共振器同样不会完全损坏，类似于鞘翅，它会失去所有增益、功能等效果，攻击伤害变为0，附魔大部分失效，浮霜带来的[无情](../advanced_features/advanced_tool_properties.md#merciless)也会失效。
 

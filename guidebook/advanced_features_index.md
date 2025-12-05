@@ -1,12 +1,12 @@
 ---
 navigation:
-  title: "Advanced Features"
+  title: "进阶特性"
   icon: "anvilcraft:ember_anvil"
   position: 4
 ---
 
-# Advanced Features
+# 进阶特性
 
-More complex, stronger.
+更复杂，也更强大。
 
 <SubPages />

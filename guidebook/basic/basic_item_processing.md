@@ -1,125 +1,143 @@
 ---
 navigation:
-  title: "Basic Item Processing"
+  title: "基本物品处理"
   icon: "minecraft:iron_ingot"
   position: 1002
-  parent: anvilcraft_guideme:basic_gameplay.md
+  parent: anvilcraft_guideme:basic_gameplay_index.md
 item_ids:
   - anvilcraft:stamping_platform
 ---
 
-# Basic Item Processing
+# 基本物品处理
 
-Let *Anvil* fall on the specific blocks to process the items inside or on. Different specific blocks have different processing. The flowing pages of this entry will introduce relevant content in sequence. This mod adds a block that prevents hit items from flying around due to hitbox squeezing: *Stamping Platform*.
+让*铁砧*落在特定方块上就可以加工该方块顶部或内部的物品，不同的特定方块有不同的处理，本条目的后续页面依次介绍。本模组增加了一种方块可以让直接被砸的物品不因碰撞箱挤压而乱飞：*冲压平台*。
 
-The iron pressure plate can be replaced with an iron plate from any mod.
+铁压力板可以替换成任意模组的铁板。
 
 <Recipe id="anvilcraft:stamping_platform" />
 
-## Item Stamping
+## 物品冲压
 
-<GameScene interactive={true} zoom={2}>
-  <Block x="2" y="0" z="1" id="minecraft:anvil" />
-  <Block x="0" y="1" z="1" id="minecraft:anvil" />
-  <Block x="0" y="2" z="1" id="anvilcraft:stamping_platform" />
-  <Block x="1" y="2" z="1" id="anvilcraft:arrow" />
-  <Block x="2" y="2" z="1" id="anvilcraft:stamping_platform" />
+<GameScene interactive={true} zoom={3}>
+  <ImportStructure src="/ac_assets/sturcture/item_stamping.snbt" />
+  <ItemEntity id="minecraft:iron_ingot" count="1" pos="0 0.75 0" />
+  <ItemEntity id="minecraft:heavy_weighted_pressure_plate" count="1" pos="2 0.25 -0.75" />
+  <BlockAnnotation x="2" y="0" z="-1">
+    重质测重压力板 <ItemImage id="minecraft:heavy_weighted_pressure_plate" />
+  </BlockAnnotation>
+  <BlockAnnotation x="0" y="1" z="0">
+    铁锭 <ItemImage id="minecraft:iron_ingot" />
+  </BlockAnnotation>
+  <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-When the stamping platform is below, the item stamping is performed, and both materials and products are on the stamping platform. Detailed instructions on the right.
+下方是冲压平台时执行物品冲压操作，原料和产物都在平台中，具体描述见右侧。
 
-Items can be stamped into slices, such as Iron Ingot→Iron Pressure Plate; Gold Ingot→Gold Pressure Plate; Snowball→Snow; Cherry Leaves→Pink Petals.
-It is also possible to separate the different components of some items, such as Sugar Cane→Paper+Sugar; Wheat→Wheat Flour+Wheat Seeds; Log→Wood Fiber+Resin.
-Some equipment can also be recycled. Chains, gold, iron and diamond tools, weapons and armors can be broken down into much more materials than they are smelted.
+可以将物品砸成对应的薄片，例如铁锭→铁压力板；金锭→金压力板；雪球→雪片；樱花树叶→粉色花瓣。
+还可以分离一些物品的不同组分，例如甘蔗→纸+糖；小麦→面粉+小麦种子；原木→木质纤维+树脂。
+还可以回收一些装备，锁链、金质、铁质和钻石工具武器盔甲可以分解出原料，远远多于熔炼得到的。
 
-## Item Compression
+## 物品压缩
 
-<GameScene interactive={true} zoom={2}>
-  <Block x="2" y="0" z="1" id="minecraft:anvil" />
-  <Block x="0" y="1" z="1" id="minecraft:anvil" />
-  <Block x="0" y="2" z="1" id="minecraft:cauldron" />
-  <Block x="1" y="2" z="1" id="anvilcraft:arrow" />
-  <Block x="2" y="2" z="1" id="minecraft:cauldron" />
+<GameScene interactive={true} zoom={3}>
+  <ImportStructure src="/ac_assets/sturcture/item_compress.snbt" />
+  <ItemEntity id="minecraft:iron_ingot" count="9" pos="0 0.75 0" />
+  <BlockAnnotation x="2" y="0" z="0">
+    铁块 <ItemImage id="minecraft:iron_block" />
+  </BlockAnnotation>
+  <BlockAnnotation x="0" y="1" z="0">
+    铁锭 <ItemImage id="minecraft:iron_ingot" />
+  </BlockAnnotation>
+  <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-When the cauldron is below, the item compression is performed, and both materials and products are in the cauldron. Detailed instructions on the right.
+下方是炼药锅时执行物品压缩操作，原料和产物都在锅中，具体描述见右侧。
 
-If the item as a 2 x 2 or 3 x 3 crafting recipe, it will be executed, e.g. 9 Iron Nuggets→1 Iron Ingot; 9 Iron Ingots→1 Iron Block; 4 Strings→1 White Wool. If an item can be crafted both 2 x 2 and 3 x 3, 3 x 3 crafting will be performed.
-In addition to the vanilla recipes: 3 Bones→1 Bone block.
+如果物品有2x2或3x3的合成配方则会被执行，例如9铁粒→铁锭；9铁锭→铁块；4线→羊毛。如果一个物品既可以2x2合成又可以3x3合成，则执行3x3合成。
+除了原版的配方外，增加了3骨头→1骨块的配方也可以在此合成。
 
-## Item Decomposition
+## 物品分解
 
-<GameScene interactive={true} zoom={2}>
-  <Block x="2" y="0" z="1" id="minecraft:anvil" />
-  <Block x="0" y="1" z="1" id="minecraft:anvil" />
-  <Block x="0" y="2" z="1" id="minecraft:iron_trapdoor"p:half="top" />
-  <Block x="1" y="2" z="1" id="anvilcraft:arrow" />
-  <Block x="2" y="2" z="1" id="minecraft:iron_trapdoor"p:half="top" />
+<GameScene interactive={true} zoom={3}>
+  <ImportStructure src="/ac_assets/sturcture/unpack.snbt" />
+  <ItemEntity id="minecraft:iron_ingot" count="9" pos="0 0.75 0" />
+  <BlockAnnotation x="2" y="0" z="0">
+    铁块 <ItemImage id="minecraft:iron_block" />
+  </BlockAnnotation>
+  <BlockAnnotation x="0" y="1" z="0">
+    铁锭 <ItemImage id="minecraft:iron_ingot" />
+  </BlockAnnotation>
+  <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-When the iron trapdoor is below, the item decomposition is performed. The materials are on the iron trapdoor and products are under theiron trapdoor. Detailed instructions on the right.
+下方是铁活版门时执行物品分解操作，原料置于铁活版门上，产物出现在铁活版门下，具体描述见右侧。
 
-If the item has a 1→n crafting recipe, it will be executed, e.g. 1 Iron Ingot→9 Iron Nuggets.
-In addition, the vanilla decomposition by breaking blocks can also be performed here, and the amount is the largest. For example, 1 Melon→9 Melon Slices; 1 Snow Block→4 Snowballs; 1 Glowstone→ 4 Glowstone Dust, Clay→4 Clay Balls.
-Some building blocks that vanilla cannot disassemble can also be broken down in this way. For example, 1 Quartz Block→4 Quartzs; 1 Amethyst Block→4 Amethyst Sharts; 1 Dripstone Block→4 Pointed Dripstone; 1 Honeycomb Block→4 Honeycomb; 1 Prismarine→4 Prismarine Shards; 1 Prismarine Bricks→9 Prismarine Shards.
+如果物品有1→n的合成配方则会被执行，例如1铁锭→9铁粒。
+额外地，原版可以通过打破方块来分解的也可执行，数量按最大来：例如西瓜→9西瓜片；雪块→4雪球；荧石→4荧石粉，黏土→4黏土球。
+一些原版无法分解的建筑方块也可以通过此方法分解：例如石英块→4石英；紫水晶块→4紫水晶碎片；滴水石块→4滴水石锥；蜜脾块→4蜜脾；海晶石→4海晶碎片；海晶石砖→9海晶碎片。
 
-## Items Sifting
+## 物品过筛
 
-<GameScene interactive={true} zoom={2}>
-  <Block x="2" y="0" z="1" id="minecraft:anvil" />
-  <Block x="0" y="1" z="1" id="minecraft:anvil" />
-  <Block x="0" y="2" z="1" id="minecraft:scaffolding" />
-  <Block x="1" y="2" z="1" id="anvilcraft:arrow" />
-  <Block x="2" y="2" z="1" id="minecraft:scaffolding" />
+<GameScene interactive={true} zoom={3}>
+  <ImportStructure src="/ac_assets/sturcture/mesh.snbt" />
+  <ItemEntity id="minecraft:gravel" count="64" pos="0 0.8 0" />
+  <ItemEntity id="minecraft:iron_nugget" count="10" pos="2 0 0" />
+  <ItemEntity id="minecraft:flint" count="10" pos="2 0 0" />
+  <ItemEntity id="minecraft:gravel" count="10" pos="2 0 0" />
+  <BlockAnnotation x="0" y="1" z="0">
+    沙砾 <ItemImage id="minecraft:gravel" />
+  </BlockAnnotation>
+  <BlockAnnotation x="2" y="0" z="0">
+    沙砾 燧石 铁粒
+  </BlockAnnotation>
+  <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-When the scaffolding is below, the items sifting is performed. The materials are on the scaffolding and products are under the scaffolding. Detailed instructions on the right.
+下方是脚手架时执行物品过筛操作，原料置于脚手架上，产物出现在脚手架下，具体描述见右侧。
 
-About half of the additional material is produced through sifting, which can be recycled. The conversion table is as follows (probability of existence):
-Gravel→Flint+Iron Nugget
-Sand→Clay+Gold Nugget
-Red Sand→Glowstone Dust+Copper Nugget
-Cinerite→Lapis Lazuli+Zinc Nugget
-Quartz Sand→Quartz+Tin Nugget
-Deepslate Chips→Lime Powder+Lead Nugget
-Nether Dust→Redstone Dust+Tungsten Nugget
-Black Sand→Gunpowder+Silver Nugget
-End Dust→Chorus Flowers+Titanium Nugget
-Soul Sand→Nether Wart
-Leaves→Corresponding Sapling
+过筛额外产出约一半原料，可循环利用。转化表如下（存在概率）：
+砂砾→燧石+铁粒
+沙子→黏土+金粒
+红沙→荧石粉+铜粒
+火山灰→青金石+锌粒
+石英砂→石英+锡粒
+深板岩碎→石灰粉+铅粒
+下界尘→红石粉+钨粒
+黑沙→火药+银粒
+末地尘→紫颂花+钛粒
+灵魂沙→下界疣
+树叶→对应的树苗
 
-## Item Bulging
+## 物品膨发
 
-<GameScene interactive={true} zoom={2}>
-  <Block x="2" y="0" z="1" id="minecraft:anvil" />
-  <Block x="0" y="1" z="1" id="minecraft:anvil" />
-  <Block x="0" y="2" z="1" id="minecraft:water_cauldron"p:level="2" />
-  <Block x="1" y="2" z="1" id="anvilcraft:arrow" />
-  <Block x="2" y="2" z="1" id="minecraft:water_cauldron"p:level="3" />
+<GameScene interactive={true} zoom={3}>
+  <ImportStructure src="/ac_assets/sturcture/bulging.snbt" />
+  <BlockAnnotation x="0" y="0" z="0">
+    3层水 <ItemImage id="minecraft:water_bucket" />
+  </BlockAnnotation>
+  <BlockAnnotation x="2" y="0" z="0">
+    2层水 <ItemImage id="minecraft:water_bucket" />
+  </BlockAnnotation>
+  <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-When the water cauldron is below, the item bulging is performed, and both materials and products are in the cauldron. Detailed instructions on the right.
+下方是装水炼药锅时执行物品膨发操作，原料和产物都在锅中，消耗一层水，转化表见右侧。
 
-Dirt→Clay
-Crimson Fungus→Nether Wart Block
-Warped Fungus→Warped Wart Block
-Spider Eye→ Fermented Spider Eye
-Coral→Corresponding Coral Block.
+泥土→黏土
+绯红菌→下界疣块
+诡异菌→诡异疣块
+蜘蛛眼→发酵蜘蛛眼
+珊瑚→对应珊瑚块。
 
-## Cooking
+## 烹饪
 
-<GameScene interactive={true} zoom={2}>
-  <Block x="2" y="0" z="1" id="minecraft:anvil" />
-  <Block x="0" y="1" z="1" id="minecraft:anvil" />
-  <Block x="0" y="2" z="1" id="minecraft:cauldron" />
-  <Block x="1" y="2" z="1" id="anvilcraft:arrow" />
-  <Block x="2" y="2" z="1" id="minecraft:cauldron" />
-  <Block x="0" y="3" z="1" id="minecraft:campfire" />
-  <Block x="2" y="3" z="1" id="minecraft:campfire" />
+<GameScene interactive={true} zoom={3}>
+  <ImportStructure src="/ac_assets/sturcture/cooking.snbt" />
+  <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-When the cauldron and the campfire is below, the cooking is performed, and both materials and products are in the cauldron.  A few recipes require water and consume a layer of water. Detailed instructions on the right.
+下方是炼药锅和营火时执行烹饪操作，原料和产物都在锅中，有的配方需要水且消耗一层水，具体描述见右侧。
 
-Auto-compatible with all smoker recipes and campfire recipes, no water required.
-In the presence of water, the following transformations can occur: Resin→Slime Ball.
+自动兼容所有烟熏炉配方和营火配方，不需要水。
+有水时，可以发生如下转化：树脂→粘液球。
 

@@ -1,6 +1,6 @@
 @MethodsReturnNonnullByDefault
 @ParametersAreNonnullByDefault
-package dev.anvilcraft.guideme.init.guideme;
+package dev.anvilcraft.guideme.client;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 

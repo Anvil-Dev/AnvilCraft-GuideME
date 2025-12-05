@@ -1,12 +1,12 @@
 ---
 navigation:
-  title: "Smithing Introduction"
+  title: "锻造系统介绍"
   icon: "anvilcraft:royal_anvil"
   position: 3000
   parent: anvilcraft_guideme:smithing_system_index.md
 ---
 
-# Smithing Introduction
+# 锻造系统介绍
 
-Vanilla enchant system has lots of constraints. By using more powerful materials to upgrade your smithing workstation, like Anvils, to release the constraints. Some by-products in these progresses can also causing some interesting changes.
+原版附魔有着诸多限制，通过使用更强的材料升级你的铁砧等锻造方块，逐步解除这些限制。这个过程的副产物还将引起一些奇妙的变化。
 

@@ -1,9 +1,9 @@
 ---
 navigation:
-  title: "More Practical Device"
+  title: "更多实用设备"
   icon: "anvilcraft:block_placer"
   position: 1005
-  parent: anvilcraft_guideme:basic_gameplay.md
+  parent: anvilcraft_guideme:basic_gameplay_index.md
 item_ids:
   - anvilcraft:magnet
   - anvilcraft:crab_trap
@@ -12,23 +12,23 @@ item_ids:
   - anvilcraft:chute
 ---
 
-# More Practical Device
+# 更多实用设备
 
-The equipments in this entry can help you automate at an early stage.
+本页面的设备可以帮助你在初期实现自动化。
 
 *手持磁铁*右键使用将附近物品吸引到脚下。
 
 <Recipe id="anvilcraft:magnet" />
 
-*Crab Trab* should be placed on the water surface and can automatically produce fishing catch items. It will only work if there are at least three blocks around it that are water sources or waterlogged blocks. Right-click or hit it with an anvil to make it spit out the products. The output of different biomes is slightly different, but they will all produce *Crab Claw*.
+*蟹笼*放置在水面，可以自动产出鱼获，四面紧邻的方块至少三个为水源或含水方块时正常工作。右键或铁砧砸之使其吐出产物。不同生物群系产出略有不同，但都会产出*蟹钳*。
 
 <Recipe id="anvilcraft:crab_trap" />
 
 <ItemImage id="anvilcraft:crab_claw" />
 
-When held in the hand or off-hand, the reach distance is increased by 3 blocks. It is produced from *Crab Trab*.
+主手或副手手持时增加3格触及距离，从*蟹笼*产出。
 
-*Block Placer* will place a block when there is a redstone signal or when hit by an anvil. Placed block items are taken from the container or drops behind it. The redstone signal causes it to place a block closely in front of it. Hit by an anvil, it will place the block n blocks away based on the height n of the anvil's fall. It can be pushed and pulled by pistons.
+*方块放置器*有红石信号或被铁砧砸时放置方块，方块物品从其背后的容器方块、实体库存、掉落物中取。红石信号使其放置在面前，铁砧根据下落高度n使其间隔n格放置。可以被活塞推拉。
 
 <Recipe id="anvilcraft:block_placer" />
 
@@ -36,11 +36,11 @@ When held in the hand or off-hand, the reach distance is increased by 3 blocks. 
 
 <Recipe id="anvilcraft:block_devourer" />
 
-*Chute* is a special kind of hopper. It has 9 slots, transporting a group of items at a time, and can throw items out into the world. Open the GUI to view inventory, change output direction, and set filtration.
+*溜槽*是一种特殊的漏斗，有9格容量，一次性输送一组物品，可以将物品丢出至世界上。打开gui可以查看库存、改变输出方向和设置过滤。
 
 <Recipe id="anvilcraft:chute" />
 
-## Chute Auto-Connection
+## 溜槽自动连接
 
 <GameScene interactive={true} zoom={2}>
   <Block x="0" y="0" z="0" id="anvilcraft:chute" />
@@ -56,5 +56,5 @@ When held in the hand or off-hand, the reach distance is increased by 3 blocks. 
   <Block x="1" y="2" z="1" id="anvilcraft:arrow" />
 </GameScene>
 
-When chute are chained, the pointed chute will become a simple chute and no longer draw items from the world. It can not be set filtration, too.
+溜槽成链时，被指向的溜槽变为简化溜槽，不再从世界吸取物品，不能过滤。
 

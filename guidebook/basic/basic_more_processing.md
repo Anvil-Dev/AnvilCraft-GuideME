@@ -1,46 +1,41 @@
 ---
 navigation:
-  title: "More Processing"
+  title: "更多铁砧处理"
   icon: "minecraft:spawner"
   position: 1003
-  parent: anvilcraft_guideme:basic_gameplay.md
+  parent: anvilcraft_guideme:basic_gameplay_index.md
 ---
 
-# More Processing
+# 更多铁砧处理
 
-Let *Anvil* fall on the mob's feet, on the spawner or on the redstone block causes the change. The following pages of this entry are introduced in sequence.
+* 让*铁砧*落在生物脚下、刷怪笼上、红石块上会引起相应变化，本条目的后续页面依次介绍。
 
-Get more mob loot:
-When mobs are hit and damaged by an anvil, they will drop items according to the mob loot table. The mobs must be taken enough damage at once: 40% HP→1x drops; 60% HP→2x drops; 80% HP→3x drops.
-This method only yields normal mob drops, and does not produce drops such as blaze rod that require the player to manually kill.
-There are mobs that can regenerate health on their own or with the help of external forces, which you can use to create drop farms that don't kill mobs.
+获得更多生物战利品：
+生物被铁砧砸到而伤害时，会按照原战利品表掉落物品，生物必须一次性受到足够伤害：一次40%血量→1倍掉落物；一次60%血量→2倍掉落物；一次80%血量→3倍掉落物。
+这种方式只能获得生物的一般掉落物，不会产出需要玩家手动击杀而产生的掉落物如烈焰棒。
+有一些生物可以自行或借助外力恢复血量，你可以借此制造不杀死生物的掉落物农场。
 
-## Spawner: Forced Spawn
+## 刷怪笼：强制刷怪
 
-<GameScene interactive={true} zoom={2}>
-  <Block x="2" y="0" z="1" id="minecraft:anvil" />
-  <Block x="0" y="1" z="1" id="minecraft:anvil" />
-  <Block x="0" y="2" z="1" id="minecraft:spawner" />
-  <Block x="1" y="2" z="1" id="anvilcraft:arrow" />
-  <Block x="2" y="2" z="1" id="minecraft:spawner" />
+<GameScene interactive={true} zoom={3}>
+  <ImportStructure src="/ac_assets/sturcture/spawner.snbt" />
+  <Entity id="minecraft:mooshroom" x="1.5" z="1.5" rotationY="180" rotationX="-10" />
+  <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-Spawners that are hit will attempt to spawn. Detailed instructions on the right.
+被砸中的刷怪笼会尝试刷怪，详细说明见右侧。
 
-The higher the drop height of the anvil, the greater the chance of spawning. This method of farming does not require players to be around, but it needs to meet the lighting conditions of the spawner and the number of mobs around it will also affect the spawning, and quickly transporting or killing nearby mobs can greatly improve efficiency.
+铁砧下落高度越高刷怪概率越大。这种刷怪方式不需要周围有玩家，但需要满足刷怪笼刷怪的光照条件、周围怪物数量也会影响刷怪，将附近怪物快速运走或击杀能大大提高效率。
 
-## Redstone Block: Redstone EMP
+## 红石块：红石EMP
 
-<GameScene interactive={true} zoom={2}>
-  <Block x="2" y="0" z="1" id="minecraft:anvil" />
-  <Block x="0" y="1" z="1" id="minecraft:anvil" />
-  <Block x="0" y="2" z="1" id="minecraft:redstone_block" />
-  <Block x="1" y="2" z="1" id="anvilcraft:arrow" />
-  <Block x="2" y="2" z="1" id="minecraft:redstone_block" />
+<GameScene interactive={true} zoom={3}>
+  <ImportStructure src="/ac_assets/sturcture/redstone_emp.snbt" />
+  <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-A hit Redstone Block will produce redstone EMP. Detailed instructions on the right.
+被砸中的红石块会产生红石EMP，详细说明见右侧。
 
-When an anvil hits a redstone block, the redstone block torches within a distance of r on the same layer as the redstone block will be extinguished by 1gt. An iron trapdoor clinging to redstone block can prevent EMP from spreading in this direction.
-R is calculated: the distance is proportional to the drop height, the drop height of 1 block spreads 6 blocks, and the limit distance is 24 blocks.
+铁砧砸到红石块，会让与红石块同层的距离为r内的红石火把熄灭1gt，紧贴红石块的铁活版门阻止这个方向的EMP。
+r的计算方法：距离与掉落高度成正比，1格掉落高度传播6格，极限距离24格。
 

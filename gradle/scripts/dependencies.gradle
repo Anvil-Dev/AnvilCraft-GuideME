@@ -29,5 +29,5 @@ dependencies {
     runtimeOnly(libs.guideme)
 
     // AE2
-    compileOnly(libs.ae2)
+    implementation(libs.ae2)
 }

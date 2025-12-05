@@ -1,12 +1,11 @@
 ---
 navigation:
-  title: "Forging System"
+  title: "锻造系统"
   icon: "anvilcraft:royal_anvil"
-  position: 3
 ---
 
-# Forging System
+# 锻造系统
 
-Stronger anvil, forging and enchantments.
+更强的铁砧，更强的锻造和附魔
 
 <SubPages />
