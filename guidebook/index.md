@@ -21,3 +21,5 @@ navigation:
 * 晶化：将材料加细雪晶化
 * 压合：将两个方块压成一个
 * 方块破坏：破坏切石机上的方块
+
+<Recipe id="anvilcraft:block_compress/mycelium" />
