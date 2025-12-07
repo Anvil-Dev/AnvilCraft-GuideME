@@ -8,6 +8,7 @@ import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class GuideMERenderUtil {
     private static float TIME = 0f;
@@ -26,11 +27,8 @@ public class GuideMERenderUtil {
     }
 
     public static int getDisplayPage(int size) {
-        return (int) ((System.currentTimeMillis() / 2000) % size);
-    }
-
-    public static BlockStatePredicate getDisplayedBlockState(List<BlockStatePredicate> blockStatePredicateList) {
-        return blockStatePredicateList.get(getDisplayPage(blockStatePredicateList.size()));
+        var cycle = System.nanoTime() / TimeUnit.MILLISECONDS.toNanos(2000);
+        return ((int) (cycle % size));
     }
 
     public static void renderAnvil(

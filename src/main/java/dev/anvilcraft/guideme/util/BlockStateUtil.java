@@ -6,6 +6,8 @@ import dev.anvilcraft.lib.recipe.component.ItemIngredientPredicate;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderSet;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 
@@ -48,5 +50,17 @@ public class BlockStateUtil {
         BlockStatePredicate blockStatePredicate
     ) {
         return blockStatePredicate.constructStatesForRender();
+    }
+
+    public static Ingredient transToIngredient(BlockStatePredicate blockState) {
+        return Ingredient.of(blockState
+            .getBlocks()
+            .stream()
+            .map(blockHolder ->
+                new ItemStack(
+                    blockHolder.value().asItem()
+                )
+            )
+        );
     }
 }
