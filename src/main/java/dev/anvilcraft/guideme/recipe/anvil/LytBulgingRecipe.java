@@ -1,7 +1,7 @@
 package dev.anvilcraft.guideme.recipe.anvil;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import dev.anvilcraft.guideme.recipe.BetterLytVBox;
+import dev.anvilcraft.guideme.recipe.box.BetterLytVBox;
 import dev.dubhe.anvilcraft.client.support.RenderSupport;
 import dev.dubhe.anvilcraft.recipe.anvil.wrap.BulgingRecipe;
 import dev.dubhe.anvilcraft.recipe.component.HasCauldronSimple;

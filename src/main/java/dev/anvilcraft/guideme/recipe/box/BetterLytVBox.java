@@ -1,4 +1,4 @@
-package dev.anvilcraft.guideme.recipe;
+package dev.anvilcraft.guideme.recipe.box;
 
 import dev.anvilcraft.guideme.util.GuideMERenderUtil;
 import guideme.document.block.LytVBox;

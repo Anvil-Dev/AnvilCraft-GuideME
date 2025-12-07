@@ -1,6 +1,6 @@
 package dev.anvilcraft.guideme.recipe.anvil;
 
-import dev.anvilcraft.guideme.recipe.BetterLytVBox;
+import dev.anvilcraft.guideme.recipe.box.BetterLytVBox;
 import dev.dubhe.anvilcraft.recipe.multiple.BaseMultipleToOneSmithingRecipe;
 import guideme.render.RenderContext;
 import net.minecraft.client.gui.GuiGraphics;

@@ -1,7 +1,7 @@
 package dev.anvilcraft.guideme.recipe.anvil;
 
 import com.google.common.collect.ImmutableList;
-import dev.anvilcraft.guideme.recipe.BetterLytVBox;
+import dev.anvilcraft.guideme.recipe.box.BetterLytVBox;
 import dev.dubhe.anvilcraft.client.support.RenderSupport;
 import dev.dubhe.anvilcraft.integration.jei.recipe.VoidDecayRecipe;
 import dev.dubhe.anvilcraft.util.LevelLike;

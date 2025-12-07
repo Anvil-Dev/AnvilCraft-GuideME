@@ -1,5 +1,14 @@
 package dev.anvilcraft.guideme.util;
 
+import dev.anvilcraft.lib.recipe.component.BlockStatePredicate;
+import dev.dubhe.anvilcraft.client.support.RenderSupport;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockState;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class GuideMERenderUtil {
     private static float TIME = 0f;
     private static long LAST_UPDATE = System.nanoTime();
@@ -9,7 +18,7 @@ public class GuideMERenderUtil {
         float deltaTime = (now - LAST_UPDATE) / 1_000_000_000f;
         TIME += deltaTime * 4.0f;
         LAST_UPDATE = now;
-        float cycleTime = (TIME % 5);
+        float cycleTime = (TIME % 10);
         if (cycleTime >= 2) return 0;
         double progress = cycleTime / 2;
         double smoothProgress = progress * progress * (3 - 2 * progress);
@@ -17,6 +26,112 @@ public class GuideMERenderUtil {
     }
 
     public static int getDisplayPage(int size) {
-        return (int) ((System.currentTimeMillis() / 1000) % size);
+        return (int) ((System.currentTimeMillis() / 2000) % size);
+    }
+
+    public static BlockStatePredicate getDisplayedBlockState(List<BlockStatePredicate> blockStatePredicateList) {
+        return blockStatePredicateList.get(getDisplayPage(blockStatePredicateList.size()));
+    }
+
+    public static void renderAnvil(
+        GuiGraphics guiGraphics,
+        int x,
+        float y,
+        int z
+    ) {
+        RenderSupport.renderBlock(
+            guiGraphics,
+            Blocks.ANVIL.defaultBlockState(),
+            x,
+            y,
+            z,
+            12,
+            RenderSupport.SINGLE_BLOCK
+        );
+    }
+
+    public static void renderedBlock(
+        GuiGraphics guiGraphics,
+        List<BlockState> block,
+        int x,
+        int y,
+        int z
+    ) {
+        if (block == null) return;
+        int blockCount = block.size();
+        int displayIndex = getDisplayPage(blockCount);
+        if (displayIndex < 0 || displayIndex >= blockCount) return;
+        BlockState renderedState = block.get(displayIndex);
+        if (renderedState == null) return;
+        RenderSupport.renderBlock(
+            guiGraphics,
+            renderedState,
+            x,
+            y,
+            z,
+            12,
+            RenderSupport.SINGLE_BLOCK
+        );
+    }
+
+    public static void renderedBlockStatesAndAnvilAnimation(
+        GuiGraphics guiGraphics,
+        List<BlockStatePredicate> list,
+        int startX,
+        int startY
+    ) {
+        int z = 25;
+        List<BlockStatePredicate> list1 = new ArrayList<>(list);
+        list1.addFirst(BlockStatePredicate.builder().of(Blocks.ANVIL).build());
+        for (int i = list1.size() - 1; i >= 0; i--) {
+            if (i == 0) {
+                renderAnvil(
+                    guiGraphics,
+                    startX,
+                    startY - 9 + getAnvilAnimationOffset(),
+                    z
+                );
+            } else {
+                List<BlockState> input = list1.get(i).constructStatesForRender();
+                if (input.isEmpty()) continue;
+                BlockState renderedState = input.get(getDisplayPage(input.size()));
+                if (renderedState == null) continue;
+                RenderSupport.renderBlock(
+                    guiGraphics,
+                    renderedState,
+                    startX,
+                    startY + 10 * i,
+                    z - 10 * i,
+                    12,
+                    RenderSupport.SINGLE_BLOCK
+                );
+            }
+        }
+    }
+
+    public static void renderedBlockStatesAndAnvil(
+        GuiGraphics guiGraphics,
+        List<BlockStatePredicate> list,
+        int startX,
+        int startY
+    ) {
+        int z = 25;
+        List<BlockStatePredicate> list1 = new ArrayList<>(list);
+        list1.addFirst(BlockStatePredicate.builder().of(Blocks.ANVIL).build());
+        for (int i = list1.size() - 1; i >= 0; i--) {
+            List<BlockState> input = list1.get(i).constructStatesForRender();
+            if (input.isEmpty()) continue;
+            BlockState renderedState = input.get((int) ((System.currentTimeMillis() / 1000) % input.size()));
+            if (renderedState == null) continue;
+            RenderSupport.renderBlock(
+                guiGraphics,
+                renderedState,
+                startX,
+                startY + 10 * i,
+                z - 10 * i,
+                12,
+                RenderSupport.SINGLE_BLOCK
+            );
+        }
     }
 }

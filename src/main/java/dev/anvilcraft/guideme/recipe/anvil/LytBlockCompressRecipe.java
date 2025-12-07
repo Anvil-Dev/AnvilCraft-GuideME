@@ -1,60 +1,36 @@
 package dev.anvilcraft.guideme.recipe.anvil;
 
-import dev.anvilcraft.guideme.recipe.BetterLytVBox;
-import dev.dubhe.anvilcraft.client.support.RenderSupport;
+import dev.anvilcraft.guideme.recipe.box.BetterLytVBox;
+import dev.anvilcraft.guideme.recipe.box.LytBlockSlot;
+import dev.anvilcraft.guideme.util.BlockStateUtil;
 import dev.dubhe.anvilcraft.recipe.anvil.wrap.BlockCompressRecipe;
+import guideme.document.LytRect;
+import guideme.layout.LayoutContext;
 import guideme.render.RenderContext;
-import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockState;
-
-import java.util.List;
 
 public class LytBlockCompressRecipe extends BetterLytVBox {
-    private final BlockCompressRecipe recipe;
+    private final LytBlockSlot inputBlocks;
+    private final LytBlockSlot outputBlocks;
 
     public LytBlockCompressRecipe(BlockCompressRecipe recipe) {
-        this.recipe = recipe;
+        append(inputBlocks = new LytBlockSlot(recipe.getInputBlocks()));
+        append(outputBlocks = new LytBlockSlot(
+            BlockStateUtil.ChanceBlockStatesTransToBlockStatePredicates(recipe.getResultBlocks()))
+        );
+        inputBlocks.setAnvilAnimation(true);
     }
 
     @Override
     public void render(RenderContext context) {
-        GuiGraphics guiGraphics = context.guiGraphics();
-        recipe.getInputBlocks();
+        inputBlocks.render(context);
+        outputBlocks.render(context);
+    }
 
-        float anvilYOffset = ANVIL_ANIMATION;
-
-        RenderSupport.renderBlock(
-            guiGraphics,
-            Blocks.ANVIL.defaultBlockState(),
-            getSafeX(),
-            getSafeY() + anvilYOffset,
-            20,
-            12,
-            RenderSupport.SINGLE_BLOCK
-        );
-
-        for (int i = recipe.getInputBlocks().size() - 1; i >= 0; i--) {
-            List<BlockState> input = recipe.getInputBlocks().get(i).constructStatesForRender();
-            if (input.isEmpty()) continue;
-            BlockState renderedState = input.get((int) ((System.currentTimeMillis() / 1000) % input.size()));
-            if (renderedState == null) continue;
-            RenderSupport.renderBlock(
-                guiGraphics,
-                renderedState,
-                getSafeX(),
-                getSafeY() + 10 * i,
-                10 - 10 * i,
-                12,
-                RenderSupport.SINGLE_BLOCK
-            );
-        }
-
-        RenderSupport.renderBlock(
-            guiGraphics, Blocks.ANVIL.defaultBlockState(), getSafeX(), getSafeX(), 10, 12, RenderSupport.SINGLE_BLOCK
-        );
-        RenderSupport.renderBlock(
-            guiGraphics, recipe.getFirstResultBlock().state(), getSafeX(), getSafeY(), 0, 12, RenderSupport.SINGLE_BLOCK
-        );
+    @Override
+    protected LytRect computeBoxLayout(LayoutContext context, int x, int y, int availableWidth) {
+        inputBlocks.layout(context, x + 10, y + 10, availableWidth);
+        outputBlocks.layout(context, x + 30, y + 10, availableWidth);
+        int size = Math.max(inputBlocks.blockStatePredicates.size(), outputBlocks.blockStatePredicates.size());
+        return new LytRect(x, y, 90, size * 32);
     }
 }

@@ -1,6 +1,6 @@
 package dev.anvilcraft.guideme.recipe.anvil;
 
-import dev.anvilcraft.guideme.recipe.BetterLytVBox;
+import dev.anvilcraft.guideme.recipe.box.BetterLytVBox;
 import dev.dubhe.anvilcraft.client.support.RenderSupport;
 import dev.dubhe.anvilcraft.init.block.ModBlocks;
 import dev.dubhe.anvilcraft.recipe.anvil.wrap.NeutronIrradiationRecipe;
