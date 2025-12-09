@@ -1,7 +1,6 @@
-package dev.anvilcraft.guideme.recipe.box;
+package dev.anvilcraft.guideme.recipe.slot;
 
 import dev.anvilcraft.guideme.util.GuideMERenderUtil;
-import dev.anvilcraft.guideme.util.TextureConstants;
 import dev.anvilcraft.lib.recipe.component.BlockStatePredicate;
 import guideme.document.LytRect;
 import guideme.document.block.LytBox;

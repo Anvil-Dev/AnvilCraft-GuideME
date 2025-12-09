@@ -1,48 +1,50 @@
 package dev.anvilcraft.guideme.recipe.anvil;
 
-import dev.anvilcraft.guideme.recipe.box.BetterLytVBox;
-import dev.dubhe.anvilcraft.client.support.RenderSupport;
+import dev.anvilcraft.guideme.recipe.slot.LytBlockSlot;
+import dev.anvilcraft.guideme.recipe.slot.LytInputItemSlot;
+import dev.anvilcraft.guideme.recipe.slot.LytOutputItemSlot;
+import dev.anvilcraft.lib.recipe.component.BlockStatePredicate;
 import dev.dubhe.anvilcraft.recipe.anvil.wrap.BoilingRecipe;
-import dev.dubhe.anvilcraft.util.CauldronUtil;
+import guideme.document.LytRect;
+import guideme.document.block.LytVBox;
+import guideme.layout.LayoutContext;
 import guideme.render.RenderContext;
-import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.CampfireBlock;
+import net.minecraft.world.level.block.LayeredCauldronBlock;
 
-public class LytBoilingRecipe extends BetterLytVBox {
-    private final BoilingRecipe recipe;
+import java.util.ArrayList;
+import java.util.List;
+
+public class LytBoilingRecipe extends LytVBox {
+    private final LytBlockSlot workBlocks;
+    private final LytInputItemSlot inputItemSlot;
+    private final LytOutputItemSlot outputItemSlot;
+
 
     public LytBoilingRecipe(BoilingRecipe recipe) {
-        this.recipe = recipe;
+        List<BlockStatePredicate> work = new ArrayList<>();
+        work.add(BlockStatePredicate.builder().of(Blocks.WATER_CAULDRON).with(LayeredCauldronBlock.LEVEL, 3).build());
+        work.add(BlockStatePredicate.builder().of(Blocks.CAMPFIRE).with(CampfireBlock.LIT, true).build());
+        append(workBlocks = new LytBlockSlot(work));
+        workBlocks.setAnvilAnimation(true);
+
+        append(inputItemSlot = new LytInputItemSlot(recipe.getInputItems()));
+        append(outputItemSlot = new LytOutputItemSlot(recipe.getResultItems()));
     }
 
     @Override
     public void render(RenderContext context) {
-        GuiGraphics guiGraphics = context.guiGraphics();
+        workBlocks.render(context);
+        inputItemSlot.render(context);
+        outputItemSlot.render(context);
+    }
 
-        RenderSupport.renderBlock(
-            guiGraphics,
-            Blocks.ANVIL.defaultBlockState(),
-            getSafeX(),
-            getSafeY() + ANVIL_ANIMATION,
-            20,
-            12,
-            RenderSupport.SINGLE_BLOCK);
-        RenderSupport.renderBlock(
-            guiGraphics,
-            CauldronUtil.fullState(Blocks.WATER_CAULDRON),
-            getSafeX(),
-            getSafeY(),
-            10,
-            12,
-            RenderSupport.SINGLE_BLOCK);
-        RenderSupport.renderBlock(
-            guiGraphics,
-            Blocks.CAMPFIRE.defaultBlockState().setValue(CampfireBlock.LIT, true),
-            getSafeX(),
-            getSafeY(),
-            0,
-            12,
-            RenderSupport.SINGLE_BLOCK);
+    @Override
+    protected LytRect computeBoxLayout(LayoutContext context, int x, int y, int availableWidth) {
+        workBlocks.layout(context, x + 50, y, availableWidth);
+        inputItemSlot.layout(context, x, y, availableWidth);
+        outputItemSlot.layout(context, x + 68, y, availableWidth);
+        return new LytRect(x, y, 120, 48);
     }
 }

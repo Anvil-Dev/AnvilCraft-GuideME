@@ -9,7 +9,7 @@ navigation:
 
 # 介绍
 
-## 欢迎来到模组《铁砧工艺》的页面！模组是以铁砧为核心的原版生存拓展，主要内容有：anvilcraft:block_crush/andesite
+## 欢迎来到模组《铁砧工艺》的页面！模组是以铁砧为核心的原版生存拓展
 
 * 磁铁：将铁砧吸到空中，红石充能后释放
 * 粉碎：将岩石粉碎为粉末
@@ -22,4 +22,6 @@ navigation:
 * 压合：将两个方块压成一个
 * 方块破坏：破坏切石机上的方块
 
-<Recipe id="anvilcraft:block_smear/grass_block" />
+<Recipe id="anvilcraft:boiling/slime_ball" />
+// beef_mushroom_stew  
+// slime_ball

@@ -1,15 +1,15 @@
 package dev.anvilcraft.guideme.recipe.anvil;
 
-import dev.anvilcraft.guideme.recipe.box.BetterLytVBox;
-import dev.anvilcraft.guideme.recipe.box.LytBlockSlot;
+import dev.anvilcraft.guideme.recipe.slot.LytBlockSlot;
 import dev.anvilcraft.guideme.util.BlockStateUtil;
 import dev.dubhe.anvilcraft.recipe.anvil.wrap.BlockCompressRecipe;
 import guideme.document.LytRect;
 import guideme.document.block.LytSlot;
+import guideme.document.block.LytVBox;
 import guideme.layout.LayoutContext;
 import guideme.render.RenderContext;
 
-public class LytBlockCompressRecipe extends BetterLytVBox {
+public class LytBlockCompressRecipe extends LytVBox {
     private final LytBlockSlot inputBlocks;
     private final LytBlockSlot outputBlocks;
     private final LytSlot inputFirstSlot;
