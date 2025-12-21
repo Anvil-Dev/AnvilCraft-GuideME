@@ -11,6 +11,7 @@ import guideme.render.RenderContext;
 import lombok.Getter;
 import lombok.Setter;
 import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.world.level.block.state.BlockState;
 
 import javax.annotation.Nullable;
 import java.util.ArrayList;
@@ -18,8 +19,6 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
-
-// 完全能用()
 public class LytBlockSlot extends LytBox implements InteractiveElement {
     private static final int WIDTH = 16;
     private static final int HEIGHT = 16;
@@ -29,9 +28,20 @@ public class LytBlockSlot extends LytBox implements InteractiveElement {
     @Setter
     @Getter
     private boolean anvilAnimation;
+    @Setter
+    @Getter
+    private boolean hasAnvil;
 
     public LytBlockSlot(@Nullable List<BlockStatePredicate> blockStatePredicates) {
         this.blockStatePredicates = Objects.requireNonNullElseGet(blockStatePredicates, ArrayList::new);
+    }
+
+    public LytBlockSlot(BlockState blockState) {
+        BlockStatePredicate predicate = BlockStatePredicate
+            .builder()
+            .of(blockState.getBlock())
+            .build();
+        this.blockStatePredicates = List.of(predicate);
     }
 
     @Override
@@ -45,15 +55,22 @@ public class LytBlockSlot extends LytBox implements InteractiveElement {
         int x = getSafeX();
         int y = getSafeY();
         if (blockStatePredicates.isEmpty()) return;
-        if (anvilAnimation) {
+        if (anvilAnimation && hasAnvil) {
             GuideMERenderUtil.renderedBlockStatesAndAnvilAnimation(
                 context.guiGraphics(),
                 blockStatePredicates,
                 x,
                 y
             );
-        } else {
+        } else if (hasAnvil) {
             GuideMERenderUtil.renderedBlockStatesAndAnvil(
+                context.guiGraphics(),
+                blockStatePredicates,
+                x,
+                y
+            );
+        } else {
+            GuideMERenderUtil.renderedBlock(
                 context.guiGraphics(),
                 blockStatePredicates,
                 x,

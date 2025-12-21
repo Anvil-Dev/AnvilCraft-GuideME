@@ -50,26 +50,27 @@ public class GuideMERenderUtil {
 
     public static void renderedBlock(
         GuiGraphics guiGraphics,
-        List<BlockState> block,
+        List<BlockStatePredicate> list,
         int x,
-        int y,
-        int z
+        int y
     ) {
-        if (block == null) return;
-        int blockCount = block.size();
-        int displayIndex = getDisplayPage(blockCount);
-        if (displayIndex < 0 || displayIndex >= blockCount) return;
-        BlockState renderedState = block.get(displayIndex);
-        if (renderedState == null) return;
-        RenderSupport.renderBlock(
-            guiGraphics,
-            renderedState,
-            x,
-            y,
-            z,
-            12,
-            RenderSupport.SINGLE_BLOCK
-        );
+        int z = 25;
+        List<BlockStatePredicate> list1 = new ArrayList<>(list);
+        for (int i = list1.size() - 1; i >= 0; i--) {
+            List<BlockState> input = list1.get(i).constructStatesForRender();
+            if (input.isEmpty()) continue;
+            BlockState renderedState = input.get((int) ((System.currentTimeMillis() / 1000) % input.size()));
+            if (renderedState == null) continue;
+            RenderSupport.renderBlock(
+                guiGraphics,
+                renderedState,
+                x,
+                y + 10 * i,
+                z - 10 * i,
+                12,
+                RenderSupport.SINGLE_BLOCK
+            );
+        }
     }
 
     public static void renderedBlockStatesAndAnvilAnimation(

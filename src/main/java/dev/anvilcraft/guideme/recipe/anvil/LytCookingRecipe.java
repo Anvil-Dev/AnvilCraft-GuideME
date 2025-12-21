@@ -4,27 +4,25 @@ import dev.anvilcraft.guideme.recipe.slot.LytBlockSlot;
 import dev.anvilcraft.guideme.recipe.slot.LytInputItemSlot;
 import dev.anvilcraft.guideme.recipe.slot.LytOutputItemSlot;
 import dev.anvilcraft.lib.recipe.component.BlockStatePredicate;
-import dev.dubhe.anvilcraft.recipe.anvil.wrap.BoilingRecipe;
+import dev.dubhe.anvilcraft.recipe.anvil.wrap.CookingRecipe;
 import guideme.document.LytRect;
 import guideme.document.block.LytVBox;
 import guideme.layout.LayoutContext;
 import guideme.render.RenderContext;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.CampfireBlock;
-import net.minecraft.world.level.block.LayeredCauldronBlock;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class LytBoilingRecipe extends LytVBox {
+public class LytCookingRecipe extends LytVBox {
     private final LytBlockSlot workBlocks;
     private final LytInputItemSlot inputItemSlot;
     private final LytOutputItemSlot outputItemSlot;
 
-
-    public LytBoilingRecipe(BoilingRecipe recipe) {
+    public LytCookingRecipe(CookingRecipe recipe) {
         List<BlockStatePredicate> work = new ArrayList<>();
-        work.add(BlockStatePredicate.builder().of(Blocks.WATER_CAULDRON).with(LayeredCauldronBlock.LEVEL, 3).build());
+        work.add(BlockStatePredicate.builder().of(Blocks.CAULDRON).build());
         work.add(BlockStatePredicate.builder().of(Blocks.CAMPFIRE).with(CampfireBlock.LIT, true).build());
         append(workBlocks = new LytBlockSlot(work));
         workBlocks.setAnvilAnimation(true);

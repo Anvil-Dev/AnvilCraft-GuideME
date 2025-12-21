@@ -35,7 +35,8 @@ public class ChanceItemTooltip implements GuideTooltip {
 
     @Override
     public List<ClientTooltipComponent> getLines() {
-        List<Component> list = new ArrayList<>();
+        List<Component> list = new ArrayList<>(Screen.getTooltipFromItem(Minecraft.getInstance(), chanceItemStack.stack()));
+
         NumberProvider provider = chanceItemStack.count();
         int count = chanceItemStack.stack().getCount();
 
@@ -58,8 +59,8 @@ public class ChanceItemTooltip implements GuideTooltip {
             }
         }
 
-        list.addAll(Screen.getTooltipFromItem(Minecraft.getInstance(), chanceItemStack.stack()));
-        return list.stream()
+        return list
+            .stream()
             .map(Component::getVisualOrderText)
             .map(ClientTooltipComponent::create)
             .toList();

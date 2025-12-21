@@ -22,6 +22,7 @@ navigation:
 * 压合：将两个方块压成一个
 * 方块破坏：破坏切石机上的方块
 
-<Recipe id="anvilcraft:boiling/slime_ball" />
-// beef_mushroom_stew  
-// slime_ball
+<Recipe id="anvilcraft:mesh/cinerite" />
+// cement_cauldron  
+// utusan
+// prismarine_cluster

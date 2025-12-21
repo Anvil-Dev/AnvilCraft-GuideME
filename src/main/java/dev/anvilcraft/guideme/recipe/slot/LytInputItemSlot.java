@@ -19,6 +19,7 @@ import java.util.concurrent.TimeUnit;
 
 public class LytInputItemSlot extends LytBlock implements InteractiveElement {
     private static final int ITEM_SIZE = 16;
+    private static final int SLOT_SIZE = 18;
     private static final int CYCLE_TIME = 2000;
 
     private final List<ItemIngredientPredicate> mergedIngredients;
@@ -32,13 +33,13 @@ public class LytInputItemSlot extends LytBlock implements InteractiveElement {
         int size = mergedIngredients.size();
         if (size == 0) return null;
         if (size == 1) {
-            return new LytRect(x + 16, y + 16, ITEM_SIZE, ITEM_SIZE);
+            return new LytRect(x + 16, y + 16, SLOT_SIZE, SLOT_SIZE);
         } else if (size <= 4) {
-            return new LytRect(x + 8, y + 8, ITEM_SIZE * 2, ITEM_SIZE * 2);
+            return new LytRect(x + 16, y + 8, SLOT_SIZE * 2, SLOT_SIZE * 2);
         } else if (size <= 6) {
-            return new LytRect(x, y, ITEM_SIZE * 3, ITEM_SIZE * 2);
+            return new LytRect(x + 8, y + 8, SLOT_SIZE * 3, SLOT_SIZE * 2);
         } else {
-            return new LytRect(x, y, ITEM_SIZE * 3, ITEM_SIZE * (size / 3));
+            return new LytRect(x + 8, y + 4, SLOT_SIZE * 3, SLOT_SIZE * 3);
         }
     }
 
@@ -50,7 +51,7 @@ public class LytInputItemSlot extends LytBlock implements InteractiveElement {
         int size = mergedIngredients.size();
         if (size == 1) {
             ItemIngredientPredicate ingredient = mergedIngredients.getFirst();
-            LytRect lytRect = new LytRect(bounds.x(), bounds.y(), 18, 18);
+            LytRect lytRect = new LytRect(bounds.x(), bounds.y(), SLOT_SIZE, SLOT_SIZE);
             context.renderItem(ingredient.getItems()[0], x + 1, y + 1, ITEM_SIZE, ITEM_SIZE);
             context.fillIcon(lytRect, texture);
         } else if (size <= 4) {
@@ -58,7 +59,7 @@ public class LytInputItemSlot extends LytBlock implements InteractiveElement {
                 int row = i / 2;
                 int col = i % 2;
                 ItemStack stack = getDisplayedStack(mergedIngredients.get(i).getItems());
-                LytRect lytRect = new LytRect(bounds.x() + 18 * col, bounds.y() + 18 * row, 18, 18);
+                LytRect lytRect = new LytRect(bounds.x() + SLOT_SIZE * col, bounds.y() + SLOT_SIZE * row, SLOT_SIZE, SLOT_SIZE);
                 context.fillIcon(lytRect, texture);
                 context.renderItem(stack, lytRect.x() + 1, lytRect.y() + 1, ITEM_SIZE, ITEM_SIZE);
             }
@@ -67,7 +68,7 @@ public class LytInputItemSlot extends LytBlock implements InteractiveElement {
                 int row = i / 3;
                 int col = i % 3;
                 ItemStack stack = getDisplayedStack(mergedIngredients.get(i).getItems());
-                LytRect lytRect = new LytRect(bounds.x() + 18 * col, bounds.y() + 18 * row, 18, 18);
+                LytRect lytRect = new LytRect(bounds.x() + SLOT_SIZE * col, bounds.y() + SLOT_SIZE * row, SLOT_SIZE, SLOT_SIZE);
                 context.fillIcon(lytRect, texture);
                 context.renderItem(stack, lytRect.x() + 1, lytRect.y() + 1, ITEM_SIZE, ITEM_SIZE);
             }
@@ -77,7 +78,7 @@ public class LytInputItemSlot extends LytBlock implements InteractiveElement {
                 int row = i / 3;
                 int col = i % 3;
                 ItemStack stack = getDisplayedStack(mergedIngredients.get(i).getItems());
-                LytRect lytRect = new LytRect(bounds.x() + 18 * col, bounds.y() + 18 * row, 18, 18);
+                LytRect lytRect = new LytRect(bounds.x() + SLOT_SIZE * col, bounds.y() + SLOT_SIZE * row, SLOT_SIZE, SLOT_SIZE);
                 context.fillIcon(lytRect, texture);
                 context.renderItem(stack, lytRect.x() + 1, lytRect.y() + 1, ITEM_SIZE, ITEM_SIZE);
             }
