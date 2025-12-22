@@ -4,8 +4,6 @@ import dev.anvilcraft.lib.recipe.component.ChanceItemStack;
 import dev.anvilcraft.lib.recipe.component.ItemIngredientPredicate;
 import dev.dubhe.anvilcraft.recipe.anvil.collision.BlockTransform;
 import net.minecraft.core.Holder;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
 
 import java.util.ArrayList;
@@ -19,16 +17,6 @@ public class BlockTransformUtil {
             itemStacks.add(itemStack);
         }
         return itemStacks;
-    }
-
-    public static Ingredient getIngredient(List<BlockTransform> transformBlocks) {
-        Ingredient ingredient = Ingredient.of(ItemStack.EMPTY);
-        for (BlockTransform transform : transformBlocks) {
-            for (Holder<Block> block : transform.inputBlock().getBlocks()) {
-                ingredient = Ingredient.of(block.value());
-            }
-        }
-        return ingredient;
     }
 
     public static List<ItemIngredientPredicate> getItemIngredientPredicate(List<BlockTransform> transformBlocks) {

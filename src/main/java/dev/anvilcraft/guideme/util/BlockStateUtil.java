@@ -2,16 +2,9 @@ package dev.anvilcraft.guideme.util;
 
 import dev.anvilcraft.lib.recipe.component.BlockStatePredicate;
 import dev.anvilcraft.lib.recipe.component.ChanceBlockState;
-import dev.anvilcraft.lib.recipe.component.ItemIngredientPredicate;
 import dev.dubhe.anvilcraft.recipe.anvil.predicate.block.HasCauldron;
 import dev.dubhe.anvilcraft.recipe.component.HasCauldronSimple;
 import dev.dubhe.anvilcraft.util.CauldronUtil;
-import net.minecraft.core.Holder;
-import net.minecraft.core.HolderSet;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 
@@ -41,39 +34,5 @@ public class BlockStateUtil {
         } else {
             return CauldronUtil.fullState(HasCauldron.getDefaultCauldron(hasCauldron.transform()));
         }
-    }
-
-    public static List<ItemIngredientPredicate> BlockStatePredicatesTransToItemIngredientPredicate(
-        List<BlockStatePredicate> blockStatePredicateList
-    ) {
-        List<ItemIngredientPredicate> ingredientPredicateList = new ArrayList<>();
-        if (blockStatePredicateList != null) {
-            for (BlockStatePredicate blockStatePredicate : blockStatePredicateList) {
-                HolderSet<Block> blockStates = blockStatePredicate.getBlocks();
-                for (Holder<Block> blockState : blockStates) {
-                    Item item = blockState.value().asItem();
-                    ingredientPredicateList.add(ItemIngredientPredicate.of(item).build());
-                }
-            }
-        }
-        return ingredientPredicateList;
-    }
-
-    public static List<BlockState> blockStatePredicatesTransToRenderBlockStates(
-        BlockStatePredicate blockStatePredicate
-    ) {
-        return blockStatePredicate.constructStatesForRender();
-    }
-
-    public static Ingredient transToIngredient(BlockStatePredicate blockState) {
-        return Ingredient.of(blockState
-            .getBlocks()
-            .stream()
-            .map(blockHolder ->
-                new ItemStack(
-                    blockHolder.value().asItem()
-                )
-            )
-        );
     }
 }

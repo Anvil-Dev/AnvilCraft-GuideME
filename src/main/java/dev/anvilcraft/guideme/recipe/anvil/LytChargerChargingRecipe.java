@@ -1,8 +1,6 @@
 package dev.anvilcraft.guideme.recipe.anvil;
 
 import dev.anvilcraft.guideme.recipe.slot.LytBlockSlot;
-import dev.anvilcraft.guideme.recipe.slot.LytInputItemSlot;
-import dev.anvilcraft.guideme.recipe.slot.LytOutputItemSlot;
 import dev.dubhe.anvilcraft.block.ChargerBlock;
 import dev.dubhe.anvilcraft.init.block.ModBlocks;
 import dev.dubhe.anvilcraft.recipe.ChargerChargingRecipe;
