@@ -4,8 +4,8 @@ import com.mojang.logging.LogUtils;
 import com.tterrag.registrate.Registrate;
 import dev.anvilcraft.guideme.data.ModDatagen;
 import dev.anvilcraft.guideme.element.ItemEntityShapeCompiler;
-import dev.anvilcraft.guideme.init.item.AddonItems;
 import guideme.Guide;
+import guideme.GuideBuilder;
 import guideme.scene.element.SceneElementTagCompiler;
 import lombok.Getter;
 import net.minecraft.resources.ResourceLocation;
@@ -20,16 +20,15 @@ public class AnvilCraftGuideME {
     public static final String MOD_ID = "anvilcraft_guideme";
     public static final Logger LOGGER = LogUtils.getLogger();
     public static final Registrate REGISTRATE = Registrate.create(MOD_ID);
-
-    @Getter
-    private static Guide guideme;
     public static final ResourceLocation GID = AnvilCraftGuideME.of("guideme");
 
+    @Getter
+    private final static GuideBuilder guideme = Guide.builder(GID);
+
     public AnvilCraftGuideME(@NotNull IEventBus modEventBus, @NotNull ModContainer modContainer) {
-        AddonItems.register();
         ModDatagen.init();
 
-        guideme = Guide.builder(GID)
+        guideme
             .folder("ac_guidebook")
             .extension(SceneElementTagCompiler.EXTENSION_POINT, new ItemEntityShapeCompiler())
             .build();

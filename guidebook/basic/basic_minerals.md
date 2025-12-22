@@ -9,97 +9,81 @@ item_ids:
 ---
 
 # 基本矿石
+#### 不同于大多数mod，正常情况下本模组的矿石不会自然生成，只能通过矿物涌泉得到。  
 
-不同于大多数mod，正常情况下本模组的矿石不会自然生成，只能通过矿物涌泉得到。
-为了在前期获得本模组的金属，你需要使用类似于“无中生有”的方式——“[物品过筛](basic_item_processing.mdesh)”。
-以此法获得的金属粒及其来源在后文列出。
+## 物品过筛
 
-<ItemImage id="anvilcraft:lead_nugget" />
+### 为了在前期获得本模组的金属，你需要使用类似于“无中生有”的方式—— **物品过筛**。  
 
-*铅粒*通过筛选*火山灰*概率获得。
+##### **铅粒**、**锡粒**、**锌粒**和**银粒**都可通过过筛**火山灰**概率获得。
 
-<ItemImage id="anvilcraft:tin_nugget" />
+<Row>
+  <ItemImage id="anvilcraft:lead_nugget" scale="2" />
+  <ItemImage id="anvilcraft:tin_nugget" scale="2" />
+  <ItemImage id="anvilcraft:zinc_nugget" scale="2" />
+  <ItemImage id="anvilcraft:silver_nugget" scale="2" />
+  <ItemImage id="anvilcraft:tungsten_nugget" scale="2" />
+</Row>
 
-*锡粒*通过筛选*火山灰*概率获得。
+##### **钨粒** 通过筛选 **下界尘** 概率获得。
 
-<ItemImage id="anvilcraft:zinc_nugget" />
+<ItemImage id="anvilcraft:tungsten_nugget" scale="2" />
 
-*锌粒*通过筛选*火山灰*概率获得。
+##### **钛粒** 通过筛选**末地尘** 概率获得。
+<ItemImage id="anvilcraft:titanium_nugget" scale="2" />
 
-<ItemImage id="anvilcraft:silver_nugget" />
+---
 
-*银粒*通过筛选*火山灰*概率获得。
+## 矿物涌泉
+在获得一定量的金属后，你可以通过 **时移** 将金属块转化为粗矿，  
+并用粗矿块配合 **矿脉涌泉** 再生矿物。  
+这要求你现阶段有能力制造 **腐化信标** 和 **冲击桩**  
 
-<ItemImage id="anvilcraft:tungsten_nugget" />
-
-*钨粒*通过筛选*下界尘*概率获得。
-
-<ItemImage id="anvilcraft:titanium_nugget" />
-
-*钛粒*通过筛选*末地尘*概率获得。
-
-在获得一定量的金属后，你可以通过[时移](../smithing_corrupted_beacon.md#time_warp)将金属块转化为粗矿，并用粗矿块配合*矿脉涌泉*再生矿物。这要求你现阶段有能力制造*腐化信标*和*冲击桩*
-
-## 矿物涌泉产矿
+### 矿物涌泉产矿
 
 <GameScene interactive={true} zoom={2}>
-  <Block x="1" y="1" z="1" id="anvilcraft:deepslate_silver_ore" />
-  <Block x="5" y="1" z="1" id="minecraft:deepslate" />
-  <Block x="1" y="2" z="0" id="anvilcraft:raw_silver_block" />
-  <Block x="5" y="2" z="0" id="anvilcraft:raw_silver_block" />
-  <Block x="0" y="2" z="1" id="anvilcraft:raw_silver_block" />
-  <Block x="1" y="2" z="1" id="anvilcraft:mineral_fountain" />
-  <Block x="2" y="2" z="1" id="anvilcraft:raw_silver_block" />
-  <Block x="3" y="2" z="1" id="anvilcraft:arrow" />
-  <Block x="4" y="2" z="1" id="anvilcraft:raw_silver_block" />
-  <Block x="5" y="2" z="1" id="anvilcraft:mineral_fountain" />
-  <Block x="6" y="2" z="1" id="anvilcraft:raw_silver_block" />
-  <Block x="1" y="2" z="2" id="anvilcraft:raw_silver_block" />
-  <Block x="5" y="2" z="2" id="anvilcraft:raw_silver_block" />
+  <ImportStructure src="../ac_assets/sturcture/mineral_fountain.snbt" />
+  <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-这种结构下的*矿物涌泉*可以生成矿石
+*这种结构下的 **矿物涌泉** 可以生成矿石*  
 
-*矿物涌泉*每秒检测四个面相邻方块，如果它们都是某一种粗矿块，则将*深板岩*转化为对应的深层矿。
-在主世界生成时，有1%概率生成*地核碎片矿石*，有1%概率生成*虚空石*。
-在下界生成时，有20%概率生成*地核碎片矿石*。
-在末地生成时，有20%概率生成*虚空石*。
-<Color hex="#aa2222">注意</Color>：宝石不能以这种方式再生，仅接受粗矿块。
-<Color hex="#aa2222">注意</Color>：矿物涌泉仅在y=-54及以下位置工作
+**矿物涌泉** 每秒检测四个面相邻方块，如果它们都是某一种粗矿块，则将 **深板岩** 转化为对应的深层矿。  
+在主世界生成时，有1%概率生成 **地核碎片矿石**，有1%概率生成 **虚空石** 。  
+在下界生成时，有20%概率生成 **地核碎片矿石** 。  
+在末地生成时，有20%概率生成 **虚空石** 。  
 
-<a name="earth_core_shard_ore"></a>
-<ItemImage id="anvilcraft:earth_core_shard_ore" />
+<Color id="red">注意</Color>：宝石不能以这种方式再生，仅接受粗矿块。  
+<Color id="red">注意</Color>：矿物涌泉仅在y=-54及以下位置工作  
 
-*地核碎片矿石*只能通过*矿物涌泉产矿*伴生
-受到*时运*与*精准采集*影响
+**地核碎片矿石** 只能通过 **矿物涌泉产矿** 伴生
+受到 **时运** 与 **精准采集** 影响
 需要钻石镐及以上等级镐挖掘
-挖掘获得*地核碎片*
+挖掘获得 **地核碎片**
 
-<a name="earth_core_shard"></a>
-<ItemImage id="anvilcraft:earth_core_shard" />
+<ItemImage id="anvilcraft:earth_core_shard_ore" scale="2" />
 
-*地核碎片*及其块状物、矿石防火，不受*熔岩*和*火焰*损害
-可参与[余烬金属锭](../smithing_tier_2_materials.md#ember_metal)的制作
+**地核碎片** 及其块状物、矿石防火，不受 **熔岩** 和 **火焰** 损害  
+可参与[余烬金属锭]的制作  
 
-<a name="void_stone"></a>
-<ItemImage id="anvilcraft:void_stone" />
+<ItemImage id="anvilcraft:earth_core_shard" scale="2" />
 
-*虚空石*只能通过*矿物涌泉产矿*伴生
-受到*时运*与*精准采集*影响
-需要钻石镐及以上等级镐挖掘
-挖掘获得*虚空物质*
+**虚空石** 只能通过 **矿物涌泉产矿** 伴生  
+受到 **时运** 与 **精准采集** 影响  
+需要钻石镐及以上等级镐挖掘  
+挖掘获得 **虚空物质**  
+**虚空物质** 及其块状物、矿石防虚空，在 **虚空** 中会上升  
 
-<a name="void_matter"></a>
-<ItemImage id="anvilcraft:void_matter" />
+<Row>
+  <ItemImage id="anvilcraft:void_matter" scale="2" />
+  <ItemImage id="anvilcraft:void_matter_block" scale="2" />
+  <ItemImage id="anvilcraft:void_stone" scale="2" />
+  <Recipe id="anvilcraft:void_matter_block" />
+</Row>
 
-*虚空物质*及其块状物、矿石防虚空，在*虚空*中会上升
-
-<a name="void_matter_block"></a>
-*虚空物质块*防虚空
-可用于制作[虚空能收集器](../power_system/power_advanced_void_energy_collection.md#void_energy_collector)
-自身具有*虚空衰变*的特性
-
-<Recipe id="anvilcraft:void_matter_block" />
+**虚空物质块** 防虚空  
+可用于制作[虚空能收集器]  
+自身具有 **虚空衰变** 的特性  
 
 <a name="void_decay"></a>
 ## 虚空衰变
@@ -113,18 +97,8 @@ item_ids:
 ## 激光采矿系统
 
 <GameScene interactive={true} zoom={2}>
-  <Block x="1" y="0" z="1" id="minecraft:barrel" />
-  <Block x="1" y="1" z="0" id="anvilcraft:ruby_laser"p:facing="east" />
-  <Block x="0" y="1" z="1" id="anvilcraft:ruby_laser"p:facing="south" />
-  <Block x="1" y="1" z="1" id="anvilcraft:ruby_prism" />
-  <Block x="2" y="1" z="1" id="anvilcraft:ruby_laser"p:facing="north" />
-  <Block x="1" y="1" z="2" id="anvilcraft:ruby_laser"p:facing="west" />
-  <Block x="1" y="6" z="1" id="anvilcraft:deepslate_silver_ore" />
-  <Block x="1" y="7" z="0" id="anvilcraft:raw_silver_block" />
-  <Block x="0" y="7" z="1" id="anvilcraft:raw_silver_block" />
-  <Block x="1" y="7" z="1" id="anvilcraft:mineral_fountain" />
-  <Block x="2" y="7" z="1" id="anvilcraft:raw_silver_block" />
-  <Block x="1" y="7" z="2" id="anvilcraft:raw_silver_block" />
+  <ImportStructure src="../ac_assets/sturcture/laser_miner.snbt" />
+  <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
 这种结构可以自动提取粗矿并存放至上方容器内,更多结构可以参考*5.5激光采矿机*

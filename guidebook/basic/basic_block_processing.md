@@ -94,6 +94,7 @@ navigation:
 <GameScene interactive={true} zoom={3}>
   <ImportStructure src="../ac_assets/sturcture/break.snbt" />
   <ItemEntity id="minecraft:cobblestone" count="1" pos="2 0.75 0" />
+  <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
 使方块变为掉落物。  
