@@ -76,6 +76,7 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
         mappings.add(ModRecipeTypes.SUPER_HEATING_TYPE.get(), RecipeTypeContributions::superHeating);
         mappings.add(ModRecipeTypes.TIME_WARP_TYPE.get(), RecipeTypeContributions::timeWarp);
         mappings.add(ModRecipeTypes.UNPACK_TYPE.get(), RecipeTypeContributions::unpack);
+        mappings.add(ModRecipeTypes.MULTIPLE_TO_ONE_SMITHING_TYPE.get(), RecipeTypeContributions::multiple);
     }
 
     private static LytStandardRecipeBox<BlockCompressRecipe> blockCompress(RecipeHolder<BlockCompressRecipe> holder) {
@@ -383,7 +384,9 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
                     .value()
                     .getResult()
                     .getResult()
-                    .getDescriptionId()
+                    .getItem()
+                    .getDescription()
+                    .getString()
             )
             .build(holder);
     }
