@@ -1,15 +1,7 @@
 package dev.anvilcraft.guideme.util;
 
 import dev.anvilcraft.guideme.AnvilCraftGuideME;
-import dev.dubhe.anvilcraft.AnvilCraft;
-import guideme.render.GuiAssets;
 import guideme.render.GuiSprite;
-import net.minecraft.resources.ResourceLocation;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 
 import static guideme.render.GuiAssets.sprite;
 
