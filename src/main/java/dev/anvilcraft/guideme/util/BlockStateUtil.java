@@ -4,7 +4,6 @@ import dev.anvilcraft.lib.recipe.component.BlockStatePredicate;
 import dev.anvilcraft.lib.recipe.component.ChanceBlockState;
 import dev.anvilcraft.lib.recipe.component.ItemIngredientPredicate;
 import dev.dubhe.anvilcraft.recipe.anvil.predicate.block.HasCauldron;
-import dev.dubhe.anvilcraft.recipe.anvil.wrap.AbstractProcessRecipe;
 import dev.dubhe.anvilcraft.recipe.component.HasCauldronSimple;
 import dev.dubhe.anvilcraft.util.CauldronUtil;
 import net.minecraft.core.Holder;
@@ -35,13 +34,12 @@ public class BlockStateUtil {
         return blockStatePredicateList;
     }
 
-    public static BlockState getCauldron(AbstractProcessRecipe<?> recipe) {
-        HasCauldronSimple hasCauldron = recipe.getHasCauldron();
+    public static BlockState getCauldron(HasCauldronSimple hasCauldron) {
         boolean isProduceFluid = HasCauldron.isNotEmpty(hasCauldron.transform()) && hasCauldron.consume() < 0;
         if (isProduceFluid) {
             return Blocks.CAULDRON.defaultBlockState();
         } else {
-            return CauldronUtil.fullState(HasCauldron.getDefaultCauldron(recipe.getHasCauldron().transform()));
+            return CauldronUtil.fullState(HasCauldron.getDefaultCauldron(hasCauldron.transform()));
         }
     }
 

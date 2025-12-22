@@ -4,7 +4,6 @@ import dev.anvilcraft.guideme.recipe.slot.LytBlockSlot;
 import dev.anvilcraft.guideme.recipe.slot.LytInputItemSlot;
 import dev.anvilcraft.guideme.recipe.slot.LytOutputItemSlot;
 import dev.anvilcraft.lib.recipe.component.BlockStatePredicate;
-import dev.dubhe.anvilcraft.block.NeutronIrradiatorBlock;
 import dev.dubhe.anvilcraft.init.block.ModBlocks;
 import dev.dubhe.anvilcraft.recipe.anvil.wrap.NeutronIrradiationRecipe;
 import guideme.document.LytRect;
@@ -12,7 +11,6 @@ import guideme.document.block.LytVBox;
 import guideme.layout.LayoutContext;
 import guideme.render.RenderContext;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.CampfireBlock;
 
 import java.util.ArrayList;
 import java.util.List;

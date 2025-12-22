@@ -1,7 +1,6 @@
 package dev.anvilcraft.guideme.recipe.anvil;
 
 import dev.anvilcraft.guideme.recipe.slot.LytBlockSlot;
-import dev.anvilcraft.lib.recipe.component.BlockStatePredicate;
 import dev.dubhe.anvilcraft.init.block.ModBlocks;
 import dev.dubhe.anvilcraft.init.item.ModItems;
 import dev.dubhe.anvilcraft.recipe.anvil.MassInjectRecipe;
@@ -14,9 +13,6 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import static dev.dubhe.anvilcraft.block.entity.SpaceOvercompressorBlockEntity.NEUTRONIUM_INGOT_MASS;
 
 public class LytMassInjectRecipe extends LytVBox {
@@ -27,9 +23,7 @@ public class LytMassInjectRecipe extends LytVBox {
 
     public LytMassInjectRecipe(MassInjectRecipe recipe) {
         this.recipe = recipe;
-        List<BlockStatePredicate> work = new ArrayList<>();
-        work.add(BlockStatePredicate.builder().of(ModBlocks.SPACE_OVERCOMPRESSOR).build());
-        append(workBlocks = new LytBlockSlot(work));
+        append(workBlocks = new LytBlockSlot(ModBlocks.SPACE_OVERCOMPRESSOR.getDefaultState()));
         workBlocks.setAnvilAnimation(true);
         workBlocks.setHasAnvil(true);
         append(inputItemSlot = new LytSlot(recipe.getIngredient()));

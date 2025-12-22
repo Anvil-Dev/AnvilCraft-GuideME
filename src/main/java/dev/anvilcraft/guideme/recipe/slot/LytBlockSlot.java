@@ -37,7 +37,7 @@ public class LytBlockSlot extends LytBox implements InteractiveElement {
     @Getter
     private boolean render;
 
-    public LytBlockSlot(@Nullable List<BlockStatePredicate> blockStatePredicates) {
+    public LytBlockSlot(List<BlockStatePredicate> blockStatePredicates) {
         this.blockStatePredicates = Objects.requireNonNullElseGet(blockStatePredicates, ArrayList::new);
     }
 
@@ -52,6 +52,43 @@ public class LytBlockSlot extends LytBox implements InteractiveElement {
 
         BlockStatePredicate predicate = builder.of(blockState.getBlock()).build();
         this.blockStatePredicates = List.of(predicate);
+    }
+
+    public LytBlockSlot(List<BlockStatePredicate> blockStatePredicates, BlockState blockState) {
+        BlockStatePredicate.Builder builder = BlockStatePredicate.builder();
+        for (Map.Entry<Property<?>, Comparable<?>> entry : blockState.getValues().entrySet()) {
+            Property<?> property = entry.getKey();
+            Comparable<?> value = entry.getValue();
+            builder.with(property, value.toString());
+        }
+        BlockStatePredicate predicate = builder.of(blockState.getBlock()).build();
+
+        List<BlockStatePredicate> list = new ArrayList<>(blockStatePredicates);
+        list.add(predicate);
+        this.blockStatePredicates = list;
+    }
+
+    public LytBlockSlot(BlockState state1, BlockState state2) {
+        BlockStatePredicate.Builder builder1 = BlockStatePredicate.builder();
+        BlockStatePredicate.Builder builder2 = BlockStatePredicate.builder();
+        for (Map.Entry<Property<?>, Comparable<?>> entry : state1.getValues().entrySet()) {
+            Property<?> property = entry.getKey();
+            Comparable<?> value = entry.getValue();
+            builder1.with(property, value.toString());
+        }
+
+        for (Map.Entry<Property<?>, Comparable<?>> entry : state2.getValues().entrySet()) {
+            Property<?> property = entry.getKey();
+            Comparable<?> value = entry.getValue();
+            builder2.with(property, value.toString());
+        }
+
+        BlockStatePredicate predicate1 = builder1.of(state1.getBlock()).build();
+        BlockStatePredicate predicate2 = builder2.of(state2.getBlock()).build();
+        List<BlockStatePredicate> list = new ArrayList<>();
+        list.add(predicate1);
+        list.add(predicate2);
+        this.blockStatePredicates = list;
     }
 
     @Override

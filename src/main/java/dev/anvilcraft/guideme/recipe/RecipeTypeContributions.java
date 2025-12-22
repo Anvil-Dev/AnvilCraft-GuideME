@@ -73,6 +73,9 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
         mappings.add(ModRecipeTypes.NEUTRON_IRRADIATION.get(), RecipeTypeContributions::neutronIrradiation);
         mappings.add(ModRecipeTypes.SQUEEZING_TYPE.get(), RecipeTypeContributions::squeezing);
         mappings.add(ModRecipeTypes.STAMPING_TYPE.get(), RecipeTypeContributions::stamping);
+        mappings.add(ModRecipeTypes.SUPER_HEATING_TYPE.get(), RecipeTypeContributions::superHeating);
+        mappings.add(ModRecipeTypes.TIME_WARP_TYPE.get(), RecipeTypeContributions::timeWarp);
+        mappings.add(ModRecipeTypes.UNPACK_TYPE.get(), RecipeTypeContributions::unpack);
     }
 
     private static LytStandardRecipeBox<BlockCompressRecipe> blockCompress(RecipeHolder<BlockCompressRecipe> holder) {

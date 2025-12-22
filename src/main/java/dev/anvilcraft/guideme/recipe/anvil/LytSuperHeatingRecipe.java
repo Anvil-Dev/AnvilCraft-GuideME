@@ -1,10 +1,57 @@
 package dev.anvilcraft.guideme.recipe.anvil;
 
+import dev.anvilcraft.guideme.recipe.slot.LytBlockSlot;
+import dev.anvilcraft.guideme.recipe.slot.LytInputItemSlot;
+import dev.anvilcraft.guideme.recipe.slot.LytOutputItemSlot;
+import dev.anvilcraft.guideme.util.BlockStateUtil;
+import dev.anvilcraft.lib.recipe.component.BlockStatePredicate;
+import dev.dubhe.anvilcraft.block.HeaterBlock;
+import dev.dubhe.anvilcraft.init.block.ModBlocks;
 import dev.dubhe.anvilcraft.recipe.anvil.wrap.SuperHeatingRecipe;
+import guideme.document.LytRect;
 import guideme.document.block.LytVBox;
+import guideme.layout.LayoutContext;
+import guideme.render.RenderContext;
+import net.minecraft.world.level.block.Blocks;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class LytSuperHeatingRecipe extends LytVBox {
-    public LytSuperHeatingRecipe(SuperHeatingRecipe recipe) {
+    private final LytInputItemSlot inputItemSlot;
+    private final LytOutputItemSlot outputItemSlot;
 
+    private final LytBlockSlot workBlocks;
+    private final LytBlockSlot outputBlockSlot;
+
+    public LytSuperHeatingRecipe(SuperHeatingRecipe recipe) {
+        append(inputItemSlot = new LytInputItemSlot(recipe.getInputItems()));
+        append(outputItemSlot = new LytOutputItemSlot(recipe.getResultItems()));
+
+        List<BlockStatePredicate> work = new ArrayList<>();
+        work.add(BlockStatePredicate.builder().of(Blocks.CAULDRON).build());
+        work.add(BlockStatePredicate.builder().of(ModBlocks.HEATER).with(HeaterBlock.OVERLOAD, false).build());
+        append(workBlocks = new LytBlockSlot(work));
+        append(outputBlockSlot = new LytBlockSlot(BlockStateUtil.getCauldron(recipe.getHasCauldron())));
+        workBlocks.setHasAnvil(true);
+        workBlocks.setAnvilAnimation(true);
+        outputBlockSlot.setRender(!recipe.getResultItems().isEmpty());
+    }
+
+    @Override
+    public void render(RenderContext context) {
+        inputItemSlot.render(context);
+        outputItemSlot.render(context);
+        workBlocks.render(context);
+        outputBlockSlot.render(context);
+    }
+
+    @Override
+    protected LytRect computeBoxLayout(LayoutContext context, int x, int y, int availableWidth) {
+        inputItemSlot.layout(context, x, y, availableWidth);
+        outputItemSlot.layout(context, x + 87, y, availableWidth);
+        workBlocks.layout(context, x + 70, y, availableWidth);
+        outputBlockSlot.layout(context, x + 105, y + 15, availableWidth);
+        return new LytRect(x, y, 162, 64);
     }
 }

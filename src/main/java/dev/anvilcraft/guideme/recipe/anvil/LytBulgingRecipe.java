@@ -33,7 +33,7 @@ public class LytBulgingRecipe extends LytVBox {
             state = recipe.getHasCauldron().getTransformCauldron().defaultBlockState();
         }
         append(inputBlockSlot = new LytBlockSlot(state));
-        append(outputBlockSlot = new LytBlockSlot(BlockStateUtil.getCauldron(recipe)));
+        append(outputBlockSlot = new LytBlockSlot(BlockStateUtil.getCauldron(recipe.getHasCauldron())));
         inputBlockSlot.setHasAnvil(true);
         inputBlockSlot.setAnvilAnimation(true);
         outputBlockSlot.setRender(!recipe.getResultItems().isEmpty());
