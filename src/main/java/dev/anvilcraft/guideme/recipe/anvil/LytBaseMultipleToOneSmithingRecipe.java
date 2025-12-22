@@ -1,9 +1,9 @@
 package dev.anvilcraft.guideme.recipe.anvil;
 
+import dev.anvilcraft.guideme.recipe.slot.LytSimpleItemSlot;
 import dev.anvilcraft.guideme.util.TextureConstants;
 import dev.dubhe.anvilcraft.recipe.multiple.BaseMultipleToOneSmithingRecipe;
 import guideme.document.LytRect;
-import guideme.document.block.LytSlot;
 import guideme.document.block.LytVBox;
 import guideme.layout.LayoutContext;
 import guideme.render.RenderContext;
@@ -16,18 +16,18 @@ public class LytBaseMultipleToOneSmithingRecipe extends LytVBox {
     private static final int[] INPUT_X = {76, 76, 58, 94, 94, 58, 94, 58};
     private static final int[] INPUT_Y = {-10, 26, 8, 8, -10, -10, 26, 26};
 
-    private final LytSlot templateSlot;
-    private final LytSlot materialSlot;
-    private final LytSlot outputSlot;
-    private final List<LytSlot> slots = new ArrayList<>();
+    private final LytSimpleItemSlot templateSlot;
+    private final LytSimpleItemSlot materialSlot;
+    private final LytSimpleItemSlot outputSlot;
+    private final List<LytSimpleItemSlot> slots = new ArrayList<>();
 
     public LytBaseMultipleToOneSmithingRecipe(BaseMultipleToOneSmithingRecipe recipe) {
-        append(templateSlot = new LytSlot(Ingredient.of(recipe.getTemplate().getItems())));
-        append(materialSlot = new LytSlot(Ingredient.of(recipe.getMaterial().getItems())));
-        append(outputSlot = new LytSlot(recipe.getResult().getResult()));
+        append(templateSlot = new LytSimpleItemSlot(Ingredient.of(recipe.getTemplate().getItems())));
+        append(materialSlot = new LytSimpleItemSlot(Ingredient.of(recipe.getMaterial().getItems())));
+        append(outputSlot = new LytSimpleItemSlot(recipe.getResult().getResult()));
         for (int i = 0; i < Math.min(8, recipe.getInputs().size()); i++) {
-            LytSlot slot;
-            append(slot = new LytSlot(Ingredient.of(recipe.getInputs().get(i).getItems())));
+            LytSimpleItemSlot slot;
+            append(slot = new LytSimpleItemSlot(Ingredient.of(recipe.getInputs().get(i).getItems())));
             slots.add(slot);
         }
     }
@@ -37,7 +37,7 @@ public class LytBaseMultipleToOneSmithingRecipe extends LytVBox {
         templateSlot.render(context);
         materialSlot.render(context);
         outputSlot.render(context);
-        for (LytSlot slot : slots) {
+        for (LytSimpleItemSlot slot : slots) {
             slot.render(context);
         }
         context.fillIcon(
@@ -49,11 +49,11 @@ public class LytBaseMultipleToOneSmithingRecipe extends LytVBox {
 
     @Override
     protected LytRect computeBoxLayout(LayoutContext context, int x, int y, int availableWidth) {
-        templateSlot.layout(context, x + 4, y + 20, availableWidth);
-        materialSlot.layout(context, x + 76, y + 8, availableWidth);
-        outputSlot.layout(context, x + 147, y + 20, availableWidth);
+        templateSlot.layout(context, x + 5, y + 21, availableWidth);
+        materialSlot.layout(context, x + 77, y + 9, availableWidth);
+        outputSlot.layout(context, x + 148, y + 21, availableWidth);
         for (int i = 0; i < Math.min(8, slots.size()); i++) {
-            slots.get(i).layout(context, x + INPUT_X[i], y + INPUT_Y[i], availableWidth);
+            slots.get(i).layout(context, x + INPUT_X[i] + 1, y + INPUT_Y[i] + 1, availableWidth);
         }
         return new LytRect(x, y, 170, 47);
     }

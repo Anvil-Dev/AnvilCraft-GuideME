@@ -24,7 +24,7 @@ public class LytSimpleItemSlot extends LytBlock implements InteractiveElement {
     private boolean largeSlot;
     @Setter
     @Getter
-    private int itemSize;
+    private int itemSize = 16;
 
     private final ItemStack[] stacks;
 

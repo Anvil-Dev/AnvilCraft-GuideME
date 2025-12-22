@@ -91,7 +91,7 @@ public class LytCollisionRecipe extends LytVBox {
     @Override
     protected LytRect computeBoxLayout(LayoutContext context, int x, int y, int availableWidth) {
         inputAnvilSlot.layout(context, x + 10, y + 15, availableWidth);
-        hitBlockSlot.layout(context, x + 50, y + 10, availableWidth);
+        hitBlockSlot.layout(context, x + 51, y + 11, availableWidth);
         outputItemSlot.layout(context, x + 90, y, availableWidth);
         transInputBlockSlot.layout(context, x + 90, y + 25, availableWidth);
         transOutputBlockSlot.layout(context, x + 90, y - 20, availableWidth);

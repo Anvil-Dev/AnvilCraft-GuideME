@@ -55,7 +55,7 @@ import net.minecraft.world.item.crafting.RecipeHolder;
 
 public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
 
-    // TODO: BeaconConversion | MultiBlock | EndPortalConversion | Transcendium
+    // TODO: BeaconConversion | MultiBlock | EndPortalConversion | Transcendium | MobTransform
 
     @Override
     public void collect(RecipeTypeMappings mappings) {
@@ -77,6 +77,8 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
         mappings.add(ModRecipeTypes.TIME_WARP_TYPE.get(), RecipeTypeContributions::timeWarp);
         mappings.add(ModRecipeTypes.UNPACK_TYPE.get(), RecipeTypeContributions::unpack);
         mappings.add(ModRecipeTypes.ANVIL_COLLISION_CRAFT.get(), RecipeTypeContributions::collision);
+        mappings.add(ModRecipeTypes.CHARGER_CHARGING_TYPE.get(), RecipeTypeContributions::chargerCharging);
+        mappings.add(ModRecipeTypes.JEWEL_CRAFTING_TYPE.get(), RecipeTypeContributions::jewelCrafting);
         mappings.add(ModRecipeTypes.MULTIPLE_TO_ONE_SMITHING_TYPE.get(), RecipeTypeContributions::multiple);
     }
 
@@ -330,7 +332,9 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
                 holder
                     .value()
                     .getResult()
-                    .getDescriptionId()
+                    .getItem()
+                    .getDescription()
+                    .getString()
             )
             .build(holder);
     }
@@ -343,10 +347,29 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
                 holder
                     .value()
                     .getResult()
-                    .getDescriptionId()
+                    .getItem()
+                    .getDescription()
+                    .getString()
             )
             .build(holder);
     }
+    private static LytStandardRecipeBox<BaseMultipleToOneSmithingRecipe> multiple(RecipeHolder<BaseMultipleToOneSmithingRecipe> holder) {
+        return LytStandardRecipeBox
+            .builder()
+            .icon(Items.ANVIL)
+            .customBody(new LytBaseMultipleToOneSmithingRecipe(holder.value()))
+            .title(
+                holder
+                    .value()
+                    .getResult()
+                    .getResult()
+                    .getItem()
+                    .getDescription()
+                    .getString()
+            )
+            .build(holder);
+    }
+
     private static LytStandardRecipeBox<MobTransformRecipe> mobTransform(RecipeHolder<MobTransformRecipe> holder) {
         return LytStandardRecipeBox
             .builder()
@@ -370,22 +393,6 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
                 holder
                     .value()
                     .input()
-                    .getDescription()
-                    .getString()
-            )
-            .build(holder);
-    }
-    private static LytStandardRecipeBox<BaseMultipleToOneSmithingRecipe> multiple(RecipeHolder<BaseMultipleToOneSmithingRecipe> holder) {
-        return LytStandardRecipeBox
-            .builder()
-            .icon(Items.ANVIL)
-            .customBody(new LytBaseMultipleToOneSmithingRecipe(holder.value()))
-            .title(
-                holder
-                    .value()
-                    .getResult()
-                    .getResult()
-                    .getItem()
                     .getDescription()
                     .getString()
             )
