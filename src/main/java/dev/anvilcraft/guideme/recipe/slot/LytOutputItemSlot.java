@@ -48,37 +48,41 @@ public class LytOutputItemSlot extends LytBlock implements InteractiveElement {
         var y = bounds.y();
         int size = resultItems.size();
         if (size == 1) {
-            ItemStack stack = resultItems.getFirst().stack();
+            int maxCount = resultItems.getFirst().getMaxCount();
+            ItemStack stack = new ItemStack(resultItems.getFirst().getItem(), maxCount);
             LytRect lytRect = new LytRect(bounds.x(), bounds.y(), SLOT_SIZE, SLOT_SIZE);
-            context.renderItem(stack, x + 1, y + 1, ITEM_SIZE, ITEM_SIZE);
+            context.renderItem(stack.copy(), x + 1, y + 1, ITEM_SIZE, ITEM_SIZE);
             context.fillIcon(lytRect, texture);
         } else if (size <= 4) {
             for (int i = 0; i < size; i++) {
                 int row = i / 2;
                 int col = i % 2;
-                ItemStack stack = resultItems.get(i).stack();
+                int maxCount = resultItems.get(i).getMaxCount();
+                ItemStack stack = new ItemStack(resultItems.getFirst().getItem(), maxCount);
                 LytRect lytRect = new LytRect(bounds.x() + SLOT_SIZE * col, bounds.y() + SLOT_SIZE * row, SLOT_SIZE, SLOT_SIZE);
                 context.fillIcon(lytRect, texture);
-                context.renderItem(stack, lytRect.x() + 1, lytRect.y() + 1, ITEM_SIZE, ITEM_SIZE);
+                context.renderItem(stack.copy(), lytRect.x() + 1, lytRect.y() + 1, ITEM_SIZE, ITEM_SIZE);
             }
         } else if (size <= 6) {
             for (int i = 0; i < size; i++) {
                 int row = i / 3;
                 int col = i % 3;
-                ItemStack stack = resultItems.get(i).stack();
+                int maxCount = resultItems.get(i).getMaxCount();
+                ItemStack stack = new ItemStack(resultItems.getFirst().getItem(), maxCount);
                 LytRect lytRect = new LytRect(bounds.x() + SLOT_SIZE * col, bounds.y() + SLOT_SIZE * row, SLOT_SIZE, SLOT_SIZE);
                 context.fillIcon(lytRect, texture);
-                context.renderItem(stack, lytRect.x() + 1, lytRect.y() + 1, ITEM_SIZE, ITEM_SIZE);
+                context.renderItem(stack.copy(), lytRect.x() + 1, lytRect.y() + 1, ITEM_SIZE, ITEM_SIZE);
             }
         } else {
             for (int i = 0; i < size; i++) {
                 if (i > 9) break;
                 int row = i / 3;
                 int col = i % 3;
-                ItemStack stack = resultItems.get(i).stack();
+                int maxCount = resultItems.get(i).getMaxCount();
+                ItemStack stack = new ItemStack(resultItems.getFirst().getItem(), maxCount);
                 LytRect lytRect = new LytRect(bounds.x() + SLOT_SIZE * col, bounds.y() + SLOT_SIZE * row, SLOT_SIZE, SLOT_SIZE);
                 context.fillIcon(lytRect, texture);
-                context.renderItem(stack, lytRect.x() + 1, lytRect.y() + 1, ITEM_SIZE, ITEM_SIZE);
+                context.renderItem(stack.copy(), lytRect.x() + 1, lytRect.y() + 1, ITEM_SIZE, ITEM_SIZE);
             }
         }
     }
