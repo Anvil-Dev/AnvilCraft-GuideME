@@ -10,6 +10,7 @@ import guideme.layout.LayoutContext;
 import guideme.render.GuiAssets;
 import guideme.render.GuiSprite;
 import guideme.render.RenderContext;
+import lombok.Getter;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.world.item.ItemStack;
 
@@ -22,6 +23,7 @@ public class LytInputItemSlot extends LytBlock implements InteractiveElement {
     private static final int SLOT_SIZE = 18;
     private static final int CYCLE_TIME = 2000;
 
+    @Getter
     private final List<ItemIngredientPredicate> mergedIngredients;
 
     public LytInputItemSlot(List<ItemIngredientPredicate> mergedIngredients) {

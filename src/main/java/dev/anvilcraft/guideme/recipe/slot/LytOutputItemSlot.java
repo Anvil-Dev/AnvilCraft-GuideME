@@ -10,6 +10,7 @@ import guideme.layout.LayoutContext;
 import guideme.render.GuiAssets;
 import guideme.render.GuiSprite;
 import guideme.render.RenderContext;
+import lombok.Getter;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.world.item.ItemStack;
 
@@ -20,6 +21,7 @@ public class LytOutputItemSlot extends LytBlock implements InteractiveElement {
     private static final int ITEM_SIZE = 16;
     private static final int SLOT_SIZE = 18;
 
+    @Getter
     private final List<ChanceItemStack> resultItems;
 
     public LytOutputItemSlot(List<ChanceItemStack> resultItems) {
@@ -30,9 +32,9 @@ public class LytOutputItemSlot extends LytBlock implements InteractiveElement {
     protected LytRect computeLayout(LayoutContext context, int x, int y, int availableWidth) {
         int size = resultItems.size();
         if (size <= 1) {
-            return new LytRect(x + 16, y + 16, SLOT_SIZE, SLOT_SIZE);
+            return new LytRect(x + 32, y + 16, SLOT_SIZE, SLOT_SIZE);
         } else if (size <= 4) {
-            return new LytRect(x + 16, y + 12, SLOT_SIZE * 2, SLOT_SIZE * 2);
+            return new LytRect(x + 24, y + 12, SLOT_SIZE * 2, SLOT_SIZE * 2);
         } else if (size <= 6) {
             return new LytRect(x + 8, y + 8, SLOT_SIZE * 3, SLOT_SIZE * 2);
         } else {

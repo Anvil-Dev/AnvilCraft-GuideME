@@ -22,7 +22,7 @@ navigation:
 * 压合：将两个方块压成一个
 * 方块破坏：破坏切石机上的方块
 
-<Recipe id="anvilcraft:four_to_one_smithing/ember_metal_heavy_halberd" />
+<Recipe id="anvilcraft:anvil_collision/anvil_tier_0_and_space_overcompressor_32" />
 // cement_cauldron  
 // utusan
 // prismarine_cluster

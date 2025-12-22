@@ -13,8 +13,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LytBaseMultipleToOneSmithingRecipe extends LytVBox {
-    private static int[] INPUT_X = {76, 76, 58, 94, 94, 58, 94, 58};
-    private static int[] INPUT_Y = {-9, 27, 9, 9, -9, -9, 27, 27};
+    private static final int[] INPUT_X = {76, 76, 58, 94, 94, 58, 94, 58};
+    private static final int[] INPUT_Y = {-10, 26, 8, 8, -10, -10, 26, 26};
 
     private final LytSlot templateSlot;
     private final LytSlot materialSlot;
@@ -26,11 +26,9 @@ public class LytBaseMultipleToOneSmithingRecipe extends LytVBox {
         append(materialSlot = new LytSlot(Ingredient.of(recipe.getMaterial().getItems())));
         append(outputSlot = new LytSlot(recipe.getResult().getResult()));
         for (int i = 0; i < Math.min(8, recipe.getInputs().size()); i++) {
-            LytSlot slot = new LytSlot(Ingredient.of(recipe.getInputs().get(i).getItems()));
+            LytSlot slot;
+            append(slot = new LytSlot(Ingredient.of(recipe.getInputs().get(i).getItems())));
             slots.add(slot);
-        }
-        for (LytSlot slot : slots) {
-            append(slot);
         }
     }
 
@@ -52,7 +50,7 @@ public class LytBaseMultipleToOneSmithingRecipe extends LytVBox {
     @Override
     protected LytRect computeBoxLayout(LayoutContext context, int x, int y, int availableWidth) {
         templateSlot.layout(context, x + 4, y + 20, availableWidth);
-        materialSlot.layout(context, x + 76, y + 9, availableWidth);
+        materialSlot.layout(context, x + 76, y + 8, availableWidth);
         outputSlot.layout(context, x + 147, y + 20, availableWidth);
         for (int i = 0; i < Math.min(8, slots.size()); i++) {
             slots.get(i).layout(context, x + INPUT_X[i], y + INPUT_Y[i], availableWidth);
