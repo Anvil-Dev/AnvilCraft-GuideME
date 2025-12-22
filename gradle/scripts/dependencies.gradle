@@ -21,9 +21,6 @@ dependencies {
     // Jade
     implementation(libs.jade)
 
-    // Patchouli
-    implementation(libs.patchouli)
-
     // GuideME
     compileOnly("org.appliedenergistics:guideme:${libs.versions.guideme.get()}:api")
     runtimeOnly(libs.guideme)
