@@ -3,12 +3,17 @@ package dev.anvilcraft.guideme.util;
 import dev.anvilcraft.lib.recipe.component.BlockStatePredicate;
 import dev.anvilcraft.lib.recipe.component.ChanceBlockState;
 import dev.anvilcraft.lib.recipe.component.ItemIngredientPredicate;
+import dev.dubhe.anvilcraft.recipe.anvil.predicate.block.HasCauldron;
+import dev.dubhe.anvilcraft.recipe.anvil.wrap.AbstractProcessRecipe;
+import dev.dubhe.anvilcraft.recipe.component.HasCauldronSimple;
+import dev.dubhe.anvilcraft.util.CauldronUtil;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderSet;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.ArrayList;
@@ -28,6 +33,16 @@ public class BlockStateUtil {
             blockStatePredicateList.add(blockStatePredicate);
         }
         return blockStatePredicateList;
+    }
+
+    public static BlockState getCauldron(AbstractProcessRecipe<?> recipe) {
+        HasCauldronSimple hasCauldron = recipe.getHasCauldron();
+        boolean isProduceFluid = HasCauldron.isNotEmpty(hasCauldron.transform()) && hasCauldron.consume() < 0;
+        if (isProduceFluid) {
+            return Blocks.CAULDRON.defaultBlockState();
+        } else {
+            return CauldronUtil.fullState(HasCauldron.getDefaultCauldron(recipe.getHasCauldron().transform()));
+        }
     }
 
     public static List<ItemIngredientPredicate> BlockStatePredicatesTransToItemIngredientPredicate(

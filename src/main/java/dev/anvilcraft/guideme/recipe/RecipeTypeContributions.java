@@ -71,6 +71,8 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
         mappings.add(ModRecipeTypes.MASS_INJECT_TYPE.get(), RecipeTypeContributions::massInject);
         mappings.add(ModRecipeTypes.MESH_TYPE.get(), RecipeTypeContributions::mesh);
         mappings.add(ModRecipeTypes.NEUTRON_IRRADIATION.get(), RecipeTypeContributions::neutronIrradiation);
+        mappings.add(ModRecipeTypes.SQUEEZING_TYPE.get(), RecipeTypeContributions::squeezing);
+        mappings.add(ModRecipeTypes.STAMPING_TYPE.get(), RecipeTypeContributions::stamping);
     }
 
     private static LytStandardRecipeBox<BlockCompressRecipe> blockCompress(RecipeHolder<BlockCompressRecipe> holder) {
@@ -259,15 +261,6 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
             .builder()
             .icon(Items.ANVIL)
             .customBody(new LytSqueezingRecipe(holder.value()))
-            .title(
-                holder
-                    .value()
-                    .getResultItems()
-                    .getFirst()
-                    .getItem()
-                    .getDescription()
-                    .getString()
-            )
             .build(holder);
     }
     private static LytStandardRecipeBox<StampingRecipe> stamping(RecipeHolder<StampingRecipe> holder) {

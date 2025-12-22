@@ -29,11 +29,10 @@ public class LytOutputItemSlot extends LytBlock implements InteractiveElement {
     @Override
     protected LytRect computeLayout(LayoutContext context, int x, int y, int availableWidth) {
         int size = resultItems.size();
-        if (size == 0) return null;
-        if (size == 1) {
+        if (size <= 1) {
             return new LytRect(x + 16, y + 16, SLOT_SIZE, SLOT_SIZE);
         } else if (size <= 4) {
-            return new LytRect(x + 16, y + 8, SLOT_SIZE * 2, SLOT_SIZE * 2);
+            return new LytRect(x + 16, y + 12, SLOT_SIZE * 2, SLOT_SIZE * 2);
         } else if (size <= 6) {
             return new LytRect(x + 8, y + 8, SLOT_SIZE * 3, SLOT_SIZE * 2);
         } else {
@@ -43,6 +42,7 @@ public class LytOutputItemSlot extends LytBlock implements InteractiveElement {
 
     @Override
     public void render(RenderContext context) {
+        if (resultItems.isEmpty()) return;
         GuiSprite texture = GuiAssets.SLOT;
         var x = bounds.x();
         var y = bounds.y();
@@ -85,8 +85,9 @@ public class LytOutputItemSlot extends LytBlock implements InteractiveElement {
 
     @Override
     public Optional<GuideTooltip> getTooltip(float mouseX, float mouseY) {
+        if (resultItems.isEmpty()) return Optional.empty();
+
         int size = resultItems.size();
-        if (size == 0) return Optional.empty();
 
         if (size == 1) {
             return Optional.of(new ChanceItemTooltip(resultItems.getFirst()));

@@ -31,11 +31,10 @@ public class LytInputItemSlot extends LytBlock implements InteractiveElement {
     @Override
     protected LytRect computeLayout(LayoutContext context, int x, int y, int availableWidth) {
         int size = mergedIngredients.size();
-        if (size == 0) return null;
-        if (size == 1) {
-            return new LytRect(x + 16, y + 16, SLOT_SIZE, SLOT_SIZE);
+        if (size <= 1) {
+            return new LytRect(x + 32, y + 16, SLOT_SIZE, SLOT_SIZE);
         } else if (size <= 4) {
-            return new LytRect(x + 16, y + 8, SLOT_SIZE * 2, SLOT_SIZE * 2);
+            return new LytRect(x + 24, y + 12, SLOT_SIZE * 2, SLOT_SIZE * 2);
         } else if (size <= 6) {
             return new LytRect(x + 8, y + 8, SLOT_SIZE * 3, SLOT_SIZE * 2);
         } else {

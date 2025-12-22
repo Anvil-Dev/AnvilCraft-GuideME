@@ -22,7 +22,7 @@ navigation:
 * 压合：将两个方块压成一个
 * 方块破坏：破坏切石机上的方块
 
-<Recipe id="anvilcraft:mesh/cinerite" />
+<Recipe id="anvilcraft:stamping/geode_gems" />
 // cement_cauldron  
 // utusan
 // prismarine_cluster

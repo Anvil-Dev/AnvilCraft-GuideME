@@ -12,10 +12,12 @@ import lombok.Getter;
 import lombok.Setter;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.Property;
 
 import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
 
@@ -31,16 +33,24 @@ public class LytBlockSlot extends LytBox implements InteractiveElement {
     @Setter
     @Getter
     private boolean hasAnvil;
+    @Setter
+    @Getter
+    private boolean render;
 
     public LytBlockSlot(@Nullable List<BlockStatePredicate> blockStatePredicates) {
         this.blockStatePredicates = Objects.requireNonNullElseGet(blockStatePredicates, ArrayList::new);
     }
 
     public LytBlockSlot(BlockState blockState) {
-        BlockStatePredicate predicate = BlockStatePredicate
-            .builder()
-            .of(blockState.getBlock())
-            .build();
+        BlockStatePredicate.Builder builder = BlockStatePredicate.builder();
+
+        for (Map.Entry<Property<?>, Comparable<?>> entry : blockState.getValues().entrySet()) {
+            Property<?> property = entry.getKey();
+            Comparable<?> value = entry.getValue();
+            builder.with(property, value.toString());
+        }
+
+        BlockStatePredicate predicate = builder.of(blockState.getBlock()).build();
         this.blockStatePredicates = List.of(predicate);
     }
 
@@ -69,7 +79,7 @@ public class LytBlockSlot extends LytBox implements InteractiveElement {
                 x,
                 y
             );
-        } else {
+        } else if (!render) {
             GuideMERenderUtil.renderedBlock(
                 context.guiGraphics(),
                 blockStatePredicates,
@@ -81,7 +91,7 @@ public class LytBlockSlot extends LytBox implements InteractiveElement {
 
     @Override
     public Optional<GuideTooltip> getTooltip(float mouseX, float mouseY) {
-        // TODO: 懒得写了 调位置太烦了 有没有好人帮我写下
+        // TODO: 这块的tooltip不会写 有没有好人帮我写下(发好人卡ing)
         return Optional.empty();
     }
 
