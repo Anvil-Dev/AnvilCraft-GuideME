@@ -59,31 +59,29 @@ public class LytInputItemSlot extends LytBlock implements InteractiveElement {
             for (int i = 0; i < size; i++) {
                 int row = i / 2;
                 int col = i % 2;
-                ItemStack stack = getDisplayedStack(mergedIngredients.get(i).getItems());
-                LytRect lytRect = new LytRect(bounds.x() + SLOT_SIZE * col, bounds.y() + SLOT_SIZE * row, SLOT_SIZE, SLOT_SIZE);
-                context.fillIcon(lytRect, texture);
-                context.renderItem(stack, lytRect.x() + 1, lytRect.y() + 1, ITEM_SIZE, ITEM_SIZE);
+                getItemStack(context, texture, i, row, col);
             }
         } else if (size <= 6) {
             for (int i = 0; i < size; i++) {
                 int row = i / 3;
                 int col = i % 3;
-                ItemStack stack = getDisplayedStack(mergedIngredients.get(i).getItems());
-                LytRect lytRect = new LytRect(bounds.x() + SLOT_SIZE * col, bounds.y() + SLOT_SIZE * row, SLOT_SIZE, SLOT_SIZE);
-                context.fillIcon(lytRect, texture);
-                context.renderItem(stack, lytRect.x() + 1, lytRect.y() + 1, ITEM_SIZE, ITEM_SIZE);
+                getItemStack(context, texture, i, row, col);
             }
         } else {
             for (int i = 0; i < size; i++) {
                 if (i > 9) break;
                 int row = i / 3;
                 int col = i % 3;
-                ItemStack stack = getDisplayedStack(mergedIngredients.get(i).getItems());
-                LytRect lytRect = new LytRect(bounds.x() + SLOT_SIZE * col, bounds.y() + SLOT_SIZE * row, SLOT_SIZE, SLOT_SIZE);
-                context.fillIcon(lytRect, texture);
-                context.renderItem(stack, lytRect.x() + 1, lytRect.y() + 1, ITEM_SIZE, ITEM_SIZE);
+                getItemStack(context, texture, i, row, col);
             }
         }
+    }
+
+    private void getItemStack(RenderContext context, GuiSprite texture, int i, int row, int col) {
+        ItemStack stack = getDisplayedStack(mergedIngredients.get(i).getItems());
+        LytRect lytRect = new LytRect(bounds.x() + SLOT_SIZE * col, bounds.y() + SLOT_SIZE * row, SLOT_SIZE, SLOT_SIZE);
+        context.fillIcon(lytRect, texture);
+        context.renderItem(stack, lytRect.x() + 1, lytRect.y() + 1, ITEM_SIZE, ITEM_SIZE);
     }
 
     @Override

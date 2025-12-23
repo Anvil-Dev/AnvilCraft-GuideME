@@ -19,6 +19,8 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
+import static dev.anvilcraft.guideme.util.NumberUtil.*;
+
 public class ChanceItemTooltip implements GuideTooltip {
     private static final DecimalFormat FORMATTER = new DecimalFormat();
 
@@ -71,22 +73,7 @@ public class ChanceItemTooltip implements GuideTooltip {
         exporter.referenceItem(chanceItemStack.stack());
     }
 
-    private static double getMin(NumberProvider provider) {
-        return switch (provider) {
-            case ConstantValue value -> value.value();
-            case UniformGenerator uniform -> getMin(uniform.min());
-            default -> 0;
-        };
-    }
 
-    private static double getMax(NumberProvider provider) {
-        return switch (provider) {
-            case ConstantValue value -> value.value();
-            case UniformGenerator uniform -> getMax(uniform.max());
-            case BinomialDistributionGenerator binomial -> getMax(binomial.n());
-            default -> 0;
-        };
-    }
 
     private static void addAvgOutput(List<Component> tooltipLines, double avgValue) {
         String avgOutput = FORMATTER.format(avgValue);

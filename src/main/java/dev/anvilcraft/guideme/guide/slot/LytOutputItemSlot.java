@@ -1,6 +1,7 @@
 package dev.anvilcraft.guideme.guide.slot;
 
 import dev.anvilcraft.guideme.guide.tooltip.ChanceItemTooltip;
+import dev.anvilcraft.guideme.util.NumberUtil;
 import dev.anvilcraft.lib.recipe.component.ChanceItemStack;
 import guideme.document.LytRect;
 import guideme.document.block.LytBlock;
@@ -50,43 +51,41 @@ public class LytOutputItemSlot extends LytBlock implements InteractiveElement {
         var y = bounds.y();
         int size = resultItems.size();
         if (size == 1) {
-            int maxCount = resultItems.getFirst().getMaxCount();
-            ItemStack stack = new ItemStack(resultItems.getFirst().getItem(), maxCount);
+            ItemStack stack = resultItems.getFirst().stack().copy();
+            double count = NumberUtil.getMax(resultItems.getFirst().count());
+            stack.setCount((int) count);
             LytRect lytRect = new LytRect(bounds.x(), bounds.y(), SLOT_SIZE, SLOT_SIZE);
-            context.renderItem(stack.copy(), x + 1, y + 1, ITEM_SIZE, ITEM_SIZE);
+            context.renderItem(stack, x + 1, y + 1, ITEM_SIZE, ITEM_SIZE);
             context.fillIcon(lytRect, texture);
         } else if (size <= 4) {
             for (int i = 0; i < size; i++) {
                 int row = i / 2;
                 int col = i % 2;
-                int maxCount = resultItems.get(i).getMaxCount();
-                ItemStack stack = new ItemStack(resultItems.getFirst().getItem(), maxCount);
-                LytRect lytRect = new LytRect(bounds.x() + SLOT_SIZE * col, bounds.y() + SLOT_SIZE * row, SLOT_SIZE, SLOT_SIZE);
-                context.fillIcon(lytRect, texture);
-                context.renderItem(stack.copy(), lytRect.x() + 1, lytRect.y() + 1, ITEM_SIZE, ITEM_SIZE);
+                getItemStack(context, texture, i, row, col);
             }
         } else if (size <= 6) {
             for (int i = 0; i < size; i++) {
                 int row = i / 3;
                 int col = i % 3;
-                int maxCount = resultItems.get(i).getMaxCount();
-                ItemStack stack = new ItemStack(resultItems.getFirst().getItem(), maxCount);
-                LytRect lytRect = new LytRect(bounds.x() + SLOT_SIZE * col, bounds.y() + SLOT_SIZE * row, SLOT_SIZE, SLOT_SIZE);
-                context.fillIcon(lytRect, texture);
-                context.renderItem(stack.copy(), lytRect.x() + 1, lytRect.y() + 1, ITEM_SIZE, ITEM_SIZE);
+                getItemStack(context, texture, i, row, col);
             }
         } else {
             for (int i = 0; i < size; i++) {
                 if (i > 9) break;
                 int row = i / 3;
                 int col = i % 3;
-                int maxCount = resultItems.get(i).getMaxCount();
-                ItemStack stack = new ItemStack(resultItems.getFirst().getItem(), maxCount);
-                LytRect lytRect = new LytRect(bounds.x() + SLOT_SIZE * col, bounds.y() + SLOT_SIZE * row, SLOT_SIZE, SLOT_SIZE);
-                context.fillIcon(lytRect, texture);
-                context.renderItem(stack.copy(), lytRect.x() + 1, lytRect.y() + 1, ITEM_SIZE, ITEM_SIZE);
+                getItemStack(context, texture, i, row, col);
             }
         }
+    }
+
+    private void getItemStack(RenderContext context, GuiSprite texture, int i, int row, int col) {
+        ItemStack stack = resultItems.get(i).stack().copy();
+        double count = NumberUtil.getMax(resultItems.get(i).count());
+        stack.setCount((int) count);
+        LytRect lytRect = new LytRect(bounds.x() + SLOT_SIZE * col, bounds.y() + SLOT_SIZE * row, SLOT_SIZE, SLOT_SIZE);
+        context.fillIcon(lytRect, texture);
+        context.renderItem(stack, lytRect.x() + 1, lytRect.y() + 1, ITEM_SIZE, ITEM_SIZE);
     }
 
     @Override
