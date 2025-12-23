@@ -4,8 +4,8 @@ navigation:
   icon: "anvilcraft_guideme:guideme_book"
   position: 0
 ---
-![Logo](../ac_assets/test_logo.png)
 
+![Logo](../ac_assets/test_logo.png)
 
 # 介绍
 

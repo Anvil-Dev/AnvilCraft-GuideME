@@ -102,26 +102,11 @@ public class LytBlockSlot extends LytBox implements InteractiveElement {
         int y = getSafeY();
         if (blockStatePredicates.isEmpty()) return;
         if (anvilAnimation && hasAnvil) {
-            GuideMERenderUtil.renderedBlockStatesAndAnvilAnimation(
-                context.guiGraphics(),
-                blockStatePredicates,
-                x,
-                y
-            );
+            GuideMERenderUtil.renderedBlockStatesAndAnvilAnimation(context.guiGraphics(), blockStatePredicates, x, y);
         } else if (hasAnvil) {
-            GuideMERenderUtil.renderedBlockStatesAndAnvil(
-                context.guiGraphics(),
-                blockStatePredicates,
-                x,
-                y
-            );
+            GuideMERenderUtil.renderedBlockStatesAndAnvil(context.guiGraphics(), blockStatePredicates, x, y);
         } else if (!render) {
-            GuideMERenderUtil.renderedBlock(
-                context.guiGraphics(),
-                blockStatePredicates,
-                x,
-                y
-            );
+            GuideMERenderUtil.renderedBlock(context.guiGraphics(), blockStatePredicates, x, y);
         }
     }
 

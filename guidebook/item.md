@@ -8,4 +8,4 @@ navigation:
 
 ## 此篇将介绍铁砧工艺本体提供的物品
 
-<SubPages />
+<SubPages></SubPages>

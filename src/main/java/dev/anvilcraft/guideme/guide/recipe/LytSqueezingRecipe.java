@@ -25,11 +25,7 @@ public class LytSqueezingRecipe extends LytVBox {
         input.add(BlockStatePredicate.builder().of(Blocks.CAULDRON).build());
         output.add(ChanceBlockState.of(() -> BlockStateUtil.getCauldron(recipe.getHasCauldron()).getBlock()));
         append(inputBlocks = new LytBlockSlot(input));
-        append(
-            outputBlocks = new LytBlockSlot(
-                BlockStateUtil.ChanceBlockStatesTransToBlockStatePredicates(output)
-            )
-        );
+        append(outputBlocks = new LytBlockSlot(BlockStateUtil.ChanceBlockStatesTransToBlockStatePredicates(output)));
 
         inputBlocks.setAnvilAnimation(true);
         inputBlocks.setHasAnvil(true);

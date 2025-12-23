@@ -33,7 +33,7 @@ public class LytSimpleItemSlot extends LytBlock implements InteractiveElement {
     }
 
     public LytSimpleItemSlot(ItemStack stack) {
-        this.stacks = new ItemStack[] { stack };
+        this.stacks = new ItemStack[]{stack};
     }
 
     @Override

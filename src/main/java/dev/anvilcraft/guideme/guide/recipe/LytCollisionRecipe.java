@@ -30,30 +30,14 @@ public class LytCollisionRecipe extends LytVBox {
         append(transInputBlockSlot = new LytInputItemSlot(BlockTransformUtil.getItemIngredientPredicate(recipe.transformBlocks())));
         append(transOutputBlockSlot = new LytOutputItemSlot(BlockTransformUtil.getChanceItemStacks(recipe.transformBlocks())));
         append(outputItemSlot = new LytOutputItemSlot(recipe.outputItems()));
-        append(
-            inputAnvilSlot = new LytSlot(
-                Ingredient.of(
-                    recipe.anvil()
-                        .getBlocks()
-                        .stream()
-                        .map(
-                            blockHolder -> new ItemStack(blockHolder.value())
-                        )
-                )
-            )
-        );
-        append(
-            hitBlockSlot = new LytSimpleItemSlot(
-                Ingredient.of(
-                    recipe.hitBlock()
-                        .getBlocks()
-                        .stream()
-                        .map(
-                            blockHolder -> new ItemStack(blockHolder.value())
-                        )
-                )
-            )
-        );
+        append(inputAnvilSlot = new LytSlot(Ingredient.of(recipe.anvil()
+            .getBlocks()
+            .stream()
+            .map(blockHolder -> new ItemStack(blockHolder.value())))));
+        append(hitBlockSlot = new LytSimpleItemSlot(Ingredient.of(recipe.hitBlock()
+            .getBlocks()
+            .stream()
+            .map(blockHolder -> new ItemStack(blockHolder.value())))));
         hitBlockSlot.setItemSize(32);
     }
 

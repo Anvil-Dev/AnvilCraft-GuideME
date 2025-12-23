@@ -17,8 +17,7 @@ public class BlockStateUtil {
     ) {
         List<BlockStatePredicate> blockStatePredicateList = new ArrayList<>();
         for (ChanceBlockState chanceBlockState : chanceBlockStateList) {
-            BlockStatePredicate blockStatePredicate = BlockStatePredicate
-                .builder()
+            BlockStatePredicate blockStatePredicate = BlockStatePredicate.builder()
                 .of(chanceBlockState.state().getBlock())
                 .nbt(chanceBlockState.nbt())
                 .build();

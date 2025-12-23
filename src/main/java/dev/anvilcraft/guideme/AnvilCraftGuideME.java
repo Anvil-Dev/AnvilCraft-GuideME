@@ -3,8 +3,11 @@ package dev.anvilcraft.guideme;
 import com.mojang.logging.LogUtils;
 import com.tterrag.registrate.Registrate;
 import dev.anvilcraft.guideme.data.ModDatagen;
-import dev.anvilcraft.guideme.guide.element.ItemEntityShapeCompiler;
+import dev.anvilcraft.guideme.guide.compiler.tag.ModInfoTagCompiler;
+import dev.anvilcraft.guideme.guide.compiler.tag.NeoColorTagCompiler;
+import dev.anvilcraft.guideme.guide.compiler.tag.ItemEntityShapeCompiler;
 import guideme.Guide;
+import guideme.compiler.TagCompiler;
 import guideme.scene.element.SceneElementTagCompiler;
 import lombok.Getter;
 import net.minecraft.resources.ResourceLocation;
@@ -32,6 +35,8 @@ public class AnvilCraftGuideME {
         guideme = Guide.builder(GID)
             .folder("ac_guidebook")
             .extension(SceneElementTagCompiler.EXTENSION_POINT, new ItemEntityShapeCompiler())
+            .extension(TagCompiler.EXTENSION_POINT, new NeoColorTagCompiler())
+            .extension(TagCompiler.EXTENSION_POINT, new ModInfoTagCompiler())
             .build();
     }
 

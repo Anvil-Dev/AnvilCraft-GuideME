@@ -2,7 +2,7 @@
 navigation:
   title: "浮霜金属工具"
   icon: "anvilcraft:frost_metal_pickaxe"
-  position: 6
+  position: 7
   parent: anvilcraft_guideme:item.md
 item_ids:
   - anvilcraft:frost_metal_pickaxe
@@ -13,16 +13,20 @@ item_ids:
 ---
 
 # 浮霜金属工具
+
 <Row>
 <ItemImage id="anvilcraft:frost_metal_pickaxe" scale="2"></ItemImage>
 <ItemImage id="anvilcraft:frost_metal_axe" scale="2"></ItemImage>
 <ItemImage id="anvilcraft:frost_metal_shovel" scale="2"></ItemImage>
 <ItemImage id="anvilcraft:frost_metal_hoe" scale="2"></ItemImage>
 <ItemImage id="anvilcraft:frost_metal_sword" scale="2"></ItemImage>
+<ItemImage id="anvilcraft:frost_metal_heavy_halberd" scale="2"></ItemImage>
+<ItemImage id="anvilcraft:frost_metal_resonator" scale="2"></ItemImage>
 </Row>
 
 ## 浮霜金属工具
-    <Color id="BLUE"> ~~**\是数值怪大人/**~~ </Color>
+
+    <Color id="BLUE"> ~~**数值怪还是机制怪?**~~ </Color>
     - 默认数值
         1. 耐久以及挖掘等级与下界合金工具相同 
         2. 所有浮霜金属工具武器均拥有特殊属性：[无情](../properties/properties.md#无情)
@@ -31,7 +35,8 @@ item_ids:
         5. 攻击速度与下界合金相同
 
 ## 合成方式:
-    - 浮霜金属工具需要在锻造台中合成，需要[皇家钢工具](../item/royal_steel_tools.md)
+
+    - 需要浮霜金属锻造模板和浮霜金属锭(块)以及被锻造的工具
 
 <Row>
 <Recipe id="anvilcraft:smithing/frost_metal_pickaxe"></Recipe>
@@ -41,5 +46,12 @@ item_ids:
 <Recipe id="anvilcraft:smithing/frost_metal_sword"></Recipe>
 </Row>
 
-## 其他:
-    - 能参与浮霜金属共振器的合成
+<Row>
+<Recipe id="anvilcraft:four_to_one_smithing/frost_metal_heavy_halberd"></Recipe>
+<Recipe id="anvilcraft:four_to_one_smithing/frost_metal_resonator"></Recipe>
+</Row>
+
+## 相关:
+
+- [龙杖](dragon_rod.md)
+- [皇家钢工具](royal_steel_tools.md)

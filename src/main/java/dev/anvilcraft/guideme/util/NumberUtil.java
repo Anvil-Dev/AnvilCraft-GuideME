@@ -9,9 +9,9 @@ public class NumberUtil {
 
     public static double getMin(NumberProvider provider) {
         return switch (provider) {
-           case ConstantValue value -> value.value();
-           case UniformGenerator uniform -> getMin(uniform.min());
-           default -> 0;
+            case ConstantValue value -> value.value();
+            case UniformGenerator uniform -> getMin(uniform.min());
+            default -> 0;
         };
     }
 

@@ -12,7 +12,8 @@ import static dev.anvilcraft.guideme.AnvilCraftGuideME.REGISTRATE;
 @EventBusSubscriber(modid = AnvilCraftGuideME.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class ModDatagen {
     @SubscribeEvent
-    public static void gatherData(GatherDataEvent event) {}
+    public static void gatherData(GatherDataEvent event) {
+    }
 
     /**
      * 初始化生成器

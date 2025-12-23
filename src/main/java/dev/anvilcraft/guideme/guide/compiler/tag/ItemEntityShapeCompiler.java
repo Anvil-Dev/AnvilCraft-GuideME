@@ -1,4 +1,4 @@
-package dev.anvilcraft.guideme.guide.element;
+package dev.anvilcraft.guideme.guide.compiler.tag;
 
 import guideme.compiler.PageCompiler;
 import guideme.compiler.tags.MdxAttrs;
@@ -12,6 +12,10 @@ import org.joml.Vector3f;
 
 import java.util.Set;
 
+/**
+ * 物品实体编译器，实现SceneElementTagCompiler接口
+ * 用于处理场景中的物品实体标签，负责编译ItemEntity标签
+ */
 public class ItemEntityShapeCompiler implements SceneElementTagCompiler {
     public static final String TAG_NAME = "ItemEntity";
 
@@ -21,12 +25,7 @@ public class ItemEntityShapeCompiler implements SceneElementTagCompiler {
     }
 
     @Override
-    public void compile(
-        GuidebookScene scene,
-        PageCompiler compiler,
-        LytErrorSink errorSink,
-        MdxJsxElementFields el
-    ) {
+    public void compile(GuidebookScene scene, PageCompiler compiler, LytErrorSink errorSink, MdxJsxElementFields el) {
         ItemStack itemStack = MdxAttrs.getRequiredItemStack(compiler, errorSink, el);
         if (itemStack == null) return;
         int count = MdxAttrs.getInt(compiler, errorSink, el, "count", 1);

@@ -31,29 +31,11 @@ public class GuideMERenderUtil {
         return ((int) (cycle % size));
     }
 
-    public static void renderAnvil(
-        GuiGraphics guiGraphics,
-        int x,
-        float y,
-        int z
-    ) {
-        RenderSupport.renderBlock(
-            guiGraphics,
-            Blocks.ANVIL.defaultBlockState(),
-            x,
-            y,
-            z,
-            12,
-            RenderSupport.SINGLE_BLOCK
-        );
+    public static void renderAnvil(GuiGraphics guiGraphics, int x, float y, int z) {
+        RenderSupport.renderBlock(guiGraphics, Blocks.ANVIL.defaultBlockState(), x, y, z, 12, RenderSupport.SINGLE_BLOCK);
     }
 
-    public static void renderedBlock(
-        GuiGraphics guiGraphics,
-        List<BlockStatePredicate> list,
-        int x,
-        int y
-    ) {
+    public static void renderedBlock(GuiGraphics guiGraphics, List<BlockStatePredicate> list, int x, int y) {
         int z = 25;
         List<BlockStatePredicate> list1 = new ArrayList<>(list);
         for (int i = list1.size() - 1; i >= 0; i--) {
@@ -61,15 +43,7 @@ public class GuideMERenderUtil {
             if (input.isEmpty()) continue;
             BlockState renderedState = input.get((int) ((System.currentTimeMillis() / 1000) % input.size()));
             if (renderedState == null) continue;
-            RenderSupport.renderBlock(
-                guiGraphics,
-                renderedState,
-                x,
-                y + 10 * i,
-                z - 10 * i,
-                12,
-                RenderSupport.SINGLE_BLOCK
-            );
+            RenderSupport.renderBlock(guiGraphics, renderedState, x, y + 10 * i, z - 10 * i, 12, RenderSupport.SINGLE_BLOCK);
         }
     }
 
@@ -84,36 +58,18 @@ public class GuideMERenderUtil {
         list1.addFirst(BlockStatePredicate.builder().of(Blocks.ANVIL).build());
         for (int i = list1.size() - 1; i >= 0; i--) {
             if (i == 0) {
-                renderAnvil(
-                    guiGraphics,
-                    startX,
-                    startY - 9 + getAnvilAnimationOffset(),
-                    z
-                );
+                renderAnvil(guiGraphics, startX, startY - 9 + getAnvilAnimationOffset(), z);
             } else {
                 List<BlockState> input = list1.get(i).constructStatesForRender();
                 if (input.isEmpty()) continue;
                 BlockState renderedState = input.get(getDisplayPage(input.size()));
                 if (renderedState == null) continue;
-                RenderSupport.renderBlock(
-                    guiGraphics,
-                    renderedState,
-                    startX,
-                    startY + 10 * i,
-                    z - 10 * i,
-                    12,
-                    RenderSupport.SINGLE_BLOCK
-                );
+                RenderSupport.renderBlock(guiGraphics, renderedState, startX, startY + 10 * i, z - 10 * i, 12, RenderSupport.SINGLE_BLOCK);
             }
         }
     }
 
-    public static void renderedBlockStatesAndAnvil(
-        GuiGraphics guiGraphics,
-        List<BlockStatePredicate> list,
-        int startX,
-        int startY
-    ) {
+    public static void renderedBlockStatesAndAnvil(GuiGraphics guiGraphics, List<BlockStatePredicate> list, int startX, int startY) {
         int z = 25;
         List<BlockStatePredicate> list1 = new ArrayList<>(list);
         list1.addFirst(BlockStatePredicate.builder().of(Blocks.ANVIL).build());
@@ -122,15 +78,7 @@ public class GuideMERenderUtil {
             if (input.isEmpty()) continue;
             BlockState renderedState = input.get((int) ((System.currentTimeMillis() / 1000) % input.size()));
             if (renderedState == null) continue;
-            RenderSupport.renderBlock(
-                guiGraphics,
-                renderedState,
-                startX,
-                startY + 10 * i,
-                z - 10 * i,
-                12,
-                RenderSupport.SINGLE_BLOCK
-            );
+            RenderSupport.renderBlock(guiGraphics, renderedState, startX, startY + 10 * i, z - 10 * i, 12, RenderSupport.SINGLE_BLOCK);
         }
     }
 }

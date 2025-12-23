@@ -14,13 +14,7 @@ public class LytBlockSmearRecipe extends LytVBox {
 
     public LytBlockSmearRecipe(BlockSmearRecipe recipe) {
         append(inputBlocks = new LytBlockSlot(recipe.getInputBlocks()));
-        append(
-            outputBlocks = new LytBlockSlot(
-                BlockStateUtil.ChanceBlockStatesTransToBlockStatePredicates(
-                    recipe.getResultBlocks()
-                )
-            )
-        );
+        append(outputBlocks = new LytBlockSlot(BlockStateUtil.ChanceBlockStatesTransToBlockStatePredicates(recipe.getResultBlocks())));
         inputBlocks.setAnvilAnimation(true);
         inputBlocks.setHasAnvil(true);
         outputBlocks.setHasAnvil(true);

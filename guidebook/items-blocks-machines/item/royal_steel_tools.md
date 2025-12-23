@@ -10,10 +10,10 @@ item_ids:
   - anvilcraft:royal_steel_shovel
   - anvilcraft:royal_steel_hoe
   - anvilcraft:royal_steel_sword
-  - anvilcraft:royal_anvil_hammer
 ---
 
 # 皇家钢工具
+
 <Row>
 <ItemImage id="anvilcraft:royal_steel_pickaxe" scale="2"></ItemImage>
 <ItemImage id="anvilcraft:royal_steel_axe" scale="2"></ItemImage>
@@ -21,14 +21,18 @@ item_ids:
 <ItemImage id="anvilcraft:royal_steel_hoe" scale="2"></ItemImage>
 <ItemImage id="anvilcraft:royal_steel_sword" scale="2"></ItemImage>
 <ItemImage id="anvilcraft:royal_anvil_hammer" scale="2"></ItemImage>
+<ItemImage id="anvilcraft:royal_dragon_rod" scale="2"></ItemImage>
 </Row>
 
 ## 皇家钢工具
-    - ~~**我的天哪！是黄瓜钢大人！**~~
+
+    <Color id="GREEN"> ~~**我的天哪！是黄瓜钢大人！**~~ </Color>
     - 相比[紫水晶工具](../item/amethyst_tools.md)，皇家钢工具本身不自带附魔，继承被锻造的工具的附魔
+    - <Color id="BLUE"> **钻石品质** </Color>
 
 ## 合成方式:
-    - 皇家钢工具需要在锻造台中合成
+
+    - 需要皇家钢锻造模板和皇家钢锭(块)以及被锻造的工具
 
 <Row>
 <Recipe id="anvilcraft:smithing/royal_steel_pickaxe"></Recipe>
@@ -37,7 +41,12 @@ item_ids:
 <Recipe id="anvilcraft:smithing/royal_steel_hoe"></Recipe>
 <Recipe id="anvilcraft:smithing/royal_steel_sword"></Recipe>
 <Recipe id="anvilcraft:smithing/royal_anvil_hammer"></Recipe>
+<Recipe id="anvilcraft:smithing/royal_dragon_rod"></Recipe>
 </Row>
 
-## 其他:
-    - 能参与[余烬金属工具](../item/ember_metal_tools.md)和[浮霜金属工具](../item/frost_metal_tools.md)的合成
+## 相关
+
+- [铁砧锤](anvil_hammer.md)
+- [龙杖](dragon_rod.md)
+- [余烬金属工具](../item/ember_metal_tools.md)
+- [浮霜金属工具](../item/frost_metal_tools.md)

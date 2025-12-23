@@ -13,8 +13,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LytBaseMultipleToOneSmithingRecipe extends LytVBox {
-    private static final int[] INPUT_X = {76, 76, 58, 94, 94, 58, 94, 58};
-    private static final int[] INPUT_Y = {-10, 26, 8, 8, -10, -10, 26, 26};
+    private static final int[] INPUT_X = {
+        76,
+        76,
+        58,
+        94,
+        94,
+        58,
+        94,
+        58
+    };
+    private static final int[] INPUT_Y = {
+        -10,
+        26,
+        8,
+        8,
+        -10,
+        -10,
+        26,
+        26
+    };
 
     private final LytSimpleItemSlot templateSlot;
     private final LytSimpleItemSlot materialSlot;
@@ -40,10 +58,7 @@ public class LytBaseMultipleToOneSmithingRecipe extends LytVBox {
         for (LytSimpleItemSlot slot : slots) {
             slot.render(context);
         }
-        context.fillIcon(
-            new LytRect(bounds.x() - 3, bounds.y() - 14, 176, 64),
-            TextureConstants.MULTIPLE_TO_ONE_SMITHING
-        );
+        context.fillIcon(new LytRect(bounds.x() - 3, bounds.y() - 14, 176, 64), TextureConstants.MULTIPLE_TO_ONE_SMITHING);
         super.render(context);
     }
 
