@@ -11,6 +11,6 @@ public class LangHandler {
      */
     public static void init(RegistrateLangProvider p) {
         p.add("gui.ac_guideme.loaded", "%s is Loaded!");
-        p.add("gui.ac_guideme.unloaded", "%s isn't Loaded");
+        p.add("gui.ac_guideme.unloaded", "%s isn't Loaded!");
     }
 }
