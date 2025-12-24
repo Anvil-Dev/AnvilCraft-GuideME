@@ -30,11 +30,11 @@ navigation:
 <ModInfo id="anvilcraft_guideme" url="https://github.com/Anvil-Dev/AnvilCraft-GuideME"></ModInfo>
 <ModInfo id="guideme" url="https://github.com/AppliedEnergistics/GuideME"></ModInfo>
 <ModInfo id="anvilcraft" url="https://github.com/Anvil-Dev/AnvilCraft"></ModInfo>
-<ModInfo id="大脑"></ModInfo>
+<ModInfo id="大脑" url="https://github.com/theabab23333"></ModInfo>
 
 ## 添加的功能:
 
-<NeoColor id="ff75ff"> - ModInfo: **提供modid以查看当前当前模组加载情况** </NeoColor>  
+<NeoColor id="ff75ff"> - ModInfo: **提供modid以查看当前当前模组加载情况** (可以添加url跳转至外部链接) </NeoColor>  
 <NeoColor id="ca80ff"> - NeoColor: **提供十六进制颜色值以灵活自定义文本颜色** ~~("我吐了怎么guideme本体只能填那几个注册好的颜色啊")~~</NeoColor>  
 <NeoColor id="968bff"> - ItemEntity: **方便在场景中显示物品实体**~~(由于技术原因，物品实体不会转)~~ </NeoColor>  
 <NeoColor id="dc4796"> - Key: **提供某个功能的id以显示这个功能绑定的按键** </NeoColor>

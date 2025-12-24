@@ -28,7 +28,8 @@ public class KeyMapTagCompiler extends FlowTagCompiler {
         }
 
         Component component = KeyMapping.createNameSupplier(string).get();
-        String name = "[" + component.getString() + "]";
+        Component component1 = Component.translatable(string);
+        String name = component1.getString() + "[" + component.getString() + "]";
         LytFlowSpan span = new LytFlowSpan();
         span.appendText(name);
         span.setHoverStyle(TextStyle.builder().bold(true).color(new ColorUtil("97d9e1")).build());

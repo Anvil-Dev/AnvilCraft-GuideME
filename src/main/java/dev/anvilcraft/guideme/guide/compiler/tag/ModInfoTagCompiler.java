@@ -41,18 +41,18 @@ public class ModInfoTagCompiler extends FlowTagCompiler implements LinkParser.Vi
         if (modName != null && modVersion != null) {
             nameAndVersion = modName + " " + modVersion;
             link.appendText(Component.translatable("gui.ac_guideme.loaded", nameAndVersion).getString());
-            link.setStyle(TextStyle.builder().color(new ColorUtil("#98fb98")).build());
-            link.setHoverStyle(TextStyle.builder().bold(true).color(new ColorUtil("#00ff00")).build());
+            link.setStyle(TextStyle.builder().color(new ColorUtil("98fb98")).build());
+            link.setHoverStyle(TextStyle.builder().bold(true).color(new ColorUtil("00ff00")).build());
         } else if (modName != null) {
             nameAndVersion = modName;
             link.appendText(Component.translatable("gui.ac_guideme.loaded", nameAndVersion).getString());
-            link.setStyle(TextStyle.builder().color(new ColorUtil("#98fb98")).build());
-            link.setHoverStyle(TextStyle.builder().bold(true).color(new ColorUtil("#00ff00")).build());
+            link.setStyle(TextStyle.builder().color(new ColorUtil("98fb98")).build());
+            link.setHoverStyle(TextStyle.builder().bold(true).color(new ColorUtil("00ff00")).build());
         } else {
             nameAndVersion = id;
             link.appendText(Component.translatable("gui.ac_guideme.unloaded", nameAndVersion).getString());
-            link.setStyle(TextStyle.builder().color(new ColorUtil("#dc143c")).build());
-            link.setHoverStyle(TextStyle.builder().bold(true).color(new ColorUtil("#ff0000")).build());
+            link.setStyle(TextStyle.builder().color(new ColorUtil("dc143c")).build());
+            link.setHoverStyle(TextStyle.builder().bold(true).color(new ColorUtil("ff0000")).build());
         }
 
         if (url != null) {

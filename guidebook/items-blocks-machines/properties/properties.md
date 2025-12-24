@@ -41,7 +41,7 @@ navigation:
 多相物质工具均拥有多相  
 拥有此属性的工具将会拥有两个“相位”  
 每个相位会存储它们自己的名称和附魔，不会冲突  
-可以通过按下 <Key id="key.anvilcraft.switch_phase" /> 切换（你的“切换相位”快捷键）
+可以通过按下 <Key id="key.anvilcraft.switch_phase" />
 
 ---
 
