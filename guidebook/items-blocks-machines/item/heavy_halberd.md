@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "超限工具"
-  icon: "anvilcraft:transcendence_anvil_hammer"
+  title: "重戟"
+  icon: "anvilcraft:ember_metal_heavy_halberd"
   position: 11
   parent: anvilcraft_guideme:item-block-machines.md
 categories:
@@ -32,9 +32,8 @@ item_ids:
     5. 从高处落下可以触发重锤的猛击
     6. 长按右键也可以像三叉戟一样投掷(伤害根据速度计算，与箭类似)
     7. 当它拥有忠诚魔咒时，掷入虚空会回到玩家处
-
-重戟同样不会完全损坏，类似于鞘翅，它会失去所有增益、功能等效果，攻击伤害变为0，附魔大部分失效，浮霜带来的[无情](../properties/properties.md#无情)
-也会失效
+    8. 重戟不会完全损坏，类似于鞘翅，它会失去所有增益、功能等效果，攻击伤害变为0，附魔大部分失效，浮霜带来的[无情](../properties/properties.md#无情)
+       也会失效
 
 ## 合成
 

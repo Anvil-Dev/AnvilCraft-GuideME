@@ -39,3 +39,4 @@ categories:
 
 - [铁砧锤](anvil_hammer.md)
 - [龙杖](dragon_rod.md)
+- [共振器](resonator.md)

@@ -7,14 +7,14 @@ import javax.annotation.Nullable;
 
 public class IntegrationUtil {
     public static @Nullable String getVersion(String modId) {
-        ModFileInfo fileInfo = LoadingModList.get().getModFileById(modId);
-        if (fileInfo == null) return null;
-        return fileInfo.versionString();
+        ModFileInfo info = LoadingModList.get().getModFileById(modId);
+        if (info == null) return null;
+        return info.versionString();
     }
 
     public static @Nullable String getName(String modId) {
-        ModFileInfo fileInfo = LoadingModList.get().getModFileById(modId);
-        if (fileInfo == null) return null;
-        return fileInfo.moduleName();
+        ModFileInfo info = LoadingModList.get().getModFileById(modId);
+        if (info == null) return null;
+        return info.moduleName();
     }
 }

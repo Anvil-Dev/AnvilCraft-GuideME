@@ -62,3 +62,4 @@ item_ids:
 - [铁砧锤](anvil_hammer.md)
 - [龙杖](dragon_rod.md)
 - [皇家钢工具](royal_steel_tools.md)
+- [共振器](resonator.md)

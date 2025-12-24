@@ -27,9 +27,9 @@ navigation:
 
 ## 模组加载情况:
 
-<ModInfo id="anvilcraft_guideme"></ModInfo> [GitHub](https://github.com/Anvil-Dev/AnvilCraft-GuideME)  
-<ModInfo id="guideme"></ModInfo> [GitHub](https://github.com/AppliedEnergistics/GuideME)  
-<ModInfo id="anvilcraft"></ModInfo> [GitHub](https://github.com/Anvil-Dev/AnvilCraft)  
+<ModInfo id="anvilcraft_guideme" url="https://github.com/Anvil-Dev/AnvilCraft-GuideME"></ModInfo>
+<ModInfo id="guideme" url="https://github.com/AppliedEnergistics/GuideME"></ModInfo>
+<ModInfo id="anvilcraft" url="https://github.com/Anvil-Dev/AnvilCraft"></ModInfo>
 <ModInfo id="大脑"></ModInfo>
 
 ## 添加的功能:
