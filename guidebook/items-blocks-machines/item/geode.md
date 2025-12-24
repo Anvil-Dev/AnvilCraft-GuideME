@@ -3,7 +3,9 @@ navigation:
   title: "晶洞"
   icon: "anvilcraft:geode"
   position: 3
-  parent: anvilcraft_guideme:item.md
+  parent: anvilcraft_guideme:item-block-machines.md
+categories:
+  - tools
 item_ids:
   - anvilcraft:geode
 ---

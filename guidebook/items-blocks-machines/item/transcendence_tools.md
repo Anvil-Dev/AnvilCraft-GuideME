@@ -3,7 +3,9 @@ navigation:
   title: "超限工具"
   icon: "anvilcraft:transcendence_anvil_hammer"
   position: 8
-  parent: anvilcraft_guideme:item.md
+  parent: anvilcraft_guideme:item-block-machines.md
+categories:
+  - tools
 ---
 
 # 超限工具

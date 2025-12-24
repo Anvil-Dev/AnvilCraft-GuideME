@@ -3,7 +3,9 @@ navigation:
   title: "铁砧锤"
   icon: "anvilcraft:anvil_hammer"
   position: 9
-  parent: anvilcraft_guideme:item.md
+  parent: anvilcraft_guideme:item-block-machines.md
+categories:
+  - tools
 item_ids:
   - anvilcraft:anvil_hammer
   - anvilcraft:royal_anvil_hammer

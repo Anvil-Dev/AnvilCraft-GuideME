@@ -3,7 +3,9 @@ navigation:
   title: "手持磁铁"
   icon: "anvilcraft:magnet"
   position: 2
-  parent: anvilcraft_guideme:item.md
+  parent: anvilcraft_guideme:item-block-machines.md
+categories:
+  - tools
 ---
 
 # 手持磁铁

@@ -3,7 +3,11 @@ navigation:
   title: "铁砧工艺指南"
   icon: "anvilcraft:guide_book"
   position: 1
-  parent: anvilcraft_guideme:item.md
+  parent: anvilcraft_guideme:item-block-machines.md
+categories:
+  - tools
+item_ids:
+  - anvilcraft:guide_book
 ---
 
 # 铁砧工艺指南

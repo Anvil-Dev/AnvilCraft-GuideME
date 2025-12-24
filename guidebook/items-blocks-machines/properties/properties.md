@@ -3,7 +3,7 @@ navigation:
   title: "属性"
   icon: "minecraft:enchanted_book"
   position: 10000000
-  parent: anvilcraft_guideme:item.md
+  parent: anvilcraft_guideme:item-block-machines.md
 ---
 
 # 属性

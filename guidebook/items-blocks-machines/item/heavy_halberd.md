@@ -3,7 +3,9 @@ navigation:
   title: "超限工具"
   icon: "anvilcraft:transcendence_anvil_hammer"
   position: 11
-  parent: anvilcraft_guideme:item.md
+  parent: anvilcraft_guideme:item-block-machines.md
+categories:
+  - tools
 item_ids:
   - anvilcraft:ember_metal_heavy_halberd
   - anvilcraft:frost_metal_heavy_halberd

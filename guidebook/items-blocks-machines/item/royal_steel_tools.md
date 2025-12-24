@@ -3,7 +3,9 @@ navigation:
   title: "皇家钢工具"
   icon: "anvilcraft:royal_steel_pickaxe"
   position: 5
-  parent: anvilcraft_guideme:item.md
+  parent: anvilcraft_guideme:item-block-machines.md
+categories:
+  - tools
 item_ids:
   - anvilcraft:royal_steel_pickaxe
   - anvilcraft:royal_steel_axe

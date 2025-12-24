@@ -3,7 +3,9 @@ navigation:
   title: "浮霜金属工具"
   icon: "anvilcraft:frost_metal_pickaxe"
   position: 7
-  parent: anvilcraft_guideme:item.md
+  parent: anvilcraft_guideme:item-block-machines.md
+categories:
+  - tools
 item_ids:
   - anvilcraft:frost_metal_pickaxe
   - anvilcraft:frost_metal_axe

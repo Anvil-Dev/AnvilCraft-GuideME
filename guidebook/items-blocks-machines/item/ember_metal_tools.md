@@ -3,7 +3,9 @@ navigation:
   title: "余烬金属工具"
   icon: "anvilcraft:ember_metal_pickaxe"
   position: 6
-  parent: anvilcraft_guideme:item.md
+  parent: anvilcraft_guideme:item-block-machines.md
+categories:
+  - tools
 item_ids:
   - anvilcraft:ember_metal_pickaxe
   - anvilcraft:ember_metal_axe

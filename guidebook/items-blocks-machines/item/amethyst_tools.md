@@ -3,7 +3,9 @@ navigation:
   title: "紫水晶工具"
   icon: "anvilcraft:amethyst_pickaxe"
   position: 4
-  parent: anvilcraft_guideme:item.md
+  parent: anvilcraft_guideme:item-block-machines.md
+categories:
+  - tools
 item_ids:
   - anvilcraft:amethyst_pickaxe
   - anvilcraft:amethyst_axe

@@ -3,7 +3,9 @@ navigation:
   title: "龙杖"
   icon: "anvilcraft:dragon_rod"
   position: 10
-  parent: anvilcraft_guideme:item.md
+  parent: anvilcraft_guideme:item-block-machines.md
+categories:
+  - tools
 item_ids:
   - anvilcraft:dragon_rod
   - anvilcraft:royal_dragon_rod
