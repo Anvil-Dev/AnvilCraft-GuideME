@@ -26,13 +26,13 @@ item_ids:
 
 ## 皇家钢工具
 
-    <Color id="GREEN"> ~~**我的天哪！是黄瓜钢大人！**~~ </Color>
+<NeoColor id="00ff29"> ~~**我的天哪！是黄瓜钢大人！**~~ </NeoColor>
     - 相比[紫水晶工具](../item/amethyst_tools.md)，皇家钢工具本身不自带附魔，继承被锻造的工具的附魔
-    - <Color id="BLUE"> **钻石品质** </Color>
+    - <NeoColor id="97d9e1"> **钻石品质** </NeoColor>
 
 ## 合成方式:
 
-    - 需要皇家钢锻造模板和皇家钢锭(块)以及被锻造的工具
+需要皇家钢锻造模板和皇家钢锭(块)以及被锻造的工具
 
 <Row>
 <Recipe id="anvilcraft:smithing/royal_steel_pickaxe"></Recipe>

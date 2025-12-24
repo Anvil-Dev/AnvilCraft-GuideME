@@ -17,8 +17,8 @@ navigation:
 
 ## 超限工具
 
-    <Color id="LIGHT_PURPLE"> 那么强?! </Color>
-    - 拥有特殊属性: [永恒](../properties/properties.md#永恒) 和 [强运](../properties/properties.md#强运)
+<NeoColor id="cc00ff"> 那么强?! </NeoColor>  
+拥有特殊属性: [永恒](../properties/properties.md#永恒) 和 [强运](../properties/properties.md#强运)
 
 ## 合成
 

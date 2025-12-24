@@ -3,6 +3,7 @@ package dev.anvilcraft.guideme;
 import com.mojang.logging.LogUtils;
 import com.tterrag.registrate.Registrate;
 import dev.anvilcraft.guideme.data.ModDatagen;
+import dev.anvilcraft.guideme.guide.compiler.tag.KeyMapTagCompiler;
 import dev.anvilcraft.guideme.guide.compiler.tag.ModInfoTagCompiler;
 import dev.anvilcraft.guideme.guide.compiler.tag.NeoColorTagCompiler;
 import dev.anvilcraft.guideme.guide.compiler.tag.ItemEntityShapeCompiler;
@@ -37,6 +38,7 @@ public class AnvilCraftGuideME {
             .extension(SceneElementTagCompiler.EXTENSION_POINT, new ItemEntityShapeCompiler())
             .extension(TagCompiler.EXTENSION_POINT, new NeoColorTagCompiler())
             .extension(TagCompiler.EXTENSION_POINT, new ModInfoTagCompiler())
+            .extension(TagCompiler.EXTENSION_POINT, new KeyMapTagCompiler())
             .build();
     }
 

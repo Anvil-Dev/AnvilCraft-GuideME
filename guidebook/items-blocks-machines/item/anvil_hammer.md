@@ -32,9 +32,9 @@ item_ids:
 
 ## 合成
 
-    - 铁砧锤的合成
-    <Recipe id="anvilcraft:anvil_hammer"></Recipe>
-    此外，你还能合成皇家钢、余烬金属版本和超限金属版本的铁砧锤，这些铁砧锤有着对应金属工具的属性
+铁砧锤的合成
+<Recipe id="anvilcraft:anvil_hammer"></Recipe>
+此外，你还能合成皇家钢、余烬金属版本和超限金属版本的铁砧锤，这些铁砧锤有着对应金属工具的属性
 
 <Row>
 <Recipe id="anvilcraft:smithing/royal_anvil_hammer"></Recipe>
