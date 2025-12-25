@@ -1,7 +1,7 @@
 ---
 navigation:
   title: "介绍"
-  icon: "anvilcraft_guideme:guideme_book"
+  icon: "anvilcraft:guide_book"
   position: 0
 ---
 

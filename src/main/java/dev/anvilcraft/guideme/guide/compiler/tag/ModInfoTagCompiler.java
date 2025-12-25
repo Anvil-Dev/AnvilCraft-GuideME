@@ -33,11 +33,13 @@ public class ModInfoTagCompiler extends FlowTagCompiler implements LinkParser.Vi
             parent.appendError(compiler, "Missing 'id' attribute", el);
             return;
         }
+
         LytFlowLink link = new LytFlowLink();
         String modName = IntegrationUtil.getName(id);
         String modVersion = IntegrationUtil.getVersion(id);
         String url = el.getAttributeString("url", null);
         String nameAndVersion;
+
         if (modName != null && modVersion != null) {
             nameAndVersion = modName + " " + modVersion;
             link.appendText(Component.translatable("gui.ac_guideme.loaded", nameAndVersion).getString());
