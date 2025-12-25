@@ -74,6 +74,28 @@ public class ColorUtil implements ColorValue {
         return FastColor.ARGB32.color(a, r, g, b);
     }
 
+    public static String calculateGradientColor(ColorValue firstColor, ColorValue lastColor, float ratio) {
+        int firstColorInt = firstColor.resolve(LightDarkMode.LIGHT_MODE);
+        int lastColorInt = lastColor.resolve(LightDarkMode.LIGHT_MODE);
+
+        int firstR = (firstColorInt >> 16) & 0xFF;
+        int firstG = (firstColorInt >> 8) & 0xFF;
+        int firstB = firstColorInt & 0xFF;
+        int firstA = (firstColorInt >> 24) & 0xFF;
+
+        int lastR = (lastColorInt >> 16) & 0xFF;
+        int lastG = (lastColorInt >> 8) & 0xFF;
+        int lastB = lastColorInt & 0xFF;
+        int lastA = (lastColorInt >> 24) & 0xFF;
+
+        int r = Math.max(0, Math.min(255, (int) (firstR + ratio * (lastR - firstR))));
+        int g = Math.max(0, Math.min(255, (int) (firstG + ratio * (lastG - firstG))));
+        int b = Math.max(0, Math.min(255, (int) (firstB + ratio * (lastB - firstB))));
+        int a = Math.max(0, Math.min(255, (int) (firstA + ratio * (lastA - firstA))));
+
+        return String.format("#%02X%02X%02X%02X", r, g, b, a);
+    }
+
     @Override
     public int resolve(LightDarkMode lightDarkMode) {
         return color;

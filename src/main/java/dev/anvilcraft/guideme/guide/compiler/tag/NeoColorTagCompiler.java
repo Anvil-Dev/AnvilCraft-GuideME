@@ -30,17 +30,17 @@ public class NeoColorTagCompiler extends FlowTagCompiler {
             return;
         }
 
-        ColorValue firstColor;
+        ColorValue colorValue;
 
         try {
-            firstColor = new ColorUtil(string);
+            colorValue = new ColorUtil(string);
         } catch (IllegalArgumentException e) {
             parent.appendError(compiler, "Unknown color: '" + string + "'", el);
             return;
         }
 
         LytFlowSpan span = new LytFlowSpan();
-        span.setStyle(TextStyle.builder().color(firstColor).build());
+        span.setStyle(TextStyle.builder().color(colorValue).build());
         parent.append(span);
         compiler.compileFlowContext(el.children(), span);
     }
