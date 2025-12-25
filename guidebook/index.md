@@ -4,12 +4,12 @@ navigation:
   icon: "anvilcraft_guideme:guideme_book"
   position: 0
 ---
-![Logo](../ac_assets/test_logo.png)
 
+![Logo](../ac_assets/test_logo.png)
 
 # 介绍
 
-## 欢迎来到模组《铁砧工艺》的页面！模组是以铁砧为核心的原版生存拓展，主要内容有：
+## 欢迎来到模组《铁砧工艺》的页面！模组是以铁砧为核心的原版生存拓展
 
 * 磁铁：将铁砧吸到空中，红石充能后释放
 * 粉碎：将岩石粉碎为粉末

@@ -28,7 +28,7 @@ jobs:
         uses: christian-draeger/read-properties@1.1.1
         with:
           path: gradle.properties
-          properties: 'mod_id mod_name java_version upload'
+          properties: 'mod_id mod_name java_version modrinth_id curseforge_id upload'
 
       - name: Setup Java ${{ steps.properties.outputs.java_version }}
         uses: actions/setup-java@v3.6.0
@@ -71,4 +71,4 @@ jobs:
         uses: Anvil-Dev/dedicated-server-launch-test@1.21.1-neoforge
         with:
           mod: build/libs/${{ steps.properties.outputs.mod_id }}-neoforge-${{ steps.version.outputs.version }}.jar
-          extra-mods: patchouli:1.21-87-neoforge anvilcraft:1.21.1-1.5.0+pre-release.8 guideme:21.1.15
+          extra-mods: anvilcraft:1.21.1-1.5.0+hotfix.1560 guideme:21.1.15

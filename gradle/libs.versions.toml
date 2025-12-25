@@ -2,12 +2,11 @@
 minecraft = "1.21.1"
 neoForge = "21.1.152"
 registrate = "MC1.21-1.3.0+62"
-anvillib = "1.4.0+build.160"
-anvilcraft = "1.5.0+pre-release.24"
+anvillib = "1.4.0+build.172"
+anvilcraft = "1.5.0+hotfix.1562"
 curios = "9.0.15+1.21.1"
 jei = "19.21.0.247"
 jade = "15.3.4+neoforge"
-patchouli = "1.21-87-NEOFORGE"
 modDevGradle = "2.0.78"
 lombok = "8.7.1"
 guideme = "21.1.9"
@@ -22,7 +21,6 @@ jeiCommonApi = { group = "mezz.jei", name = "jei-1.21.1-common-api", version.ref
 jeiForgeApi = { group = "mezz.jei", name = "jei-1.21.1-neoforge-api", version.ref = "jei" }
 jeiForgeImpl = { group = "mezz.jei", name = "jei-1.21.1-neoforge", version.ref = "jei" }
 jade = { group = "maven.modrinth", name = "jade", version.ref = "jade" }
-patchouli = { group = "vazkii.patchouli", name = "Patchouli", version.ref = "patchouli" }
 guideme = { group = "org.appliedenergistics", name = "guideme", version.ref = "guideme" }
 ae2 = { group = "org.appliedenergistics", name = "appliedenergistics2", version.ref = "ae2" }
 
