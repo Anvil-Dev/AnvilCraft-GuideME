@@ -32,7 +32,7 @@ public class KeyMapTagCompiler extends FlowTagCompiler {
         String name = component1.getString() + " [" + component.getString() + "] ";
         LytFlowSpan span = new LytFlowSpan();
         span.appendText(name);
-        span.setHoverStyle(TextStyle.builder().bold(true).color(new ColorUtil("97d9e1")).build());
+        span.setHoverStyle(TextStyle.builder().underlined(true).color(new ColorUtil("97d9e1")).build());
         span.setStyle(TextStyle.builder().color(new ColorUtil("d9afd9")).build());
         parent.append(span);
     }

@@ -46,7 +46,9 @@ public class LytBlockSlot extends LytBox implements InteractiveElement {
         for (Map.Entry<Property<?>, Comparable<?>> entry : blockState.getValues().entrySet()) {
             Property<?> property = entry.getKey();
             Comparable<?> value = entry.getValue();
-            builder.with(property, value.toString());
+            if (blockState.getBlock().defaultBlockState().getValue(property) != value) {
+                builder.with(property, value.toString());
+            }
         }
 
         BlockStatePredicate predicate = builder.of(blockState.getBlock()).build();
@@ -58,7 +60,9 @@ public class LytBlockSlot extends LytBox implements InteractiveElement {
         for (Map.Entry<Property<?>, Comparable<?>> entry : blockState.getValues().entrySet()) {
             Property<?> property = entry.getKey();
             Comparable<?> value = entry.getValue();
-            builder.with(property, value.toString());
+            if (blockState.getBlock().defaultBlockState().getValue(property) != value) {
+                builder.with(property, value.toString());
+            }
         }
         BlockStatePredicate predicate = builder.of(blockState.getBlock()).build();
 
@@ -74,12 +78,17 @@ public class LytBlockSlot extends LytBox implements InteractiveElement {
             Property<?> property = entry.getKey();
             Comparable<?> value = entry.getValue();
             builder1.with(property, value.toString());
+            if (state1.getBlock().defaultBlockState().getValue(property) != value) {
+                builder1.with(property, value.toString());
+            }
         }
 
         for (Map.Entry<Property<?>, Comparable<?>> entry : state2.getValues().entrySet()) {
             Property<?> property = entry.getKey();
             Comparable<?> value = entry.getValue();
-            builder2.with(property, value.toString());
+            if (state2.getBlock().defaultBlockState().getValue(property) != value) {
+                builder2.with(property, value.toString());
+            }
         }
 
         BlockStatePredicate predicate1 = builder1.of(state1.getBlock()).build();

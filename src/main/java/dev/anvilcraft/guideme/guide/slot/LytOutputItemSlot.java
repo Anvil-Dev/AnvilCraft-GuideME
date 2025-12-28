@@ -33,7 +33,7 @@ public class LytOutputItemSlot extends LytBlock implements InteractiveElement {
     protected LytRect computeLayout(LayoutContext context, int x, int y, int availableWidth) {
         int size = resultItems.size();
         if (size <= 1) {
-            return new LytRect(x + 32, y + 16, SLOT_SIZE, SLOT_SIZE);
+            return new LytRect(x + 24, y + 16, SLOT_SIZE, SLOT_SIZE);
         } else if (size <= 4) {
             return new LytRect(x + 24, y + 12, SLOT_SIZE * 2, SLOT_SIZE * 2);
         } else if (size <= 6) {

@@ -34,7 +34,7 @@ item_ids:
 
 ## 合成方式:
 
-需要皇家钢锻造模板和皇家钢锭(块)以及被锻造的工具
+需要[皇家钢锻造模板](upgrade_smithing_template.md#皇家钢)和皇家钢锭(块)以及被锻造的工具
 
 <Row>
 <Recipe id="anvilcraft:smithing/royal_steel_pickaxe"></Recipe>
