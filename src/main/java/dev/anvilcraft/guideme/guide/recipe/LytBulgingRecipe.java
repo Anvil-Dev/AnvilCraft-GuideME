@@ -50,7 +50,7 @@ public class LytBulgingRecipe extends LytVBox {
     @Override
     protected LytRect computeBoxLayout(LayoutContext context, int x, int y, int availableWidth) {
         inputItemSlot.layout(context, x, y, availableWidth);
-        outputItemSlot.layout(context, x + 87, y, availableWidth);
+        outputItemSlot.layout(context, x + 80, y, availableWidth);
         inputBlockSlot.layout(context, x + 70, y + 10, availableWidth);
         outputBlockSlot.layout(context, x + 100, y + 10, availableWidth);
         return new LytRect(x, y, 162, 64);

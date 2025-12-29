@@ -22,7 +22,7 @@ item_ids:
 
 ## 巧克力
 
-回复16饱和度（不是饱食度）
+回复16饱和度
 
 <Recipe id="anvilcraft:chocolate"> </Recipe>
 
