@@ -20,7 +20,7 @@ categories:
 
 ## 转职
 
-- 将珠宝加工台作为工作方块的村民将转职为珠宝匠[珠宝加工台](../block/jewelcrafting_table.md)
+- 将[珠宝加工台](../block/jewelcrafting_table.md)作为工作方块的村民将转职为珠宝匠
 
 ## 交易列表
 

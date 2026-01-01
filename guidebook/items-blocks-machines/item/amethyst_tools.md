@@ -36,8 +36,6 @@ item_ids:
 
 ### 合成
 
-紫水晶工具可以合成
-
 <Row>
 <Recipe id="anvilcraft:amethyst_pickaxe"></Recipe>
 <Recipe id="anvilcraft:amethyst_axe"></Recipe>

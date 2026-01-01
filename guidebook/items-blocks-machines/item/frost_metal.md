@@ -26,7 +26,14 @@ item_ids:
 
 ### 合成
 
-<Recipe id="anvilcraft:time_warp/frost_metal_ingot" > </Recipe>
+使用皇家钢锭在细雪锅中时移，使用铁/银/钛锭进行增产
+
+<Row>
+<Recipe id="anvilcraft:time_warp/frost_metal_ingot_0"> </Recipe>
+<Recipe id="anvilcraft:time_warp/frost_metal_ingot_1"> </Recipe>
+<Recipe id="anvilcraft:time_warp/frost_metal_ingot_2"> </Recipe>
+<Recipe id="anvilcraft:time_warp/frost_metal_ingot_3"> </Recipe>
+</Row>
 
 ## 相关
 

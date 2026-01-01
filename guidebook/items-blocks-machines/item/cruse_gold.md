@@ -31,12 +31,12 @@ item_ids:
 
 ## 获取
 
-在<ItemLink id="anvilcraft:royal_grindstone"></ItemLink>上使用金锭(块)[驱除诅咒附魔或附魔惩罚]()
+在<ItemLink id="anvilcraft:royal_grindstone"></ItemLink>上使用金锭(块)[驱除诅咒附魔或附魔惩罚](../block/royal_grindstone.md)
 
 ## 用途
 
 1. 完全使用<ItemLink id="anvilcraft:cursed_gold_block"></ItemLink>作为信标底座并用<ItemLink id="anvilcraft:cursed_gold_ingot"></ItemLink>
-   激活信标时，信标有概率转化为<ItemLink id="anvilcraft:corrupted_beacon"> </ItemLink> 详情请看[腐化信标转换]()
+   激活信标时，信标有概率转化为<ItemLink id="anvilcraft:corrupted_beacon"> </ItemLink> 详情请看[腐化信标转换](../block/corrupted_beacon.md)
 2. [猪灵与诅咒金的互动]() [TODO](https://github.com/Anvil-Dev/AnvilCraft/issues/1344)
 
 **更多请安装JEI查看合成表**

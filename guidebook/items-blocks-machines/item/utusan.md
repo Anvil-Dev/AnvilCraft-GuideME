@@ -1,7 +1,7 @@
 ---
 navigation:
   title: "五毒散"
-  icon: "anvilcraft:canned_food"
+  icon: "anvilcraft:utusan"
   position: 11
   parent: anvilcraft_guideme:item-block-machines.md
 categories:

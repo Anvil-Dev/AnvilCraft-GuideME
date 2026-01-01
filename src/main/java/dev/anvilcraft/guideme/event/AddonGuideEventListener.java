@@ -4,6 +4,7 @@ import dev.anvilcraft.guideme.AnvilCraftGuideME;
 import dev.dubhe.anvilcraft.api.event.CheckIntegrationLoadedEvent;
 import dev.dubhe.anvilcraft.api.event.GuideBookEvent;
 import guideme.GuidesCommon;
+import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 
@@ -16,9 +17,10 @@ public class AddonGuideEventListener {
         event.hasGuideBook();
     }
 
-    @SubscribeEvent
+    @SubscribeEvent(priority = EventPriority.HIGHEST)
     public static void onOpenGuide(GuideBookEvent.OpenGuideBookEvent event) {
         GuidesCommon.openGuide(event.getPlayer(), GID);
+        event.setCanceled(true);
     }
 
     @SubscribeEvent

@@ -27,4 +27,4 @@ item_ids:
 
 ## 合成
 
-<Recipe id="anvilcraft:totem_of_rage"></Recipe>
+<Recipe id="anvilcraft:totem_of_rage"> </Recipe>

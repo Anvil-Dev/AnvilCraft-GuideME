@@ -29,7 +29,7 @@ item_ids:
 ## 获取
 
 1. [冲压晶洞](geode.md)有概率获取3种宝石
-2. 将宝石放在装有熔融宝石的炼药锅中进行[时移]()，消耗1000mB熔融宝石产出对应宝石块
+2. 将宝石放在装有熔融宝石的炼药锅中进行[时移](../../recipe/time_warp.md)，消耗1000mB熔融宝石产出对应宝石块
 
 <Row>
 <Recipe id="anvilcraft:stamping/geode_gems"></Recipe>

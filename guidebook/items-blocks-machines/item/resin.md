@@ -24,7 +24,7 @@ item_ids:
 
 ### 作用
 
-可以用来合成[树脂块]()、[电容器](capacitor.md)、[硬化树脂]()、[琥珀]()、<ItemLink id="minecraft:slime_ball"></ItemLink>
+可以用来合成[树脂块](../block/resin_block.md)、[电容器](capacitor.md)、[硬化树脂](hardend_resin.md)、[琥珀](amber.md)、<ItemLink id="minecraft:slime_ball"></ItemLink>
 
 <Row>
 <Recipe id="anvilcraft:resin_block"></Recipe>

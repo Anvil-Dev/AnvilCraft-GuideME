@@ -18,8 +18,8 @@ item_ids:
 
 ## 硬化树脂
 
-- 用于合成[电路板]()、[磁盘](disk.md)、[过滤器](filter.md)、[药盒](pill.md#药盒)等物品
-- 也可用于在[珠宝加工台]()仿制唱片
+- 用于合成[电路板](circuit_board.md)、[磁盘](disk.md)、[过滤器](filter.md)、[药盒](pill.md#药盒)等物品
+- 也可用于在[珠宝加工台](../block/jewelcrafting_table.md)仿制唱片
 
 ### 合成
 
