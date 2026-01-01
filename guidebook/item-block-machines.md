@@ -1,7 +1,7 @@
 ---
 navigation:
   title: "铁砧工艺本体-物品/方块/机器"
-  icon: "anvilcraft:magnet"
+  icon: "anvilcraft:guide_book"
 ---
 
 # 物品、方块和机器

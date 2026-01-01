@@ -24,6 +24,7 @@ public class LytBlockSlot extends LytBox implements InteractiveElement {
     private static final int WIDTH = 16;
     private static final int HEIGHT = 16;
 
+    @Getter
     public final List<BlockStatePredicate> blockStatePredicates;
 
     @Setter

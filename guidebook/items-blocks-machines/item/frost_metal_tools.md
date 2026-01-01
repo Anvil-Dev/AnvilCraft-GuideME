@@ -38,7 +38,7 @@ item_ids:
 
 ## 合成方式:
 
-需要[浮霜金属锻造模板](upgrade_smithing_template.md#浮霜)和浮霜金属锭(块)以及被锻造的工具
+需要[浮霜金属锻造模板](upgrade_smithing_template.md#浮霜)和[浮霜金属锭(块)](frost_metal.md)以及被锻造的工具
 
 <Row>
 <Recipe id="anvilcraft:smithing/frost_metal_pickaxe"></Recipe>
