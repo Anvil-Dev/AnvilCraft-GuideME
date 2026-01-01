@@ -13,10 +13,11 @@ import net.minecraft.network.chat.Component;
 
 import java.util.Set;
 
+// TODO: 将来GuideME升到21.5.6-beta及以上，移除这个
 public class KeyMapTagCompiler extends FlowTagCompiler {
     @Override
     public Set<String> getTagNames() {
-        return Set.of("Key");
+        return Set.of("Key", "KeyBind");
     }
 
     @Override
