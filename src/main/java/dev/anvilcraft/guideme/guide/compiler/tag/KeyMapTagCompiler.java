@@ -13,10 +13,11 @@ import net.minecraft.network.chat.Component;
 
 import java.util.Set;
 
+// TODO: 将来GuideME升到21.5.6-beta及以上，移除这个
 public class KeyMapTagCompiler extends FlowTagCompiler {
     @Override
     public Set<String> getTagNames() {
-        return Set.of("Key");
+        return Set.of("Key", "KeyBind");
     }
 
     @Override
@@ -32,7 +33,7 @@ public class KeyMapTagCompiler extends FlowTagCompiler {
         String name = component1.getString() + " [" + component.getString() + "] ";
         LytFlowSpan span = new LytFlowSpan();
         span.appendText(name);
-        span.setHoverStyle(TextStyle.builder().bold(true).color(new ColorUtil("97d9e1")).build());
+        span.setHoverStyle(TextStyle.builder().underlined(true).color(new ColorUtil("97d9e1")).build());
         span.setStyle(TextStyle.builder().color(new ColorUtil("d9afd9")).build());
         parent.append(span);
     }

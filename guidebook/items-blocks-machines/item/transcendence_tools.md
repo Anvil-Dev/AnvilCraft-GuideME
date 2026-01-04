@@ -24,6 +24,8 @@ categories:
 
 ## 合成
 
+需要[超限金属锻造模板](upgrade_smithing_template.md#超限)和[超限金属锭(块)](transcendium.md)以及被锻造的工具
+
 <Row>
 <Recipe id="anvilcraft:smithing/transcendence_anvil_hammer"></Recipe>
 <Recipe id="anvilcraft:smithing/transcendence_dragon_rod"></Recipe>

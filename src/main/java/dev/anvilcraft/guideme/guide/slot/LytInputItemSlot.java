@@ -38,9 +38,9 @@ public class LytInputItemSlot extends LytBlock implements InteractiveElement {
         } else if (size <= 4) {
             return new LytRect(x + 24, y + 12, SLOT_SIZE * 2, SLOT_SIZE * 2);
         } else if (size <= 6) {
-            return new LytRect(x + 8, y + 8, SLOT_SIZE * 3, SLOT_SIZE * 2);
+            return new LytRect(x + 18, y + 8, SLOT_SIZE * 3, SLOT_SIZE * 2);
         } else {
-            return new LytRect(x + 8, y + 4, SLOT_SIZE * 3, SLOT_SIZE * 3);
+            return new LytRect(x + 18, y + 4, SLOT_SIZE * 3, SLOT_SIZE * 3);
         }
     }
 

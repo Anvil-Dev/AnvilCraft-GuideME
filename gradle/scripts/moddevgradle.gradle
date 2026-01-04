@@ -13,7 +13,8 @@ neoForge {
     runs {
         client {
             client()
-            programArguments.addAll "--width", "1440", "--height", "841"
+            // 正版登录 不想用的可以false
+            setDevLogin(true)
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
         }
 
@@ -37,9 +38,10 @@ neoForge {
             if (isJbr) {
                 jvmArgument "-XX:+AllowEnhancedClassRedefinition"
             }
-            systemProperty 'forge.logging.markers', 'REGISTRIES'
             logLevel = org.slf4j.event.Level.DEBUG
-            systemProperty "guideme.anvilcraft_guideme.guideme.sources", file("guidebook").getAbsolutePath()
+            systemProperty 'forge.logging.markers', 'REGISTRIES'
+            systemProperty 'terminal.jline', 'true'
+            systemProperty 'guideme.anvilcraft_guideme.guideme.sources', file('guidebook').getAbsolutePath()
         }
     }
 

@@ -32,15 +32,15 @@ item_ids:
 
 <NeoColor id="ff7a00"> !重铸! </NeoColor>
 - 默认数值
-    1. 耐久以及挖掘等级与下界合金工具相同 
+    1. 耐久以及挖掘等级与下界合金工具相同
     2. 所有余烬金属工具武器均拥有特殊属性: [重铸](../properties/properties.md#重铸)
-    3. 基础挖掘速度 10 
+    3. 基础挖掘速度 10
     4. 造成伤害的基础值为：剑9，斧11，镐7，锹7.5，锄2
     6. 不怕火焰和熔岩
 
 ## 合成方式:
 
-需要余烬锻造模板和余烬金属锭(块)以及被锻造的工具
+需要[余烬锻造模板](upgrade_smithing_template.md#余烬)和余烬金属锭(块)以及被锻造的工具
 
 <Row>
 <Recipe id="anvilcraft:smithing/ember_metal_pickaxe"></Recipe>

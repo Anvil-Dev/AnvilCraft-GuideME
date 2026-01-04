@@ -23,7 +23,6 @@ import dev.anvilcraft.guideme.guide.recipe.LytStampingRecipe;
 import dev.anvilcraft.guideme.guide.recipe.LytSuperHeatingRecipe;
 import dev.anvilcraft.guideme.guide.recipe.LytTimeWarpRecipe;
 import dev.anvilcraft.guideme.guide.recipe.LytUnpackRecipe;
-import dev.dubhe.anvilcraft.init.item.ModItems;
 import dev.dubhe.anvilcraft.init.reicpe.ModRecipeTypes;
 import dev.dubhe.anvilcraft.recipe.ChargerChargingRecipe;
 import dev.dubhe.anvilcraft.recipe.JewelCraftingRecipe;
@@ -50,8 +49,14 @@ import dev.dubhe.anvilcraft.recipe.transform.MobTransformRecipe;
 import dev.dubhe.anvilcraft.recipe.transform.MobTransformWithItemRecipe;
 import guideme.compiler.tags.RecipeTypeMappingSupplier;
 import guideme.document.block.recipes.LytStandardRecipeBox;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.FormattedText;
+import net.minecraft.network.chat.Style;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.RecipeHolder;
+
+import java.util.Optional;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
 
@@ -88,14 +93,7 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
             .icon(Items.ANVIL)
             .customBody(new LytBlockCompressRecipe(holder.value()))
             .title(
-                holder
-                    .value()
-                    .getFirstResultBlock()
-                    .state()
-                    .getBlock()
-                    .asItem()
-                    .getDescription()
-                    .getString()
+                appendComponent(Component.translatable("gui.anvilcraft.category.block_compress"))
             )
             .build(holder);
     }
@@ -105,14 +103,7 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
             .icon(Items.ANVIL)
             .customBody(new LytBlockCrushRecipe(holder.value()))
             .title(
-                holder
-                    .value()
-                    .getFirstResultBlock()
-                    .state()
-                    .getBlock()
-                    .asItem()
-                    .getDescription()
-                    .getString()
+                appendComponent(Component.translatable("gui.anvilcraft.category.block_crush"))
             )
             .build(holder);
     }
@@ -122,14 +113,7 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
             .icon(Items.ANVIL)
             .customBody(new LytBlockSmearRecipe(holder.value()))
             .title(
-                holder
-                    .value()
-                    .getFirstResultBlock()
-                    .state()
-                    .getBlock()
-                    .asItem()
-                    .getDescription()
-                    .getString()
+                appendComponent(Component.translatable("gui.anvilcraft.category.block_smear"))
             )
             .build(holder);
     }
@@ -139,13 +123,7 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
             .icon(Items.ANVIL)
             .customBody(new LytBoilingRecipe(holder.value()))
             .title(
-                holder
-                    .value()
-                    .getResultItems()
-                    .getFirst()
-                    .getItem()
-                    .getDescription()
-                    .getString()
+                appendComponent(Component.translatable("gui.anvilcraft.category.boiling"))
             )
             .build(holder);
     }
@@ -154,6 +132,9 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
             .builder()
             .icon(Items.ANVIL)
             .customBody(new LytBulgingRecipe(holder.value()))
+            .title(
+                appendComponent(Component.translatable("gui.anvilcraft.category.bulging"))
+            )
             .build(holder);
     }
     private static LytStandardRecipeBox<CookingRecipe> cooking(RecipeHolder<CookingRecipe> holder) {
@@ -162,13 +143,7 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
             .icon(Items.ANVIL)
             .customBody(new LytCookingRecipe(holder.value()))
             .title(
-                holder
-                    .value()
-                    .getResultItems()
-                    .getFirst()
-                    .getItem()
-                    .getDescription()
-                    .getString()
+                appendComponent(Component.translatable("gui.anvilcraft.category.cooking"))
             )
             .build(holder);
     }
@@ -178,13 +153,7 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
             .icon(Items.ANVIL)
             .customBody(new LytItemCompressRecipe(holder.value()))
             .title(
-                holder
-                    .value()
-                    .getResultItems()
-                    .getFirst()
-                    .getItem()
-                    .getDescription()
-                    .getString()
+                appendComponent(Component.translatable("gui.anvilcraft.category.item_compress"))
             )
             .build(holder);
     }
@@ -194,13 +163,7 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
             .icon(Items.ANVIL)
             .customBody(new LytItemCrushRecipe(holder.value()))
             .title(
-                holder
-                    .value()
-                    .getResultItems()
-                    .getFirst()
-                    .getItem()
-                    .getDescription()
-                    .getString()
+                appendComponent(Component.translatable("gui.anvilcraft.category.item_crush"))
             )
             .build(holder);
     }
@@ -210,14 +173,7 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
             .icon(Items.ANVIL)
             .customBody(new LytItemInjectRecipe(holder.value()))
             .title(
-                holder
-                    .value()
-                    .getFirstResultBlock()
-                    .state()
-                    .getBlock()
-                    .asItem()
-                    .getDescription()
-                    .getString()
+                appendComponent(Component.translatable("gui.anvilcraft.category.item_inject"))
             )
             .build(holder);
     }
@@ -227,7 +183,7 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
             .icon(Items.ANVIL)
             .customBody(new LytMassInjectRecipe(holder.value()))
             .title(
-                ModItems.NEUTRONIUM_INGOT.asItem().getDescription().getString()
+                appendComponent(Component.translatable("gui.anvilcraft.category.mass_inject"))
             )
             .build(holder);
     }
@@ -237,13 +193,7 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
             .icon(Items.ANVIL)
             .customBody(new LytMeshRecipe(holder.value()))
             .title(
-                holder
-                    .value()
-                    .getResultItems()
-                    .getFirst()
-                    .getItem()
-                    .getDescription()
-                    .getString()
+                appendComponent(Component.translatable("gui.anvilcraft.category.mesh"))
             )
             .build(holder);
     }
@@ -253,13 +203,7 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
             .icon(Items.ANVIL)
             .customBody(new LytNeutronIrradiationRecipe(holder.value()))
             .title(
-                holder
-                    .value()
-                    .getResultItems()
-                    .getFirst()
-                    .getItem()
-                    .getDescription()
-                    .getString()
+                appendComponent(Component.translatable("gui.anvilcraft.category.neutron_irradiation"))
             )
             .build(holder);
     }
@@ -268,6 +212,9 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
             .builder()
             .icon(Items.ANVIL)
             .customBody(new LytSqueezingRecipe(holder.value()))
+            .title(
+                appendComponent(Component.translatable("gui.anvilcraft.category.squeezing"))
+            )
             .build(holder);
     }
     private static LytStandardRecipeBox<StampingRecipe> stamping(RecipeHolder<StampingRecipe> holder) {
@@ -276,13 +223,7 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
             .icon(Items.ANVIL)
             .customBody(new LytStampingRecipe(holder.value()))
             .title(
-                holder
-                    .value()
-                    .getResultItems()
-                    .getFirst()
-                    .getItem()
-                    .getDescription()
-                    .getString()
+                appendComponent(Component.translatable("gui.anvilcraft.category.stamping"))
             )
             .build(holder);
     }
@@ -291,6 +232,9 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
             .builder()
             .icon(Items.ANVIL)
             .customBody(new LytSuperHeatingRecipe(holder.value()))
+            .title(
+                appendComponent(Component.translatable("gui.anvilcraft.category.super_heating"))
+            )
             .build(holder);
     }
     private static LytStandardRecipeBox<TimeWarpRecipe> timeWarp(RecipeHolder<TimeWarpRecipe> holder) {
@@ -298,6 +242,9 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
             .builder()
             .icon(Items.ANVIL)
             .customBody(new LytTimeWarpRecipe(holder.value()))
+            .title(
+                appendComponent(Component.translatable("gui.anvilcraft.category.time_warp"))
+            )
             .build(holder);
     }
     private static LytStandardRecipeBox<UnpackRecipe> unpack(RecipeHolder<UnpackRecipe> holder) {
@@ -306,13 +253,7 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
             .icon(Items.ANVIL)
             .customBody(new LytUnpackRecipe(holder.value()))
             .title(
-                holder
-                    .value()
-                    .getResultItems()
-                    .getFirst()
-                    .getItem()
-                    .getDescription()
-                    .getString()
+                appendComponent(Component.translatable("gui.anvilcraft.category.unpack"))
             )
             .build(holder);
     }
@@ -321,6 +262,9 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
             .builder()
             .icon(Items.ANVIL)
             .customBody(new LytCollisionRecipe(holder.value()))
+            .title(
+                appendComponent(Component.translatable("gui.anvilcraft.category.anvil_collision"))
+            )
             .build(holder);
     }
     private static LytStandardRecipeBox<ChargerChargingRecipe> chargerCharging(RecipeHolder<ChargerChargingRecipe> holder) {
@@ -329,12 +273,7 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
             .icon(Items.ANVIL)
             .customBody(new LytChargerChargingRecipe(holder.value()))
             .title(
-                holder
-                    .value()
-                    .getResult()
-                    .getItem()
-                    .getDescription()
-                    .getString()
+                appendComponent(Component.translatable("gui.anvilcraft.category.charger_charging"))
             )
             .build(holder);
     }
@@ -344,12 +283,7 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
             .icon(Items.ANVIL)
             .customBody(new LytJewelCraftingRecipe(holder.value()))
             .title(
-                holder
-                    .value()
-                    .getResult()
-                    .getItem()
-                    .getDescription()
-                    .getString()
+                appendComponent(Component.translatable("gui.anvilcraft.category.jewel_crafting"))
             )
             .build(holder);
     }
@@ -359,13 +293,7 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
             .icon(Items.ANVIL)
             .customBody(new LytBaseMultipleToOneSmithingRecipe(holder.value()))
             .title(
-                holder
-                    .value()
-                    .getResult()
-                    .getResult()
-                    .getItem()
-                    .getDescription()
-                    .getString()
+                appendComponent(Component.translatable("gui.anvilcraft.category.multiple_to_one_smithing"))
             )
             .build(holder);
     }
@@ -397,5 +325,17 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
                     .getString()
             )
             .build(holder);
+    }
+
+    private static String appendComponent(FormattedText formattedText) {
+        AtomicReference<String> string = new AtomicReference<>();
+        formattedText.visit(
+            (style, text) -> {
+                string.set(text);
+                return Optional.empty();
+                },
+            Style.EMPTY
+        );
+        return string.get();
     }
 }

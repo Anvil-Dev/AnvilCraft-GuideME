@@ -8,6 +8,7 @@ import dev.anvilcraft.lib.recipe.component.BlockStatePredicate;
 import dev.dubhe.anvilcraft.block.HeaterBlock;
 import dev.dubhe.anvilcraft.init.block.ModBlocks;
 import dev.dubhe.anvilcraft.recipe.anvil.wrap.SuperHeatingRecipe;
+import dev.dubhe.anvilcraft.util.CauldronUtil;
 import guideme.document.LytRect;
 import guideme.document.block.LytVBox;
 import guideme.layout.LayoutContext;
@@ -32,7 +33,8 @@ public class LytSuperHeatingRecipe extends LytVBox {
         work.add(BlockStatePredicate.builder().of(Blocks.CAULDRON).build());
         work.add(BlockStatePredicate.builder().of(ModBlocks.HEATER).with(HeaterBlock.OVERLOAD, false).build());
         append(workBlocks = new LytBlockSlot(work));
-        append(outputBlockSlot = new LytBlockSlot(BlockStateUtil.getCauldron(recipe.getHasCauldron())));
+        boolean consumeFluid = recipe.isConsumeFluid() && recipe.isProduceFluid();
+        append(outputBlockSlot = new LytBlockSlot(BlockStateUtil.getCauldron(recipe.getHasCauldron(), consumeFluid)));
         workBlocks.setHasAnvil(true);
         workBlocks.setAnvilAnimation(true);
         outputBlockSlot.setRender(!recipe.getResultItems().isEmpty());
@@ -49,7 +51,7 @@ public class LytSuperHeatingRecipe extends LytVBox {
     @Override
     protected LytRect computeBoxLayout(LayoutContext context, int x, int y, int availableWidth) {
         inputItemSlot.layout(context, x, y, availableWidth);
-        outputItemSlot.layout(context, x + 87, y, availableWidth);
+        outputItemSlot.layout(context, x + 80, y, availableWidth);
         workBlocks.layout(context, x + 70, y, availableWidth);
         outputBlockSlot.layout(context, x + 105, y + 15, availableWidth);
         return new LytRect(x, y, 162, 64);

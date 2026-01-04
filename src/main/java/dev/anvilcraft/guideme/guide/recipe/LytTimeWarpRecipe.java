@@ -29,7 +29,8 @@ public class LytTimeWarpRecipe extends LytVBox {
                 ModBlocks.CORRUPTED_BEACON.getDefaultState().trySetValue(CorruptedBeaconBlock.LIT, false)
             )
         );
-        append(outputBlockSlot = new LytBlockSlot(BlockStateUtil.getCauldron(recipe.getHasCauldron())));
+        boolean consumeFluid = recipe.isConsumeFluid() && recipe.isProduceFluid();
+        append(outputBlockSlot = new LytBlockSlot(BlockStateUtil.getCauldron(recipe.getHasCauldron(), consumeFluid)));
         workBlocks.setHasAnvil(true);
         workBlocks.setAnvilAnimation(true);
         outputBlockSlot.setRender(!recipe.getResultItems().isEmpty());
