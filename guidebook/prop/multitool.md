@@ -32,4 +32,4 @@ item_ids:
 
 ### 相关
 
-- [手持磁铁](../material/magnet.md)
+- [手持磁铁](hand_magnet.md)
