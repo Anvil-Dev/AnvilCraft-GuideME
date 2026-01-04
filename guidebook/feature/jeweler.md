@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "珠宝匠"
+  title: "村民职业：珠宝匠"
   icon: "minecraft:emerald"
   position: 11
   parent: anvilcraft_guideme:feature.md
