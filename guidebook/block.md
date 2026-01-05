@@ -5,6 +5,7 @@ navigation:
   position: 5
 ---
 
+介绍所有方块
 ## 杂项 原料和方块
 
 <CategoryIndex category="misc ingredients blocks"></CategoryIndex>

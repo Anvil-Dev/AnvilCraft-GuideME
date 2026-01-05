@@ -29,7 +29,7 @@ item_ids:
 会消耗<ItemLink id="anvilcraft:topaz" />并制造一道闪电
 
 <Row>
-<GameScene><ImportStructure src="../ac_assets/structure/lightning_convert_magnets.snbt" /></GameScene>
+<GameScene zoom="2"><ImportStructure src="../ac_assets/structure/lightning_convert_magnets.snbt" /></GameScene>
 <Recipe id="anvilcraft:magnet_ingot_from_hollow_block"></Recipe>
 <Recipe id="anvilcraft:hollow_magnet_block"></Recipe>
 </Row>

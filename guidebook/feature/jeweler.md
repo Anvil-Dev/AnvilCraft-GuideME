@@ -2,7 +2,7 @@
 navigation:
   title: "村民职业：珠宝匠"
   icon: "minecraft:emerald"
-  position: 11
+  position: 1
   parent: anvilcraft_guideme:feature.md
 categories:
   - tools

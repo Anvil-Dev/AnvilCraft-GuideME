@@ -1,0 +1,35 @@
+---
+navigation:
+  title: "末地传送门转化"
+  icon: "minecraft:end_portal_frame"
+  position: 2
+  parent: anvilcraft_guideme:feature.md
+item_ids:
+  - anvilcraft:end_dust
+---
+
+# 末地传送门转化
+
+<Row>
+<ItemImage id="minecraft:end_portal_frame" scale="2"></ItemImage>
+<ItemImage id="anvilcraft:end_dust" scale="2"></ItemImage>
+<ItemImage id="anvilcraft:spectral_anvil" scale="2"></ItemImage>
+</Row>
+
+# 末地传送门新特性
+
+- 落入末地门的方块会变成<ItemLink id="anvilcraft:end_dust" />
+- 如果方块是铁砧，还有可能获得<ItemLink id="anvilcraft:spectral_anvil" />
+
+> 不必担心原版刷沙机，铁砧工艺有更好的制造沙子的方式
+
+<GameScene zoom="2" interactive={true}>
+    <ImportStructure src="../ac_assets/structure/end_portal.snbt" />
+    <DiamondAnnotation pos="2.5 0.5 2.5" color="#ffff00">
+        被转化并传送入末地
+    </DiamondAnnotation>
+</GameScene>
+
+# 末地尘
+
+- 非重力方块，且可以凭空放置

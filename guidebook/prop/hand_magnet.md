@@ -3,7 +3,7 @@ navigation:
   title: "手持磁铁"
   icon: "anvilcraft:magnet"
   position: 2
-  parent: anvilcraft_guideme:material.md
+  parent: anvilcraft_guideme:prop.md
 categories:
   - tools
 ---

@@ -16,7 +16,7 @@ navigation:
 # 单方块处理：方块粉碎
 
 <Row>
-<GameScene><ImportStructure src="../ac_assets/structure/block_crush.snbt" /></GameScene>
+<GameScene zoom="2"><ImportStructure src="../ac_assets/structure/block_crush.snbt" /></GameScene>
 
 - <ItemLink id="minecraft:cobblestone" /> → <ItemLink id="minecraft:gravel" /> → <ItemLink id="minecraft:sand" />
 - <ItemLink id="minecraft:polished_granite" /> → <ItemLink id="minecraft:granite" /> → <ItemLink id="minecraft:red_sand" />
@@ -28,7 +28,7 @@ navigation:
 # 双方块处理：方块压合
 
 <Row>
-<GameScene><ImportStructure src="../ac_assets/structure/press.snbt" /></GameScene>
+<GameScene zoom="2"><ImportStructure src="../ac_assets/structure/press.snbt" /></GameScene>
 
 - 苔藓块 + 泥土 → 草方块
 - 树叶 + 泥土 → 灰化土
@@ -44,21 +44,24 @@ navigation:
 # 双方块处理：方块涂抹
 
 <Row>
-<GameScene><ImportStructure src="../ac_assets/structure/smear.snbt" /></GameScene>
+<GameScene zoom="2"><ImportStructure src="../ac_assets/structure/smear.snbt" /></GameScene>
 
+<Column>
+上方的方块不消耗
 - 苔藓块 + 圆石 → 苔石
 - 苔藓块 + 石砖 → 苔石砖
 - 蜜脾块 + 任意铜制方块 → 对应的涂蜡铜制方块
 - ...
-
+</Column>
 </Row>
 
 # 方块 + 炼药锅：方块压榨
 
 <Row>
-<GameScene><ImportStructure src="../ac_assets/structure/squeeze.snbt" /></GameScene>
+<GameScene zoom="2"><ImportStructure src="../ac_assets/structure/squeeze.snbt" /></GameScene>
 <Column>
 
+转化方块，并在炼药锅中生成资源
 - 湿海绵 → 海绵 + 水
 - 苔藓块 → 覆地苔藓 + 水
 - 岩浆块 → 下界岩 + 熔岩
@@ -74,7 +77,7 @@ navigation:
 # 方块 + 切石机：方块破坏
 
 <Row>
-<GameScene><ImportStructure src="../ac_assets/structure/break.snbt" /></GameScene>
+<GameScene zoom="2"><ImportStructure src="../ac_assets/structure/break.snbt" /></GameScene>
 <Column>
 
 可以破坏无法被普通TNT爆炸破坏的方块，如<ItemLink id="minecraft:obsidian" />，但是普通铁砧将固定损坏一个耐久等级。
