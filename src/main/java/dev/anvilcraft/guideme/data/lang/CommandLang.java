@@ -2,9 +2,8 @@ package dev.anvilcraft.guideme.data.lang;
 
 import com.tterrag.registrate.providers.RegistrateLangProvider;
 
-public class LangHandler {
+public class CommandLang {
     public static void init(RegistrateLangProvider provider) {
-        ModInfoLang.init(provider);
-        CommandLang.init(provider);
+        provider.add("command.ac_guideme.item", "Item: %s");
     }
 }

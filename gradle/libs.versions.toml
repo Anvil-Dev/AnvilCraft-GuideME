@@ -1,11 +1,11 @@
 [versions]
 minecraft = "1.21.1"
-neoForge = "21.1.152"
+neoForge = "21.1.217"
 registrate = "MC1.21-1.3.0+62"
 anvillib = "1.4.0+build.172"
 anvilcraft = "1.5.0+hotfix.1570"
 curios = "9.0.15+1.21.1"
-jei = "19.21.0.247"
+jei = "19.25.0.322"
 jade = "15.3.4+neoforge"
 modDevGradle = "2.0.78"
 lombok = "8.7.1"

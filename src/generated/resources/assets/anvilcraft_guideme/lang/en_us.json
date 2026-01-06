@@ -1,4 +1,5 @@
 {
+  "command.ac_guideme.item": "Item: %s",
   "gui.ac_guideme.mod_info.loaded": "%s is Loaded!",
   "gui.ac_guideme.mod_info.unloaded": "%s isn't Loaded!"
 }
