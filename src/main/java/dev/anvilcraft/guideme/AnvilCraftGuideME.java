@@ -2,6 +2,7 @@ package dev.anvilcraft.guideme;
 
 import com.mojang.logging.LogUtils;
 import com.tterrag.registrate.Registrate;
+import dev.anvilcraft.guideme.command.AddonCommands;
 import dev.anvilcraft.guideme.data.ModDatagen;
 import dev.anvilcraft.guideme.guide.compiler.tag.GradientColourTagCompiler;
 import dev.anvilcraft.guideme.guide.compiler.tag.KeyMapTagCompiler;
@@ -16,6 +17,9 @@ import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.RegisterCommandsEvent;
+import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 
 @Mod(AnvilCraftGuideME.MOD_ID)
@@ -28,9 +32,10 @@ public class AnvilCraftGuideME {
     @Getter
     private static Guide guideme;
 
-    public AnvilCraftGuideME(IEventBus modEventBus, ModContainer modContainer) {
+    public AnvilCraftGuideME(IEventBus bus, ModContainer container) {
         ModDatagen.init();
         this.guide();
+        this.registerEvents(bus);
     }
 
     private void guide() {
@@ -44,7 +49,15 @@ public class AnvilCraftGuideME {
             .build();
     }
 
+    private void registerEvents(@NotNull IEventBus eventBus) {
+        NeoForge.EVENT_BUS.addListener(AnvilCraftGuideME::registerCommand);
+    }
+
     public static ResourceLocation of(String path) {
         return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
+    }
+
+    public static void registerCommand(RegisterCommandsEvent event) {
+        AddonCommands.register(event.getDispatcher());
     }
 }
