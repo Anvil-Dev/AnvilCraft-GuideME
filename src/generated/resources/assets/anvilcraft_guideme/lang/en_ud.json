@@ -1,5 +1,9 @@
 {
+  "command.ac_guideme.block_tags": ":sbɐ⟘ ʞɔoןᗺ",
+  "command.ac_guideme.count": "%s :ʇunoƆ",
   "command.ac_guideme.item": "%s :ɯǝʇI",
+  "command.ac_guideme.item_tags": ":sbɐ⟘ ɯǝʇI",
+  "command.ac_guideme.mod": "%s :poW",
   "gui.ac_guideme.mod_info.loaded": "¡pǝpɐoꞀ sı %s",
   "gui.ac_guideme.mod_info.unloaded": "¡pǝpɐoꞀ ʇ,usı %s"
 }

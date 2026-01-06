@@ -1,5 +1,9 @@
 {
+  "command.ac_guideme.block_tags": "Block Tags:",
+  "command.ac_guideme.count": "Count: %s",
   "command.ac_guideme.item": "Item: %s",
+  "command.ac_guideme.item_tags": "Item Tags:",
+  "command.ac_guideme.mod": "Mod: %s",
   "gui.ac_guideme.mod_info.loaded": "%s is Loaded!",
   "gui.ac_guideme.mod_info.unloaded": "%s isn't Loaded!"
 }

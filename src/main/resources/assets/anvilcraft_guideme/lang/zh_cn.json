@@ -1,4 +1,9 @@
 {
+  "command.ac_guideme.block_tags": "方块Tag:",
+  "command.ac_guideme.count": "数量: %s",
+  "command.ac_guideme.item": "物品: %s",
+  "command.ac_guideme.item_tags": "物品Tag:",
+  "command.ac_guideme.mod": "模组: %s",
   "gui.ac_guideme.mod_info.loaded": "%s 已加载!",
   "gui.ac_guideme.mod_info.unloaded": "%s 未加载!"
 }
