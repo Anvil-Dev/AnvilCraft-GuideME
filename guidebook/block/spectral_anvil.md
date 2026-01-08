@@ -15,7 +15,7 @@ item_ids:
 </Row>
 
 # 生产
-铁砧落入末地门有概率变成<ItemLink id="anvilcraft:spectral_anvil" />:
+[铁砧落入末地门](../feature/end_portal.md)有概率变成<ItemLink id="anvilcraft:spectral_anvil" />:
 - <ItemLink id="minecraft:damaged_anvil" />：1%
 - <ItemLink id="minecraft:chipped_anvil" />：2%
 - <ItemLink id="minecraft:anvil" />：3%
