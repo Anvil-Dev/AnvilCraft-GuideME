@@ -23,6 +23,7 @@ import dev.anvilcraft.guideme.guide.recipe.LytStampingRecipe;
 import dev.anvilcraft.guideme.guide.recipe.LytSuperHeatingRecipe;
 import dev.anvilcraft.guideme.guide.recipe.LytTimeWarpRecipe;
 import dev.anvilcraft.guideme.guide.recipe.LytUnpackRecipe;
+import dev.anvilcraft.guideme.guide.recipe.vanilla.VanillaRecipes;
 import dev.dubhe.anvilcraft.init.reicpe.ModRecipeTypes;
 import dev.dubhe.anvilcraft.recipe.ChargerChargingRecipe;
 import dev.dubhe.anvilcraft.recipe.JewelCraftingRecipe;
@@ -54,6 +55,7 @@ import net.minecraft.network.chat.FormattedText;
 import net.minecraft.network.chat.Style;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.RecipeHolder;
+import net.minecraft.world.item.crafting.RecipeType;
 
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicReference;
@@ -64,6 +66,10 @@ public class RecipeTypeContributions implements RecipeTypeMappingSupplier {
 
     @Override
     public void collect(RecipeTypeMappings mappings) {
+        // Vanilla
+        mappings.add(RecipeType.STONECUTTING, VanillaRecipes::createStonecutter);
+
+        // Anvil
         mappings.add(ModRecipeTypes.BLOCK_COMPRESS_TYPE.get(), RecipeTypeContributions::blockCompress);
         mappings.add(ModRecipeTypes.BLOCK_CRUSH_TYPE.get(), RecipeTypeContributions::blockCrush);
         mappings.add(ModRecipeTypes.BLOCK_SMEAR_TYPE.get(), RecipeTypeContributions::blockSmear);
