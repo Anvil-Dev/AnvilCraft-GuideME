@@ -10,17 +10,6 @@ dependencies {
     implementation(libs.anvilcraft) { transitive = false }
     interfaceInjectionData(libs.anvilcraft) { transitive = false }
 
-    // Curios API
-    implementation(libs.curios)
-
-    // JEI
-    compileOnlyApi(libs.jeiCommonApi) { transitive = false }
-    compileOnlyApi(libs.jeiForgeApi) { transitive = false }
-    implementation(libs.jeiForgeImpl) { transitive = false }
-
-    // Jade
-    implementation(libs.jade)
-
     // GuideME
     compileOnly("org.appliedenergistics:guideme:${libs.versions.guideme.get()}:api")
     runtimeOnly(libs.guideme)
