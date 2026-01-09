@@ -2,7 +2,7 @@
 navigation:
   title: "树脂"
   icon: "anvilcraft:resin"
-  position: 1
+  position: 2
   parent: anvilcraft_guideme:material.md
 categories:
   - misc ingredients blocks
@@ -20,7 +20,7 @@ item_ids:
 <ItemImage id="anvilcraft:circuit_board" scale="2"></ItemImage>
 </Row>
 
-# 树脂
+# <ItemLink id="anvilcraft:resin"/>
 ## 合成
 
 <Recipe id="anvilcraft:item_crush/wood_fiber"> </Recipe>
@@ -35,13 +35,12 @@ item_ids:
 <Recipe id="anvilcraft:boiling/slime_ball"></Recipe>
 </Row>
 
-# 硬化树脂
-## 作用
+# <ItemLink id="anvilcraft:hardend_resin"/>
 
 - 用于合成<ItemLink id="anvilcraft:circuit_board"/>等...
 
 <Recipe id="anvilcraft:circuit_board"> </Recipe>
 
-# 电路板
-## 作用
+# <ItemLink id="anvilcraft:circuit_board"/>
+
 作为大多数机器的合成材料

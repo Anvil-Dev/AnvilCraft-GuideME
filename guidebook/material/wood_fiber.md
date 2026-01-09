@@ -2,7 +2,7 @@
 navigation:
   title: "木质纤维"
   icon: "anvilcraft:wood_fiber"
-  position: 11
+  position: 2
   parent: anvilcraft_guideme:material.md
 categories:
   - misc ingredients blocks

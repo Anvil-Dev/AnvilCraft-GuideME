@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "海绵芽球"
+  title: "再生海绵"
   icon: "anvilcraft:sponge_gemmule"
   position: 2
   parent: anvilcraft_guideme:recipe.md
@@ -8,7 +8,7 @@ item_ids:
   - anvilcraft:sponge_gemmule
 ---
 
-# 海绵芽球
+# 再生海绵
 
 <Row>
 <ItemImage id="anvilcraft:sponge_gemmule" scale="2"> </ItemImage>

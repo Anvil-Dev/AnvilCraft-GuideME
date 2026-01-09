@@ -2,12 +2,11 @@
 navigation:
   title: "锻造模板"
   icon: "anvilcraft:royal_steel_upgrade_smithing_template"
-  position: 2
+  position: 2000
   parent: anvilcraft_guideme:material.md
 categories:
   - tools
 item_ids:
-  - anvilcraft:royal_steel_upgrade_smithing_template
   - anvilcraft:frost_metal_upgrade_smithing_template
   - anvilcraft:ember_metal_upgrade_smithing_template
   - anvilcraft:transcendium_upgrade_smithing_template
@@ -20,8 +19,7 @@ item_ids:
 
 本篇将介绍各种锻造模板
 
-<Row>
-<ItemImage id="anvilcraft:royal_steel_upgrade_smithing_template" scale="3"></ItemImage>
+<Row>=
 <ItemImage id="anvilcraft:frost_metal_upgrade_smithing_template" scale="3"></ItemImage>
 <ItemImage id="anvilcraft:ember_metal_upgrade_smithing_template" scale="3"></ItemImage>
 <ItemImage id="anvilcraft:transcendium_upgrade_smithing_template" scale="3"></ItemImage>

@@ -46,6 +46,6 @@ item_ids:
 <Recipe id="anvilcraft:smithing/transcendence_anvil_hammer"></Recipe>
 </Row>
 
-- [皇家金属工具](../prop/royal_steel_tools.md)
+- [皇家金属工具](../material/royal_steel.md)
 - [余烬金属工具](../prop/ember_metal_tools.md)
 - [超限金属工具](../prop/transcendence_tools.md)

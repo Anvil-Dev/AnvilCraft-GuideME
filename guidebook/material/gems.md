@@ -13,6 +13,7 @@ item_ids:
   - anvilcraft:topaz_block
   - anvilcraft:sapphire_block
   - anvilcraft:ruby_block
+  - anvilcraft:melt_gem_bucket
 ---
 
 # 各类宝石(块)
@@ -26,6 +27,7 @@ item_ids:
 <ItemImage id="anvilcraft:topaz_block" scale="2"></ItemImage>
 <ItemImage id="anvilcraft:sapphire_block" scale="2"></ItemImage>
 <ItemImage id="anvilcraft:ruby_block" scale="2"></ItemImage>
+<ItemImage id="anvilcraft:melt_gem_bucket" scale="2"></ItemImage>
 </Row>
 
 # 首次获取
@@ -40,12 +42,6 @@ item_ids:
 
 <Recipe id="anvilcraft:super_heating/melt_gem_cauldron"></Recipe>
 
-# 宝石转化
+# 量产宝石
 
-将宝石放在装有熔融宝石的炼药锅中进行[时移](../block/corrupted_beacon.md)，消耗1000mB熔融宝石产出对应宝石块
-
-<Row>
-<Recipe id="anvilcraft:time_warp/topaz_block"></Recipe>
-<Recipe id="anvilcraft:time_warp/sapphire_block"></Recipe>
-<Recipe id="anvilcraft:time_warp/ruby_block"></Recipe>
-</Row>
+拥有<ItemLink id="anvilcraft:corrupted_beacon" />后，可以[量产宝石](../recipe/gem.md)

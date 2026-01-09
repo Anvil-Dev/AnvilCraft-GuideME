@@ -2,7 +2,7 @@
 navigation:
   title: "浮霜金属"
   icon: "anvilcraft:frost_metal_ingot"
-  position: 11
+  position: 201
   parent: anvilcraft_guideme:material.md
 categories:
   - misc ingredients blocks

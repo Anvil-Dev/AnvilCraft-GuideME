@@ -38,8 +38,8 @@ public class LytJewelCraftingRecipe extends LytVBox {
 
     @Override
     protected LytRect computeBoxLayout(LayoutContext context, int x, int y, int availableWidth) {
-        copySlot.layout(context, x + 74, y + 4, availableWidth);
-        resultSlot.layout(context, x + 128, y + 36, availableWidth);
+        copySlot.layout(context, x + 75, y + 4, availableWidth);
+        resultSlot.layout(context, x + 129, y + 36, availableWidth);
         for (int i = 0; i < slots.size(); i++) {
             slots.get(i).layout(context, x + i * 18 + 21, y + 36, availableWidth);
         }

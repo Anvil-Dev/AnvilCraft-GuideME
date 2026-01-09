@@ -2,7 +2,7 @@
 navigation:
   title: "石灰粉"
   icon: "anvilcraft:lime_powder"
-  position: 0
+  position: 4
   parent: anvilcraft_guideme:material.md
 item_ids:
   - anvilcraft:lime_powder

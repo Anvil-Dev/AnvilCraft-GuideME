@@ -1,8 +1,8 @@
 ---
 navigation:
   title: "一般金属(粒)"
-  icon: "anvilcraft:tungsten_nugget"
-  position: 0
+  icon: "anvilcraft:lead_ingot"
+  position: 3
   parent: anvilcraft_guideme:material.md
 item_ids:
   - anvilcraft:tungsten_nugget

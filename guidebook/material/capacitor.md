@@ -2,7 +2,7 @@
 navigation:
   title: "电容器"
   icon: "anvilcraft:capacitor"
-  position: 12
+  position: 11
   parent: anvilcraft_guideme:material.md
 item_ids:
   - anvilcraft:capacitor

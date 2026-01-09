@@ -16,7 +16,7 @@ navigation:
 
 - 通过[切石机配合铁砧](../struct/block_processing.md)破坏单个方块
 - 通过[铁砧触发方块吞噬器](../block/block_devourer.md)破坏范围内方块
-- 通过$(l:struct/giant_anvil_shocking#break)巨型铁砧撼地$(/l)破坏大范围内方块
+- 通过[巨型铁砧撼地](../block/giant_anvil.md)破坏大范围内方块
 
 # 效果
 

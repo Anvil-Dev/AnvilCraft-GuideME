@@ -1,12 +1,12 @@
 ---
 navigation:
-  title: "熔岩再生"
+  title: "再生熔岩"
   icon: "minecraft:lava_bucket"
-  position: 10
+  position: 100
   parent: anvilcraft_guideme:recipe.md
 ---
 
-# 熔岩再生
+# 再生熔岩
 
 <Row>
 <ItemImage id="anvilcraft:lime_powder" scale="2"> </ItemImage>
