@@ -28,8 +28,8 @@ item_ids:
 
 ## 皇家钢工具
 
-<Colour firstColor="e1ffc4" lastColor="7fffa3"> ~~**我的天哪！是黄瓜钢大人！**~~ </Colour>
-    - 相比[紫水晶工具](../item/amethyst_tools.md)，皇家钢工具本身不自带附魔，继承被锻造的工具的附魔
+<Colour firstColor="e1ffc4" lastColor="7fffa3"> **~~我的天哪！是黄瓜钢大人！~~** </Colour>
+    - 相比[紫水晶工具](../prop/amethyst_tools.md)，皇家钢工具本身不自带附魔，继承被锻造的工具的附魔
     - <NeoColor id="97d9e1"> **钻石品质** </NeoColor>
 
 ## 合成方式:

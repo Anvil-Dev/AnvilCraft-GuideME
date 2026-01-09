@@ -2,10 +2,8 @@
 navigation:
   title: "电容器"
   icon: "anvilcraft:capacitor"
-  position: 11
-  parent: anvilcraft_guideme:power.md
-categories:
-  - tools
+  position: 12
+  parent: anvilcraft_guideme:material.md
 item_ids:
   - anvilcraft:capacitor
   - anvilcraft:capacitor_empty
@@ -22,31 +20,24 @@ item_ids:
 <ItemImage id="anvilcraft:supercapacitor_empty" scale="2"></ItemImage>
 </Row>
 
-## 电容器
+# <ItemLink id="anvilcraft:capacitor" />
 
-> 能够存储电能或释放电能
+- 能够配合<ItemLink id="anvilcraft:charger" />存储电能或释放电能
 
-## 合成
-
-<Row>
 <Recipe id="anvilcraft:capacitor_empty"></Recipe>
-<Recipe id="anvilcraft:item_compress/supercapacitor_empty"></Recipe>
-</Row>
-
----
-
-## 存储电能
 
 <Row>
 <Recipe id="anvilcraft:charger_charging/capacitor"></Recipe>
-<Recipe id="anvilcraft:charger_charging/supercapacitor"></Recipe>
+<Recipe id="anvilcraft:charger_charging/capacitor_empty"></Recipe>
 </Row>
 
 ---
 
-## 释放电能
+# <ItemLink id="anvilcraft:supercapacitor" />
+
+<Recipe id="anvilcraft:item_compress/supercapacitor_empty"></Recipe>
 
 <Row>
-<Recipe id="anvilcraft:charger_charging/capacitor_empty"></Recipe>
+<Recipe id="anvilcraft:charger_charging/supercapacitor"></Recipe>
 <Recipe id="anvilcraft:charger_charging/supercapacitor_empty"></Recipe>
 </Row>
