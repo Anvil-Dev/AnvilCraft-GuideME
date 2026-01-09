@@ -7,6 +7,7 @@ import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.core.Holder;
 import net.minecraft.network.chat.ClickEvent;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.network.chat.Style;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.TagKey;
@@ -38,10 +39,11 @@ public class GetHandCommand {
         ItemStack itemStack = player.getMainHandItem();
         Item item = itemStack.getItem();
 
+
         components.add(Component.nullToEmpty("=========="));
 
         // Item ID
-        Component itemMessage = Component.translatable("command.ac_guideme.item", item.toString())
+        MutableComponent itemMessage = Component.translatable("command.ac_guideme.item", item.toString())
             .withStyle(ChatFormatting.GREEN, ChatFormatting.BOLD);
         components.add(copy(itemMessage, item.toString()));
 
@@ -51,9 +53,9 @@ public class GetHandCommand {
         components.add(copy(countMessage, String.valueOf(count)));
 
         // Mod
-        String modInfo = getMod(item.toString());
-        Component ModMessage = Component.translatable("command.ac_guideme.mod", modInfo).withStyle(ChatFormatting.RED);
-        components.add(copy(ModMessage, modInfo));
+        String modId = item.getCreatorModId(itemStack);
+        Component ModMessage = Component.translatable("command.ac_guideme.mod", modId).withStyle(ChatFormatting.RED);
+        components.add(copy(ModMessage, modId));
 
         // Item Tag
         Holder<Item> itemHolder = itemStack.getItemHolder();
@@ -92,15 +94,9 @@ public class GetHandCommand {
         return returnValue.get();
     }
 
-    private static Component copy(Component c, String info) {
+    private static Component copy(Component component, String info) {
         return Component.literal("- ")
             .withStyle(Style.EMPTY.withClickEvent(new ClickEvent(ClickEvent.Action.COPY_TO_CLIPBOARD, info)))
-            .append(c);
-    }
-
-    private static String getMod(String item) {
-        if (!item.contains(":")) return item;
-        String[] parts = item.split(":", 2);
-        return parts[0];
+            .append(component);
     }
 }
