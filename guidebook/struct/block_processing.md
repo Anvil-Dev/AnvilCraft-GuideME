@@ -13,6 +13,22 @@ navigation:
 
 > 在此之前，了解<ItemLink id="anvilcraft:magnet_block" />会让你更方便地加工
 
+# 方块 + 切石机：方块破坏
+
+<Row>
+<GameScene zoom="2"><ImportStructure src="../ac_assets/structure/break.snbt" /></GameScene>
+<Column>
+
+可以破坏无法被普通TNT爆炸破坏的方块，如<ItemLink id="minecraft:obsidian" />，但是普通铁砧将固定损坏一个耐久等级。
+
+为了防止方块破坏后铁砧掉在切石机上变为掉落物，你需要控制<ItemLink id="anvilcraft:magnet_block" />收回铁砧的时间。
+
+属于[铁砧挖掘](../feature/anvil_destroy.md)的一种实现
+
+</Column>
+</Row>
+
+
 # 单方块处理：方块粉碎
 
 <Row>
@@ -28,7 +44,9 @@ navigation:
 # 双方块处理：方块压合
 
 <Row>
-<GameScene zoom="2"><ImportStructure src="../ac_assets/structure/press.snbt" /></GameScene>
+<GameScene zoom="2">
+    <ImportStructure src="../ac_assets/structure/press.snbt" />
+</GameScene>
 
 - 苔藓块 + 泥土 → 草方块
 - 树叶 + 泥土 → 灰化土
@@ -62,6 +80,7 @@ navigation:
 <Column>
 
 转化方块，并在炼药锅中生成资源
+
 - 湿海绵 → 海绵 + 水
 - 苔藓块 → 覆地苔藓 + 水
 - 岩浆块 → 下界岩 + 熔岩
@@ -70,21 +89,6 @@ navigation:
 - ...
 
 > 当炼药锅集满4层蜂蜜时，可以用漏斗等物流方块取出蜂蜜块"
-
-</Column>
-</Row>
-
-# 方块 + 切石机：方块破坏
-
-<Row>
-<GameScene zoom="2"><ImportStructure src="../ac_assets/structure/break.snbt" /></GameScene>
-<Column>
-
-可以破坏无法被普通TNT爆炸破坏的方块，如<ItemLink id="minecraft:obsidian" />，但是普通铁砧将固定损坏一个耐久等级。
-
-为了防止方块破坏后铁砧掉在切石机上变为掉落物，你需要控制<ItemLink id="anvilcraft:magnet_block" />收回铁砧的时间。
-
-属于[铁砧挖掘](../feature/anvil_destroy.md)的一种实现
 
 </Column>
 </Row>

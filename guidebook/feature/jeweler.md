@@ -11,21 +11,27 @@ categories:
 # 珠宝匠
 
 <Row>
+<ItemImage id="anvilcraft:jewelcrafting_table" scale="2"></ItemImage>
+<ItemImage id="anvilcraft:royal_steel_upgrade_smithing_template" scale="2"></ItemImage>
+<ItemImage id="anvilcraft:geode" scale="2"></ItemImage>
 <ItemImage id="anvilcraft:amulet_box" scale="2"></ItemImage>
 </Row>
 
-## 珠宝匠
-
-珠宝匠是村民的一种，可以与之交易一些铁砧工艺相关物品，包括重要的锻造模板
-
-## 转职
+# 转职
 
 - 将[珠宝加工台](../block/jewelcrafting_table.md)作为工作方块的村民将转职为珠宝匠
 
-## 交易列表
+# 核心交易
+
+- <ItemLink id="anvilcraft:royal_steel_upgrade_smithing_template" />
+- <ItemLink id="anvilcraft:geode" />  
+- <ItemLink id="anvilcraft:amulet_box" /> 
+> <ItemLink id="anvilcraft:amulet_box" /> 仅能通过珠宝匠获得
+
+# 交易列表
 
 | 等级 | 购买的物品                                                                                        | 出售的物品                                                                |
-|----|----------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+|:--:|----------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | 新手 | 4个<ItemLink id="minecraft:amethyst_shard" />                                                 | 1个<ItemLink id="minecraft:emerald" />                                |
 | 新手 | 1个<ItemLink id="minecraft:emerald" />                                                        | 1个<ItemLink id="minecraft:tinted_glass" />                           |
 | 学徒 | 8个<ItemLink id="minecraft:sea_lantern" />                                                    | 1个<ItemLink id="minecraft:emerald" />                                |

@@ -2,8 +2,8 @@
 navigation:
   title: "蟹钳"
   icon: "anvilcraft:crab_claw"
-  position: 11
-  parent: anvilcraft_guideme:material.md
+  position: 1
+  parent: anvilcraft_guideme:prop.md
 categories:
   - tools
 item_ids:
@@ -13,13 +13,15 @@ item_ids:
 # 蟹钳
 
 <Row>
-<ItemImage id="anvilcraft:crab_claw" scale="2"></ItemImage>
+<ItemImage id="anvilcraft:crab_claw" scale="3"></ItemImage>
 </Row>
 
-## 蟹钳
+# 获取
 
-主手或副手手持时增加3格触及距离
+通过[蟹笼](../block/crab_trap.md)生产
 
-## 获取
+# 功能
 
-请看[蟹笼](../block/crab_trap.md)
+- 主手或副手手持时，为携带者增加3格触及距离
+- 右键可以强制撬开**潜影贝**
+

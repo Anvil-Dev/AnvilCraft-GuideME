@@ -2,10 +2,8 @@
 navigation:
   title: "一般金属(粒)"
   icon: "anvilcraft:tungsten_nugget"
-  position: 11
+  position: 0
   parent: anvilcraft_guideme:material.md
-categories:
-  - misc ingredients blocks
 item_ids:
   - anvilcraft:tungsten_nugget
   - anvilcraft:titanium_nugget
@@ -13,18 +11,12 @@ item_ids:
   - anvilcraft:tin_nugget
   - anvilcraft:lead_nugget
   - anvilcraft:silver_nugget
-  - anvilcraft:copper_nugget
-  - minecraft:iron_nugget
-  - minecraft:gold_nugget
   - anvilcraft:tungsten_ingot
   - anvilcraft:titanium_ingot
   - anvilcraft:zinc_ingot
   - anvilcraft:tin_ingot
   - anvilcraft:lead_ingot
   - anvilcraft:silver_ingot
-  - minecraft:copper_ingot
-  - minecraft:iron_ingot
-  - minecraft:gold_ingot
 ---
 
 # 一般金属(粒)
@@ -69,8 +61,15 @@ item_ids:
 ---
 
 <Row>
-<ItemImage id="anvilcraft:end_dust" scale="2"></ItemImage>
-<Recipe id="anvilcraft:mesh/end_dust"></Recipe>
+<ItemImage id="minecraft:sand" scale="2"></ItemImage>
+<Recipe id="anvilcraft:mesh/sand"></Recipe>
+</Row>
+
+---
+
+<Row>
+<ItemImage id="minecraft:red_sand" scale="2"></ItemImage>
+<Recipe id="anvilcraft:mesh/red_sand"></Recipe>
 </Row>
 
 ---
@@ -90,13 +89,6 @@ item_ids:
 ---
 
 <Row>
-<ItemImage id="minecraft:red_sand" scale="2"></ItemImage>
-<Recipe id="anvilcraft:mesh/red_sand"></Recipe>
-</Row>
-
----
-
-<Row>
-<ItemImage id="minecraft:sand" scale="2"></ItemImage>
-<Recipe id="anvilcraft:mesh/sand"></Recipe>
+<ItemImage id="anvilcraft:end_dust" scale="2"></ItemImage>
+<Recipe id="anvilcraft:mesh/end_dust"></Recipe>
 </Row>
