@@ -2,7 +2,7 @@
 navigation:
   title: "回溯珍珠"
   icon: "anvilcraft:recovery_pearl"
-  position: 11
+  position: 151
   parent: anvilcraft_guideme:prop.md
 categories:
   - tools

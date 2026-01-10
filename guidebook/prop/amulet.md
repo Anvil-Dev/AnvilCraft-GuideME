@@ -2,7 +2,7 @@
 navigation:
   title: "护符"
   icon: "anvilcraft:emerald_amulet"
-  position: 11
+  position: 100
   parent: anvilcraft_guideme:prop.md
 categories:
   - tools
@@ -18,8 +18,6 @@ item_ids:
   - anvilcraft:dog_amulet
   - anvilcraft:silence_amulet
   - anvilcraft:abnormal_amulet
-  - anvilcraft:gem_amulet
-  - anvilcraft:nature_amulet
 ---
 
 # 护符
@@ -36,21 +34,17 @@ item_ids:
 <ItemImage id="anvilcraft:dog_amulet" scale="2"></ItemImage>
 <ItemImage id="anvilcraft:silence_amulet" scale="2"></ItemImage>
 <ItemImage id="anvilcraft:abnormal_amulet" scale="2"></ItemImage>
-<ItemImage id="anvilcraft:gem_amulet" scale="2"></ItemImage>
-<ItemImage id="anvilcraft:nature_amulet" scale="2"></ItemImage>
 </Row>
-
-## 护符
 
 ---
 
-### 普通护符
+# 获取
 
-- 可在珠宝加工台中仿制，必须先得到第一个才可仿制
-
-#### 获取
-
-如果存活于特定致命伤害，背包内有<ItemLink id="anvilcraft:amulet_box" />且盒内有不死图腾，则会消耗不死图腾抵挡伤害，同时有20%的概率获得相应护符。若失败，额外增加10%
+- 获取第一个护符需要<ItemLink id="anvilcraft:amulet_box" />：
+  - 背包内有<ItemLink id="anvilcraft:amulet_box" />，且盒内有不死图腾
+  - 受到特定致密伤害并消耗不死图腾抵挡
+  - 20%的概率获得相应护符。若失败，额外增加10%
+- 之后可在珠宝加工台中仿制，必须先得到第一个才可仿制
 
 以下是各普通护符、致命伤害和效果的列表
 
@@ -68,7 +62,7 @@ item_ids:
 | <ItemLink id="anvilcraft:silence_amulet"/>  | 监守者                        | 玩家不会发出能被幽匿感测体或监守者检测到的震动          |
 | <ItemLink id="anvilcraft:abnormal_amulet"/> | 携带有异常状态的物品导致的凋零            | 玩家不再因携带有异常状态的物品获得异常效果            |
 
-#### 仿制
+# 仿制配方
 
 <Row>
 <Recipe id="anvilcraft:jewel_crafting/emerald_amulet"></Recipe>
@@ -86,20 +80,7 @@ item_ids:
 
 ---
 
-### 多合一护符
-
-多合一护符是一种特殊的护符，由多个普通护符合成，有着合成所需护符的所有效果
-
-#### 合成
-
-<Row>
-<Recipe id="anvilcraft:four_to_one_smithing/gem_amulet"></Recipe>
-<Recipe id="anvilcraft:four_to_one_smithing/nature_amulet"></Recipe>
-</Row>
-
----
-
-### 生效
+# 生效
 
 - 主副手持有的护符生效（两手都有就生效两个）
 - <ItemLink id="anvilcraft:amulet_box"></ItemLink>可以容纳护符，主副手持有护符盒，盒中的护符全生效

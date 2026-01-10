@@ -2,7 +2,7 @@
 navigation:
   title: "多用途工具"
   icon: "anvilcraft:multitool"
-  position: 11
+  position: 301
   parent: anvilcraft_guideme:prop.md
 categories:
   - tools

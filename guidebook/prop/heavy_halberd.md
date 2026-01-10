@@ -2,7 +2,7 @@
 navigation:
   title: "重戟"
   icon: "anvilcraft:ember_metal_heavy_halberd"
-  position: 11
+  position: 301
   parent: anvilcraft_guideme:prop.md
 categories:
   - tools
