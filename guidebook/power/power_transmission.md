@@ -2,7 +2,7 @@
 navigation:
   title: "电能传输"
   icon: "anvilcraft:transmission_pole"
-  position: 2001
+  position: 101
   parent: anvilcraft_guideme:power.md
 item_ids:
   - anvilcraft:transmission_pole

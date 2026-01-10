@@ -2,7 +2,7 @@
 navigation:
   title: "能量转换"
   icon: "anvilcraft:power_converter_big"
-  position: 13
+  position: 103
   parent: anvilcraft_guideme:power.md
 item_ids:
   - anvilcraft:power_converter_small

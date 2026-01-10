@@ -15,9 +15,9 @@ item_ids:
 # 诅咒金
 
 <Row>
-<ItemImage id="anvilcraft:cursed_gold_block" scale="2"> </ItemImage>
-<ItemImage id="anvilcraft:cursed_gold_ingot" scale="2"> </ItemImage>
-<ItemImage id="anvilcraft:cursed_gold_nugget" scale="2"> </ItemImage>
+<ItemImage id="anvilcraft:cursed_gold_block" scale="3"> </ItemImage>
+<ItemImage id="anvilcraft:cursed_gold_ingot" scale="3"> </ItemImage>
+<ItemImage id="anvilcraft:cursed_gold_nugget" scale="3"> </ItemImage>
 </Row>
 
 <Colour firstColor="ff5544" lastColor="bbaa55">~~被禁忌知识所诅咒的~~</Colour>

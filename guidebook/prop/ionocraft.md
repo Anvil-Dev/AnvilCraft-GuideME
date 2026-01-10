@@ -16,6 +16,7 @@ item_ids:
 <ItemImage id="anvilcraft:ionocraft" scale="2"></ItemImage>
 </Row>
 
+<NeoColor id="97d9e1"> ~~飞起来\~~~ </NeoColor>
 # 合成
 
 <Row>
@@ -28,9 +29,3 @@ item_ids:
 - 电网范围中给电网增加16kw负荷，会快速上升
 - 不在电网范围内会缓慢下降
 - 实体可以踩在上面
-
-<NeoColor id="97d9e1"> ~~飞起来~~ </NeoColor>
-
-# 相关
-
-- [飘升机背包](ionocraft_backpack.md)

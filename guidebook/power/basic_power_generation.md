@@ -2,7 +2,7 @@
 navigation:
   title: "基础发电"
   icon: "anvilcraft:charge_collector"
-  position: 1
+  position: 100
   parent: anvilcraft_guideme:power.md
 item_ids:
   - anvilcraft:charge_collector
@@ -12,8 +12,8 @@ item_ids:
 # 基础发电
 
 <Row>
-<ItemImage id="anvilcraft:charge_collector" scale="2"></ItemImage>
-<ItemImage id="anvilcraft:piezoelectric_crystal"></ItemImage>
+<ItemImage id="anvilcraft:charge_collector" scale="3"></ItemImage>
+<ItemImage id="anvilcraft:piezoelectric_crystal" scale="3"></ItemImage>
 </Row>
 
 # <ItemLink id="anvilcraft:charge_collector" />
