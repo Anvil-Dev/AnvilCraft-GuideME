@@ -1,8 +1,11 @@
-tasks.named('jar', Jar) {
-    exclude '/.cache'
+tasks.named('processResources', ProcessResources) {
     from('guidebook') {
         into "assets/${project.mod_id}/guide"
     }
+}
+
+tasks.named('jar', Jar) {
+    exclude '/.cache'
 }
 
 tasks.register('sourcesJar', Jar) {

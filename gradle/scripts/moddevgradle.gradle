@@ -6,6 +6,8 @@ neoForge {
         minecraftVersion = project.parchment_minecraft_version
     }
 
+    accessTransformers = project.files('src/main/resources/META-INF/accesstransformer.cfg')
+
     var isJbr = System.getProperty('java.vm.vendor').contains('JetBrains')
 
     runs {
@@ -37,6 +39,8 @@ neoForge {
             }
             systemProperty 'forge.logging.markers', 'REGISTRIES'
             logLevel = org.slf4j.event.Level.DEBUG
+            systemProperty 'terminal.jline', 'true'
+            systemProperty 'guideme.anvilcraft_guideme.guideme.sources', file('guidebook').getAbsolutePath()
         }
     }
 
