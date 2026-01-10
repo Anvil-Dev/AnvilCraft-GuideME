@@ -18,11 +18,3 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
 
 sourceSets.main.resources.srcDir generateModMetadata
 neoForge.ideSyncTask generateModMetadata
-
-// 移到jars.gradle无法成功运行
-tasks.named('jar', Jar) {
-    exclude '/.cache'
-    from('guidebook') {
-        into 'assets/${project.mod_id}/guide'
-    }
-}

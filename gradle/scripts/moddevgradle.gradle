@@ -6,15 +6,12 @@ neoForge {
         minecraftVersion = project.parchment_minecraft_version
     }
 
-    accessTransformers = project.files('src/main/resources/META-INF/accesstransformer.cfg')
-
     var isJbr = System.getProperty('java.vm.vendor').contains('JetBrains')
 
     runs {
         client {
             client()
-            // 正版登录 不想用的可以false
-            setDevLogin(true)
+            programArguments.addAll "--width", "1440", "--height", "841"
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
         }
 
@@ -38,10 +35,8 @@ neoForge {
             if (isJbr) {
                 jvmArgument "-XX:+AllowEnhancedClassRedefinition"
             }
-            logLevel = org.slf4j.event.Level.DEBUG
             systemProperty 'forge.logging.markers', 'REGISTRIES'
-            systemProperty 'terminal.jline', 'true'
-            systemProperty 'guideme.anvilcraft_guideme.guideme.sources', file('guidebook').getAbsolutePath()
+            logLevel = org.slf4j.event.Level.DEBUG
         }
     }
 

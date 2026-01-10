@@ -21,9 +21,10 @@
 部分文本抄自[AnvilCraft-Patchouli](https://github.com/Anvil-Dev/AnvilCraft-Patchouli)
 和[Xekr's TODO](https://github.com/Anvil-Dev/AnvilCraft/issues?q=is%3Aissue%20state%3Aopen%20author%3AXeKr%20label%3A%22%F0%9F%93%8B%EF%B8%8F%20TODO%22)
 
-## 使用许可
+## License
 
-[LICENSE 文件(LGPL-3.0)](./LICENSE)
+* Code unless otherwise stated default to our [LICENSE file(LGPL-3.0)](./LICENSE) here
+* Non-Code assets (Located here) go by our [ASSET_LICENSE file(ARR)](./ASSETS_LICENSE) here
 
 ## 使用方法
 
