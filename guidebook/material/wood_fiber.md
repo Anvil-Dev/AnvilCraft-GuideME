@@ -13,18 +13,16 @@ item_ids:
 # 木质纤维
 
 <Row>
-<ItemImage id="anvilcraft:wood_fiber" scale="2"></ItemImage>
+<ItemImage id="anvilcraft:wood_fiber" scale="3"></ItemImage>
 </Row>
 
-## 硬化树脂
-
-### 合成
+# 合成
 
 <Row>
 <Recipe id="anvilcraft:item_crush/wood_fiber"> </Recipe>
 </Row>
 
-### 用途
+# 用途
 
 - 用于合成<ItemLink id="minecraft:paper"></ItemLink>和<ItemLink id="minecraft:charcoal"></ItemLink>
 - 也可作为燃料

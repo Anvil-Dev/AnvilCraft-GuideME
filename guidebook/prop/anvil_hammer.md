@@ -36,16 +36,3 @@ item_ids:
 - 头槌，戴在头上时鞘翅飞行撞击生物造成伤害
 - 主手持有铁砧锤时，副手使用烟花火箭对着脚下的方块使用，可以向上**火箭跳**，烟花等级越高跳的越高
 > *注意，左键敲击方块、左键攻击生物以及头槌撞击生物会消耗铁砧锤的耐久，其他操作不会*
-
-## 相关
-
-此外，你还能合成皇家钢、余烬金属版本和超限金属版本的铁砧锤，这些铁砧锤有着对应金属工具的属性
-<Row>
-<Recipe id="anvilcraft:smithing/royal_anvil_hammer"></Recipe>
-<Recipe id="anvilcraft:smithing/ember_anvil_hammer"></Recipe>
-<Recipe id="anvilcraft:smithing/transcendence_anvil_hammer"></Recipe>
-</Row>
-
-- [皇家金属工具](../material/royal_steel.md)
-- [余烬金属工具](../prop/ember_metal_tools.md)
-- [超限金属工具](../prop/transcendence_tools.md)

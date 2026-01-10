@@ -20,9 +20,9 @@ item_ids:
 # 皇家钢
 
 <Row>
-<ItemImage id="anvilcraft:royal_steel_block" scale="2"></ItemImage>
-<ItemImage id="anvilcraft:royal_steel_ingot" scale="2"></ItemImage>
-<ItemImage id="anvilcraft:royal_steel_nugget" scale="2"></ItemImage>
+<ItemImage id="anvilcraft:royal_steel_block" scale="3"></ItemImage>
+<ItemImage id="anvilcraft:royal_steel_ingot" scale="3"></ItemImage>
+<ItemImage id="anvilcraft:royal_steel_nugget" scale="3"></ItemImage>
 </Row>
 
 <Colour firstColor="e1ffc4" lastColor="7fffa3"> ~~黄瓜钢大人~~ </Colour>
@@ -38,7 +38,7 @@ item_ids:
 
 - 用于合成机器
 - 与<ItemLink id="anvilcraft:royal_steel_upgrade_smithing_template" />配合，升级工具
-  - 工具拥有<NeoColor id="97d9e1"> **钻石品质** </NeoColor>
+    - 工具拥有<NeoColor id="97d9e1"> **钻石品质** </NeoColor>
 
 <Row>
 <Recipe id="anvilcraft:smithing/royal_steel_pickaxe"></Recipe>
@@ -49,3 +49,8 @@ item_ids:
 <Recipe id="anvilcraft:smithing/royal_anvil_hammer"></Recipe>
 <Recipe id="anvilcraft:smithing/royal_dragon_rod"></Recipe>
 </Row>
+
+# 相关
+
+- [铁砧锤](../prop/anvil_hammer.md)
+- [龙杖](../prop/dragon_rod.md)

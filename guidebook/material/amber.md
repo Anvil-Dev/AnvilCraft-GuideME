@@ -2,7 +2,7 @@
 navigation:
   title: "琥珀"
   icon: "anvilcraft:amber"
-  position: 11
+  position: 200
   parent: anvilcraft_guideme:material.md
 categories:
   - misc ingredients blocks

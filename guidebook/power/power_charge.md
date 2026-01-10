@@ -2,7 +2,7 @@
 navigation:
   title: "充电与放电"
   icon: "anvilcraft:charger"
-  position: 12
+  position: 102
   parent: anvilcraft_guideme:power.md
 item_ids:
   - anvilcraft:charger
