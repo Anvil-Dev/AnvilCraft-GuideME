@@ -3,13 +3,12 @@ navigation:
   title: "共振器"
   icon: "anvilcraft:ember_metal_resonator"
   position: 301
-  parent: anvilcraft_guideme:prop.md
+  parent: anvilcraft_guideme:tool.md
 categories:
   - tools
 item_ids:
   - anvilcraft:ember_metal_resonator
   - anvilcraft:frost_metal_resonator
-  - anvilcraft:transcendence_resonator
 ---
 
 # 共振器
@@ -39,11 +38,10 @@ item_ids:
 <Row>
 <Recipe id="anvilcraft:four_to_one_smithing/ember_metal_resonator"></Recipe>
 <Recipe id="anvilcraft:four_to_one_smithing/frost_metal_resonator"></Recipe>
-<Recipe id="anvilcraft:two_to_one_smithing/transcendence_resonator"></Recipe>
 </Row>
 
-### 相关
+# 相关
 
-- [皇家金属工具](royal_steel_tools.md)
-- [余烬金属工具](ember_metal_tools.md)
-- [超限金属工具](transcendence_tools.md)
+- [余烬金属工具](../material/ember_metal.md)
+- [浮霜金属工具](../material/frost_metal.md)
+- [超限金属工具](../material/transcendium.md)

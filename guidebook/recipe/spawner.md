@@ -33,7 +33,7 @@ item_ids:
 </GameScene>
 
 <Column>
-> 制造<ItemLink id="minecraft:spawner"/>，仅接受[多方块转化](../block/giant_anvil.md)，不接受[多方块合成](../block/giant_anvil.md)!
+> 制造<ItemLink id="minecraft:spawner"/>，仅接受[多方块转化](../block/giant_anvil.md#功能)，不接受[多方块合成](../block/giant_anvil.md#功能)!
 
 > 若没有搬运<ItemLink id="minecraft:spawner"/>的手段，请提前规划好位置
 

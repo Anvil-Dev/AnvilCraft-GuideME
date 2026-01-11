@@ -3,7 +3,7 @@ navigation:
   title: "龙杖"
   icon: "anvilcraft:dragon_rod"
   position: 10
-  parent: anvilcraft_guideme:prop.md
+  parent: anvilcraft_guideme:tool.md
 categories:
   - tools
 item_ids:
@@ -58,8 +58,8 @@ item_ids:
 龙杖遵循方块吞噬器的规则，当挖掘世界基底方块（**石头**、**下界岩**、**末地石**）时，只有5%的概率掉落。但是它无法连锁顶部的可下落方块   
 龙杖在挖掘一次后会有一段冷却时间，默认为1秒。这段冷却时长只受*急迫*效果和*挖掘疲劳*效果影响，每级急迫会减少4tick，每级挖掘疲劳会增加1秒
 
-### 相关
+# 相关
 
-- [皇家金属工具](royal_steel_tools.md)
-- [余烬金属工具](ember_metal_tools.md)
-- [超限金属工具](transcendence_tools.md)
+- [皇家钢工具](../material/royal_steel.md)
+- [余烬金属工具](../material/ember_metal.md)
+- [超限金属工具](../material/transcendium.md)

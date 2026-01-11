@@ -77,8 +77,8 @@ public class LytCollisionRecipe extends LytVBox {
         inputAnvilSlot.layout(context, x + 10, y + 15, availableWidth);
         hitBlockSlot.layout(context, x + 51, y + 11, availableWidth);
         outputItemSlot.layout(context, x + 90, y, availableWidth);
-        transInputBlockSlot.layout(context, x + 90, y + 25, availableWidth);
-        transOutputBlockSlot.layout(context, x + 90, y - 20, availableWidth);
+        transInputBlockSlot.layout(context, x + 90, y - 20, availableWidth);
+        transOutputBlockSlot.layout(context, x + 90, y + 25, availableWidth);
         return new LytRect(x, y, 162, 64);
     }
 }

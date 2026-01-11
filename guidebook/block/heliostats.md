@@ -24,6 +24,8 @@ item_ids:
 - 手持<ItemLink id="anvilcraft:heliostats" />右键绑定方块后放置，可利用日光加热被绑定方块及其上的方块
 
 > 相当于一次加热两个[可加热方块](../feature/heated_block.md)
+> 
+> 如果使用64个<ItemLink id="anvilcraft:heliostats" />，创造的热量可转换为512kW的电力
 
 - 不同数量的<ItemLink id="anvilcraft:heliostats" />汇聚起来的加热能力不同
 

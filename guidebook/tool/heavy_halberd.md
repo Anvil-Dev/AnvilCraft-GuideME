@@ -3,13 +3,12 @@ navigation:
   title: "重戟"
   icon: "anvilcraft:ember_metal_heavy_halberd"
   position: 301
-  parent: anvilcraft_guideme:prop.md
+  parent: anvilcraft_guideme:tool.md
 categories:
   - tools
 item_ids:
   - anvilcraft:ember_metal_heavy_halberd
   - anvilcraft:frost_metal_heavy_halberd
-  - anvilcraft:transcendence_heavy_halberd
 ---
 
 # 重戟
@@ -40,11 +39,10 @@ item_ids:
 <Row>
 <Recipe id="anvilcraft:four_to_one_smithing/ember_metal_heavy_halberd"></Recipe>
 <Recipe id="anvilcraft:four_to_one_smithing/frost_metal_heavy_halberd"></Recipe>
-<Recipe id="anvilcraft:two_to_one_smithing/transcendence_heavy_halberd"></Recipe>
 </Row>
 
-### 相关
+# 相关
 
-- [皇家金属工具](royal_steel_tools.md)
-- [余烬金属工具](ember_metal_tools.md)
-- [超限金属工具](transcendence_tools.md)
+- [余烬金属工具](../material/ember_metal.md)
+- [浮霜金属工具](../material/frost_metal.md)
+- [超限金属工具](../material/transcendium.md)

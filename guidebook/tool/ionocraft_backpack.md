@@ -3,7 +3,7 @@ navigation:
   title: "飘升机背包"
   icon: "anvilcraft:ionocraft_backpack"
   position: 11
-  parent: anvilcraft_guideme:prop.md
+  parent: anvilcraft_guideme:tool.md
 categories:
   - tools
 item_ids:
@@ -47,4 +47,4 @@ item_ids:
 
 # 相关
 
-- [飘升机](ionocraft.md)
+- [飘升机](../prop/ionocraft.md)

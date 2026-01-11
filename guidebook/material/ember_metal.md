@@ -60,7 +60,7 @@ item_ids:
 
 # 相关
 
-- [铁砧锤](../prop/anvil_hammer.md)
-- [龙杖](../prop/dragon_rod.md)
+- [铁砧锤](../tool/anvil_hammer.md)
+- [龙杖](../tool/dragon_rod.md)
 - [皇家钢工具](royal_steel.md)
-- [共振器](../prop/resonator.md)
+- [共振器](../tool/resonator.md)

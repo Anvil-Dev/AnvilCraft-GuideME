@@ -3,7 +3,7 @@ navigation:
   title: "多用途工具"
   icon: "anvilcraft:multitool"
   position: 301
-  parent: anvilcraft_guideme:prop.md
+  parent: anvilcraft_guideme:tool.md
 categories:
   - tools
 item_ids:
@@ -32,4 +32,4 @@ item_ids:
 
 ### 相关
 
-- [手持磁铁](hand_magnet.md)
+- [手持磁铁](../prop/hand_magnet.md)

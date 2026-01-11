@@ -3,7 +3,7 @@ navigation:
   title: "铁砧锤"
   icon: "anvilcraft:anvil_hammer"
   position: 0
-  parent: anvilcraft_guideme:prop.md
+  parent: anvilcraft_guideme:tool.md
 categories:
   - tools
 item_ids:

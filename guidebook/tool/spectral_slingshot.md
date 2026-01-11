@@ -3,7 +3,7 @@ navigation:
   title: "幻灵弹弓"
   icon: "anvilcraft:spectral_slingshot"
   position: 11
-  parent: anvilcraft_guideme:prop.md
+  parent: anvilcraft_guideme:tool.md
 categories:
   - tools
 item_ids:

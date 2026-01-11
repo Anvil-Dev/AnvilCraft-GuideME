@@ -12,9 +12,9 @@ item_ids:
   - anvilcraft:transcendium_nugget
   - anvilcraft:transcendence_anvil_hammer
   - anvilcraft:transcendence_dragon_rod
+  - anvilcraft:multiphase_transcendium
   - anvilcraft:transcendence_heavy_halberd
   - anvilcraft:transcendence_resonator
-  - anvilcraft:multiphase_transcendium
 ---
 
 # 超限合金
@@ -39,14 +39,17 @@ item_ids:
 
 # 合成
 
-将充能中子锭用铁砧压入超温余烬金属块，根据充能中子锭上的附魔数量决定输出超限合金锭数量
+将<ItemLink id="anvilcraft:neutron_irradiator" />用铁砧压入<ItemLink id="anvilcraft:overheated_ember_metal_block" />，
+根据<ItemLink id="anvilcraft:neutron_irradiator" />上的附魔数量，决定输出超限合金的产量
 
-- 0个附魔：方块消失，中子锭消失，得到4个超限合金锭
-- 1到10个附魔：方块消失，中子锭有 (100-(10x附魔数))/100 概率消失，(10x附魔数)/100 概率变为普通中子锭输出，得到4个超限合金锭+3*附魔数个超限合金粒
-- 11到14个附魔：方块消失，中子锭 100% 变为普通中子锭输出，得到得到 4个超限合金锭 和 3*附魔数个超限合金粒
-- 15个附魔：方块转化为超限合金块，中子锭100%变为普通中子锭输出
-- 16个以及以上附魔：方块转化为超限合金块，中子锭100%变为普通中子锭输出，额外产生1*附魔数个超限合金粒
+|  附魔数量 n  | 返还<ItemLink id="anvilcraft:neutronium_ingot" />概率 |   超限合金的产量   |
+|:--------:|:-------------------------------------------------:|:-----------:|
+| [0, 10]  |                      n * 10%                      | 4 锭 + 3*n 粒 |
+| [11, 14] |                       100%                        | 4 锭 + 3*n 粒 |
+|    15    |                       100%                        |     1 块     |
+| [16, +∞) |                       100%                        |  1 块 + n 粒  |
 
+> 锭和粒以掉落物形式产生；块生成于原方块的位置
 
 # 功能
 
@@ -74,7 +77,7 @@ item_ids:
 
 # 相关
 
-- [铁砧锤](../prop/anvil_hammer.md)
-- [龙杖](../prop/dragon_rod.md)
+- [铁砧锤](../tool/anvil_hammer.md)
+- [龙杖](../tool/dragon_rod.md)
 - [余烬工具](ember_metal.md)
-- [共振器](../prop/resonator.md)
+- [共振器](../tool/resonator.md)

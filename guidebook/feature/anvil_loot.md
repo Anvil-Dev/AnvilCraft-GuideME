@@ -22,8 +22,8 @@ navigation:
 
 # 高级铁砧额外效果
 
-使用<ItemLink id="anvilcraft:ember_anvil" />可以产出本需要玩家**手动击杀**而产生的掉落物
+- 使用<ItemLink id="anvilcraft:ember_anvil" />可以产出本需要玩家**手动击杀**而产生的掉落物
 
 > eg:烈焰人本需要由玩家击杀才掉落烈焰棒
 
-使用<ItemLink id="anvilcraft:transcendence_anvil" />可以产出本需要玩家**手动击杀**而产生的掉落物，并附带**抢夺V**效果
+- 使用<ItemLink id="anvilcraft:transcendence_anvil" />可以产出本需要玩家**手动击杀**而产生的掉落物。获得更多掉落。
