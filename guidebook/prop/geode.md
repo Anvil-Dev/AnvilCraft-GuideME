@@ -4,8 +4,6 @@ navigation:
   icon: "anvilcraft:geode"
   position: 3
   parent: anvilcraft_guideme:prop.md
-categories:
-  - tools
 item_ids:
   - anvilcraft:geode
 ---

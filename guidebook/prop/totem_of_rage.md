@@ -4,8 +4,6 @@ navigation:
   icon: "anvilcraft:totem_of_rage"
   position: 215
   parent: anvilcraft_guideme:prop.md
-categories:
-  - tools
 item_ids:
   - anvilcraft:totem_of_rage
 ---

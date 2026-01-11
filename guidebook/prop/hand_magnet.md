@@ -6,8 +6,6 @@ navigation:
   parent: anvilcraft_guideme:prop.md
 item_ids:
   - anvilcraft:magnet
-categories:
-  - tools
 ---
 
 # 手持磁铁

@@ -2,7 +2,7 @@
 navigation:
   title: "珠宝加工台"
   icon: "anvilcraft:jewelcrafting_table"
-  position: 1
+  position: 2
   parent: anvilcraft_guideme:block.md
 item_ids:
   - anvilcraft:jewelcrafting_table

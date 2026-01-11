@@ -4,8 +4,6 @@ navigation:
   icon: "anvilcraft:recovery_pearl"
   position: 151
   parent: anvilcraft_guideme:prop.md
-categories:
-  - tools
 item_ids:
   - anvilcraft:recovery_pearl
 ---

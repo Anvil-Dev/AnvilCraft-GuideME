@@ -2,7 +2,7 @@
 navigation:
   title: "余烬砂轮"
   icon: "anvilcraft:ember_grindstone"
-  position: 212
+  position: 222
   parent: anvilcraft_guideme:block.md
 item_ids:
   - anvilcraft:ember_grindstone

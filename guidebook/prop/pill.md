@@ -4,8 +4,6 @@ navigation:
   icon: "anvilcraft:pill"
   position: 11
   parent: anvilcraft_guideme:prop.md
-categories:
-  - tools
 item_ids:
   - anvilcraft:pill
   - anvilcraft:pill_box

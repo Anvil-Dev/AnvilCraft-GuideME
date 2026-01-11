@@ -11,7 +11,7 @@ item_ids:
 # 石灰粉
 
 <Row>
-<ItemImage id="anvilcraft:lime_powder" scale="2"></ItemImage>
+<ItemImage id="anvilcraft:lime_powder" scale="3"></ItemImage>
 </Row>
 
 # 获取

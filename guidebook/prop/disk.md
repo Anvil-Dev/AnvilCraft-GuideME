@@ -4,8 +4,6 @@ navigation:
   icon: "anvilcraft:disk"
   position: 11
   parent: anvilcraft_guideme:prop.md
-categories:
-  - tools
 item_ids:
   - anvilcraft:disk
 ---

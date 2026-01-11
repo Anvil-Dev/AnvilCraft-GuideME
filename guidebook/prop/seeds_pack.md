@@ -4,8 +4,6 @@ navigation:
   icon: "anvilcraft:seeds_pack"
   position: 11
   parent: anvilcraft_guideme:prop.md
-categories:
-  - tools
 item_ids:
   - anvilcraft:seeds_pack
 ---

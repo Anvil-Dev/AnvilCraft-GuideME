@@ -2,7 +2,7 @@
 navigation:
   title: "余烬铁砧"
   icon: "anvilcraft:ember_anvil"
-  position: 213
+  position: 223
   parent: anvilcraft_guideme:block.md
 item_ids:
   - anvilcraft:ember_anvil

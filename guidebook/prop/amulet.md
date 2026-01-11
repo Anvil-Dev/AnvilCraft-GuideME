@@ -4,8 +4,6 @@ navigation:
   icon: "anvilcraft:emerald_amulet"
   position: 100
   parent: anvilcraft_guideme:prop.md
-categories:
-  - tools
 item_ids:
   - anvilcraft:emerald_amulet
   - anvilcraft:topaz_amulet

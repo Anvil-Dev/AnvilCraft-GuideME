@@ -4,8 +4,6 @@ navigation:
   icon: "anvilcraft:gem_amulet"
   position: 230
   parent: anvilcraft_guideme:prop.md
-categories:
-  - tools
 item_ids:
   - anvilcraft:gem_amulet
   - anvilcraft:nature_amulet

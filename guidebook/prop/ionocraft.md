@@ -2,10 +2,8 @@
 navigation:
   title: "飘升机"
   icon: "anvilcraft:ionocraft"
-  position: 11
+  position: 101
   parent: anvilcraft_guideme:prop.md
-categories:
-  - tools
 item_ids:
   - anvilcraft:ionocraft
 ---
@@ -17,6 +15,7 @@ item_ids:
 </Row>
 
 <NeoColor id="97d9e1"> ~~飞起来\~~~ </NeoColor>
+
 # 合成
 
 <Row>

@@ -2,7 +2,7 @@
 navigation:
   title: "钚"
   icon: "anvilcraft:plutonium_ingot"
-  position: 302
+  position: 321
   parent: anvilcraft_guideme:material.md
 item_ids:
   - anvilcraft:plutonium_block

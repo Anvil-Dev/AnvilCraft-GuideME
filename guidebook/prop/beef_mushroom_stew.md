@@ -4,8 +4,6 @@ navigation:
   icon: "anvilcraft:beef_mushroom_stew"
   position: 11
   parent: anvilcraft_guideme:prop.md
-categories:
-  - misc ingredients blocks
 item_ids:
   - anvilcraft:beef_mushroom_stew
 ---

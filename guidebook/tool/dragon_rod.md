@@ -8,9 +8,6 @@ categories:
   - tools
 item_ids:
   - anvilcraft:dragon_rod
-  - anvilcraft:royal_dragon_rod
-  - anvilcraft:ember_dragon_rod
-  - anvilcraft:transcendence_dragon_rod
 ---
 
 # 龙杖
@@ -24,8 +21,8 @@ item_ids:
 
 ## 龙杖
 
-**龙杖** 本质上是为了将 <Colour firstColor="ff00ff" lastColor="00e3ff"> "放下**方块吞噬器**→**铁砧锤**敲击→收回方块吞噬器" </Colour> 的流程简化至一个工具内  
-所有龙杖的功能是相同的，只是耐久不同和属性不同
+- **龙杖**将 <Colour firstColor="ff00ff" lastColor="00e3ff"> "放下**方块吞噬器**→**铁砧锤**敲击→收回方块吞噬器" </Colour> 的流程简化至一个工具内  
+- 所有龙杖的功能是相同的，只是耐久和属性不同
 
 ## 合成
 
@@ -39,6 +36,8 @@ item_ids:
 <Recipe id="anvilcraft:smithing/royal_dragon_rod"></Recipe>
 <Recipe id="anvilcraft:smithing/ember_dragon_rod"></Recipe>
 <Recipe id="anvilcraft:smithing/transcendence_dragon_rod"></Recipe>
+</Row>
+<Row>
 <Recipe id="anvilcraft:royal_dragon_rod"></Recipe>
 <Recipe id="anvilcraft:ember_dragon_rod"></Recipe>
 <Recipe id="anvilcraft:transcendence_dragon_rod"></Recipe>

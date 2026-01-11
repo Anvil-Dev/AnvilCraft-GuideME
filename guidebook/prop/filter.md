@@ -4,8 +4,6 @@ navigation:
   icon: "anvilcraft:filter"
   position: 3
   parent: anvilcraft_guideme:prop.md
-categories:
-  - tools
 item_ids:
   - anvilcraft:filter
 ---

@@ -4,8 +4,6 @@ navigation:
   icon: "anvilcraft:amulet_box"
   position: 100
   parent: anvilcraft_guideme:prop.md
-categories:
-  - tools
 item_ids:
   - anvilcraft:amulet_box
 ---

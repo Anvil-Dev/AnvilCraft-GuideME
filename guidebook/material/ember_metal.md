@@ -15,6 +15,7 @@ item_ids:
   - anvilcraft:ember_metal_shovel
   - anvilcraft:ember_metal_hoe
   - anvilcraft:ember_metal_sword
+  - anvilcraft:ember_dragon_rod
 ---
 
 # 余烬金属

@@ -6,10 +6,3 @@ navigation:
 ---
 
 介绍所有方块
-## 杂项 原料和方块
-
-<CategoryIndex category="misc ingredients blocks"></CategoryIndex>
-
-## 机器
-
-<CategoryIndex category="machines"></CategoryIndex>

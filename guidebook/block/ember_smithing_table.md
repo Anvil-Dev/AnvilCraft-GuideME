@@ -2,7 +2,7 @@
 navigation:
   title: "余烬锻造台"
   icon: "anvilcraft:ember_smithing_table"
-  position: 211
+  position: 221
   parent: anvilcraft_guideme:block.md
 item_ids:
   - anvilcraft:ember_smithing_table
