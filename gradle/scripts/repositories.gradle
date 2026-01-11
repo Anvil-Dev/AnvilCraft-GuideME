@@ -9,4 +9,9 @@ repositories {
         name = "Ithundxr Maven"
         url = "https://maven.ithundxr.dev/snapshots"
     }
+
+    maven { // JEI
+        name = "ModMaven"
+        url = "https://modmaven.dev"
+    }
 }

@@ -31,8 +31,12 @@ item_ids:
 # 合成
 
 <Row>
-<Recipe id="anvilcraft:super_heating/royal_steel_ingot"></Recipe>
-<Recipe id="anvilcraft:super_heating/royal_steel_block"></Recipe>
+<Recipe id="anvilcraft:super_heating/royal_steel_ingot_base"></Recipe>
+<Recipe id="anvilcraft:super_heating/royal_steel_ingot_bonus_1"></Recipe>
+<Recipe id="anvilcraft:super_heating/royal_steel_ingot_bonus_2"></Recipe>
+<Recipe id="anvilcraft:super_heating/royal_steel_block_base"></Recipe>
+<Recipe id="anvilcraft:super_heating/royal_steel_ingot_bonus_1"></Recipe>
+<Recipe id="anvilcraft:super_heating/royal_steel_ingot_bonus_2"></Recipe>
 </Row>
 
 # 功能

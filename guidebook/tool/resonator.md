@@ -42,6 +42,6 @@ item_ids:
 
 # 相关
 
-- [余烬金属工具](../material/ember_metal.md)
-- [浮霜金属工具](../material/frost_metal.md)
-- [超限金属工具](../material/transcendium.md)
+- [皇家金属](../material/royal_steel.md)
+- [余烬金属](../material/ember_metal.md)
+- [超限金属](../material/transcendium.md)

@@ -16,4 +16,6 @@ dependencies {
 
     // AE2
     implementation(libs.ae2)
+
+    runtimeOnly(libs.jei)
 }

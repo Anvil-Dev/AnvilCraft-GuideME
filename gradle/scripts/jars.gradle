@@ -1,6 +1,6 @@
 tasks.named('processResources', ProcessResources) {
     from('guidebook') {
-        into "assets/${project.mod_id}/guide"
+        into "assets/${project.mod_id}/anvilcraft_guideme"
     }
 }
 

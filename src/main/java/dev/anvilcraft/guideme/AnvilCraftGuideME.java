@@ -40,7 +40,7 @@ public class AnvilCraftGuideME {
 
     private void guide() {
         guideme = Guide.builder(GID)
-            .folder("ac_guidebook")
+            .folder("anvilcraft_guideme")
             .extension(SceneElementTagCompiler.EXTENSION_POINT, new ItemEntityShapeCompiler())
             .extension(TagCompiler.EXTENSION_POINT, new NeoColorTagCompiler())
             .extension(TagCompiler.EXTENSION_POINT, new GradientColourTagCompiler())
