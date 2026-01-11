@@ -7,6 +7,7 @@ navigation:
 categories:
   - tools
 item_ids:
+  - anvilcraft:heavy_halberd_core
   - anvilcraft:ember_metal_heavy_halberd
   - anvilcraft:frost_metal_heavy_halberd
 ---
@@ -14,6 +15,7 @@ item_ids:
 # 重戟
 
 <Row>
+<ItemImage id="anvilcraft:heavy_halberd_core" scale="2"></ItemImage>
 <ItemImage id="anvilcraft:ember_metal_heavy_halberd" scale="2"></ItemImage>
 <ItemImage id="anvilcraft:frost_metal_heavy_halberd" scale="2"></ItemImage>
 <ItemImage id="anvilcraft:transcendence_heavy_halberd" scale="2"></ItemImage>
@@ -36,6 +38,8 @@ item_ids:
 
 ## 合成
 
+<Recipe id="anvilcraft:heavy_halberd_core"></Recipe>
+
 <Row>
 <Recipe id="anvilcraft:four_to_one_smithing/ember_metal_heavy_halberd"></Recipe>
 <Recipe id="anvilcraft:four_to_one_smithing/frost_metal_heavy_halberd"></Recipe>
@@ -43,6 +47,6 @@ item_ids:
 
 # 相关
 
-- [皇家金属](../material/royal_steel.md)
-- [余烬金属](../material/ember_metal.md)
-- [超限金属](../material/transcendium.md)
+- [余烬金属工具](../material/ember_metal.md)
+- [浮霜金属工具](../material/frost_metal.md)
+- [超限金属工具](../material/transcendium.md)

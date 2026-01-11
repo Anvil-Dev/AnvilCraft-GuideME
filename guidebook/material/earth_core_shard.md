@@ -26,6 +26,9 @@ item_ids:
 
 - 可用于制作<ItemLink id="anvilcraft:ember_metal_ingot" />
 - 用于[仿制盔甲纹饰锻造模板](../block/jewelcrafting_table.md)
+- 用于3倍冶炼金属块
+
+<Recipe id="anvilcraft:super_heating/raw/copper_ingot"></Recipe>
 
 # 特性
 
