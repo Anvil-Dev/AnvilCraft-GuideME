@@ -24,7 +24,7 @@ import dev.anvilcraft.guideme.guide.recipe.LytSuperHeatingRecipe;
 import dev.anvilcraft.guideme.guide.recipe.LytTimeWarpRecipe;
 import dev.anvilcraft.guideme.guide.recipe.LytUnpackRecipe;
 import dev.anvilcraft.guideme.guide.recipe.vanilla.VanillaRecipes;
-import dev.dubhe.anvilcraft.init.reicpe.ModRecipeTypes;
+import dev.dubhe.anvilcraft.init.recipe.ModRecipeTypes;
 import dev.dubhe.anvilcraft.recipe.ChargerChargingRecipe;
 import dev.dubhe.anvilcraft.recipe.JewelCraftingRecipe;
 import dev.dubhe.anvilcraft.recipe.anvil.MassInjectRecipe;
