@@ -1,8 +1,8 @@
 ---
 navigation:
-  title: "物品收集器"
+  title: "§a物品收集器"
   icon: "anvilcraft:item_collector"
-  position: 11
+  position: 101
   parent: anvilcraft_guideme:block.md
 item_ids:
   - anvilcraft:item_collector

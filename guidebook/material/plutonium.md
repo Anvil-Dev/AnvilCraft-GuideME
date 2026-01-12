@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "钚"
+  title: "§d钚"
   icon: "anvilcraft:plutonium_ingot"
   position: 321
   parent: anvilcraft_guideme:material.md

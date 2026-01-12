@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "量产冰与细雪"
+  title: "§a量产冰与细雪"
   icon: "minecraft:powder_snow_bucket"
   position: 110
   parent: anvilcraft_guideme:recipe.md

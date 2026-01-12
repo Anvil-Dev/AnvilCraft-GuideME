@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "锡罐与罐头食物"
+  title: "§a锡罐与罐头食物"
   icon: "anvilcraft:canned_food"
   position: 111
   parent: anvilcraft_guideme:prop.md

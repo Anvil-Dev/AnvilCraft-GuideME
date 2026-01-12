@@ -1,8 +1,8 @@
 ---
 navigation:
-  title: "诅咒金"
+  title: "§a诅咒金"
   icon: "anvilcraft:cursed_gold_ingot"
-  position: 22
+  position: 122
   parent: anvilcraft_guideme:material.md
 categories:
   - misc ingredients blocks

@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "超温的方块"
+  title: "§d超温的方块"
   icon: "anvilcraft:overheated_ember_metal_block"
   position: 301
   parent: anvilcraft_guideme:feature.md

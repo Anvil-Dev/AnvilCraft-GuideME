@@ -1,8 +1,8 @@
 ---
 navigation:
-  title: "电容器"
+  title: "§a电容器"
   icon: "anvilcraft:capacitor"
-  position: 11
+  position: 101
   parent: anvilcraft_guideme:material.md
 item_ids:
   - anvilcraft:capacitor

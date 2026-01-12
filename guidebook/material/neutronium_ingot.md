@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "中子锭"
+  title: "§6中子锭"
   icon: "anvilcraft:neutronium_ingot"
   position: 221
   parent: anvilcraft_guideme:material.md

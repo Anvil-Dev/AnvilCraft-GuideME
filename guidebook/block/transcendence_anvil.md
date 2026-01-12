@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "超限铁砧"
+  title: "§d超限铁砧"
   icon: "anvilcraft:transcendence_anvil"
   position: 311
   parent: anvilcraft_guideme:block.md

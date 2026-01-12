@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "空间超压器"
+  title: "§6空间超压器"
   icon: "anvilcraft:space_overcompressor"
   position: 220
   parent: anvilcraft_guideme:block.md

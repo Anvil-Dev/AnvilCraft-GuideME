@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "量产钻石"
+  title: "§6量产钻石"
   icon: "minecraft:diamond"
   position: 201
   parent: anvilcraft_guideme:recipe.md

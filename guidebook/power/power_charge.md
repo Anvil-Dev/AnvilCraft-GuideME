@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "充电与放电"
+  title: "§a充电与放电"
   icon: "anvilcraft:charger"
   position: 102
   parent: anvilcraft_guideme:power.md

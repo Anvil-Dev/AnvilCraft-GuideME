@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "制造刷怪笼"
+  title: "§6制造刷怪笼"
   icon: "minecraft:spawner"
   position: 210
   parent: anvilcraft_guideme:recipe.md
@@ -20,7 +20,7 @@ item_ids:
 
 # 怨念琥珀块
 
-- 将<ItemLink id="anvilcraft:resin_block"/>[时移](../block/corrupted_beacon.md)为<ItemLink id="anvilcraft:amber_block"/>
+- <ItemLink id="anvilcraft:resin_block"/>可被[时移](../block/corrupted_beacon.md)为<ItemLink id="anvilcraft:amber_block"/>
 - 如果<ItemLink id="anvilcraft:resin_block"/>中含有**非被动生物**，则有 5% 的概率产生<ItemLink id="anvilcraft:resentful_amber_block"/>
 - 利用<ItemLink id="anvilcraft:resentful_amber_block"/>和<ItemLink id="anvilcraft:cursed_gold_block" />
   ，可以生产对应的<ItemLink id="minecraft:spawner"/>

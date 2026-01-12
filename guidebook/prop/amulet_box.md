@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "护符盒"
+  title: "§a护符盒"
   icon: "anvilcraft:amulet_box"
   position: 100
   parent: anvilcraft_guideme:prop.md

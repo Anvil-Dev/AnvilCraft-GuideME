@@ -1,8 +1,8 @@
 ---
 navigation:
-  title: "飘升机背包"
+  title: "§a飘升机背包"
   icon: "anvilcraft:ionocraft_backpack"
-  position: 11
+  position: 101
   parent: anvilcraft_guideme:tool.md
 categories:
   - tools

@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "共振器"
+  title: "§d共振器"
   icon: "anvilcraft:ember_metal_resonator"
   position: 301
   parent: anvilcraft_guideme:tool.md

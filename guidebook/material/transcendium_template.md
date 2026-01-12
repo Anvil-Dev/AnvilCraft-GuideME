@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "超限锻造模板"
+  title: "§d超限锻造模板"
   icon: "anvilcraft:transcendium_upgrade_smithing_template"
   position: 311
   parent: anvilcraft_guideme:material.md

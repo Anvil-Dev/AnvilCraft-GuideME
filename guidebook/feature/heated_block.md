@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "热能系统"
+  title: "§a热能系统"
   icon: "anvilcraft:redhot_tungsten_block"
   position: 101
   parent: anvilcraft_guideme:feature.md

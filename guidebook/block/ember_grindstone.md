@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "余烬砂轮"
+  title: "§6余烬砂轮"
   icon: "anvilcraft:ember_grindstone"
   position: 222
   parent: anvilcraft_guideme:block.md

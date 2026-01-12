@@ -1,8 +1,8 @@
 ---
 navigation:
-  title: "幻灵铁砧"
+  title: "§a幻灵铁砧"
   icon: "anvilcraft:spectral_anvil"
-  position: 1
+  position: 105
   parent: anvilcraft_guideme:block.md
 item_ids:
   - anvilcraft:spectral_anvil

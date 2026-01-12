@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "多合一锻造模板"
+  title: "§6多合一锻造模板"
   icon: "anvilcraft:four_to_one_smithing_template"
   position: 213
   parent: anvilcraft_guideme:material.md

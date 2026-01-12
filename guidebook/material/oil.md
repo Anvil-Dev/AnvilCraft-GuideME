@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "原油"
+  title: "§6原油"
   icon: "anvilcraft:oil_bucket"
   position: 201
   parent: anvilcraft_guideme:material.md

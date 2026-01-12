@@ -1,8 +1,8 @@
 ---
 navigation:
-  title: "电感灯"
+  title: "§a电感灯"
   icon: "anvilcraft:induction_light"
-  position: 11
+  position: 101
   parent: anvilcraft_guideme:block.md
 item_ids:
   - anvilcraft:induction_light

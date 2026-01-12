@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "热能收集"
+  title: "§6热能收集"
   icon: "anvilcraft:heat_collector"
   position: 201
   parent: anvilcraft_guideme:power.md

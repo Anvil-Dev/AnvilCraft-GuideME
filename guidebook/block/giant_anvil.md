@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "巨型铁砧"
+  title: "§6巨型铁砧"
   icon: "anvilcraft:giant_anvil"
   position: 210
   parent: anvilcraft_guideme:block.md

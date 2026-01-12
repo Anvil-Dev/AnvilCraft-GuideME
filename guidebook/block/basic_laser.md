@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "激光"
+  title: "§6激光"
   icon: "anvilcraft:ruby_laser"
   position: 201
   parent: anvilcraft_guideme:block.md

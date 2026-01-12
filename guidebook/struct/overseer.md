@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "监督者"
+  title: "§a监督者"
   icon: "anvilcraft:overseer"
   position: 111
   parent: anvilcraft_guideme:struct.md

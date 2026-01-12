@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "腐化信标"
+  title: "§6腐化信标"
   icon: "anvilcraft:corrupted_beacon"
   position: 200
   parent: anvilcraft_guideme:block.md

@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "特斯拉塔"
+  title: "§6特斯拉塔"
   icon: "anvilcraft:tesla_tower"
   position: 201
   parent: anvilcraft_guideme:block.md

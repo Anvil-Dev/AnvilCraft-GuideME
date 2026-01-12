@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "定日镜"
+  title: "§a定日镜"
   icon: "anvilcraft:heliostats"
   position: 110
   parent: anvilcraft_guideme:block.md

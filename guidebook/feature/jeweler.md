@@ -4,8 +4,6 @@ navigation:
   icon: "minecraft:emerald"
   position: 1
   parent: anvilcraft_guideme:feature.md
-categories:
-  - tools
 ---
 
 # 珠宝匠

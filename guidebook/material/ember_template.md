@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "余烬锻造模板"
+  title: "§6余烬锻造模板"
   icon: "anvilcraft:ember_metal_upgrade_smithing_template"
   position: 210
   parent: anvilcraft_guideme:material.md

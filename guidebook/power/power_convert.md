@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "能量转换"
+  title: "§a能量转换"
   icon: "anvilcraft:power_converter_big"
   position: 103
   parent: anvilcraft_guideme:power.md

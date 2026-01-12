@@ -1,8 +1,8 @@
 ---
 navigation:
-  title: "地核碎片"
+  title: "§a地核碎片"
   icon: "anvilcraft:earth_core_shard"
-  position: 110
+  position: 140
   parent: anvilcraft_guideme:material.md
 item_ids:
   - anvilcraft:earth_core_shard

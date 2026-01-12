@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "负物质"
+  title: "§d负物质"
   icon: "anvilcraft:negative_matter"
   position: 301
   parent: anvilcraft_guideme:material.md

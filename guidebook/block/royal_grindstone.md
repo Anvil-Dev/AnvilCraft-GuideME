@@ -1,8 +1,8 @@
 ---
 navigation:
-  title: "皇家砂轮"
+  title: "§a皇家砂轮"
   icon: "anvilcraft:royal_grindstone"
-  position: 12
+  position: 102
   parent: anvilcraft_guideme:block.md
 item_ids:
   - anvilcraft:royal_grindstone

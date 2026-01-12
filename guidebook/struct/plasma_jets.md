@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "等离子喷流"
+  title: "§6等离子喷流"
   icon: "anvilcraft:oil_bucket"
   position: 201
   parent: anvilcraft_guideme:struct.md

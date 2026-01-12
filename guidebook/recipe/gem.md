@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "量产宝石"
+  title: "§6量产宝石"
   icon: "anvilcraft:topaz_block"
   position: 204
   parent: anvilcraft_guideme:recipe.md

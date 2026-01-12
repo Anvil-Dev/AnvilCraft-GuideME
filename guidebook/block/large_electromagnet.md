@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "大型电磁铁"
+  title: "§6大型电磁铁"
   icon: "anvilcraft:acceleration_ring"
   position: 215
   parent: anvilcraft_guideme:block.md

@@ -1,8 +1,8 @@
 ---
 navigation:
-  title: "皇家锻造台"
+  title: "§a皇家锻造台"
   icon: "anvilcraft:royal_smithing_table"
-  position: 11
+  position: 101
   parent: anvilcraft_guideme:block.md
 item_ids:
   - anvilcraft:royal_smithing_table

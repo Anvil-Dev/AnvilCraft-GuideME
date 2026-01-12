@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "中子辐照器"
+  title: "§d中子辐照器"
   icon: "anvilcraft:neutron_irradiator"
   position: 320
   parent: anvilcraft_guideme:block.md

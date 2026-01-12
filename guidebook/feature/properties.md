@@ -1,8 +1,8 @@
 ---
 navigation:
-  title: "属性"
+  title: "§6属性"
   icon: "minecraft:enchanted_book"
-  position: 10000000
+  position: 201
   parent: anvilcraft_guideme:feature.md
 ---
 

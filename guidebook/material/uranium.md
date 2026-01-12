@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "铀"
+  title: "§d铀"
   icon: "anvilcraft:uranium_ingot"
   position: 301
   parent: anvilcraft_guideme:material.md

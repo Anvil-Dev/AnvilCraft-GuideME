@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "电能传输"
+  title: "§a电能传输"
   icon: "anvilcraft:transmission_pole"
   position: 101
   parent: anvilcraft_guideme:power.md

@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "基础发电"
+  title: "§a基础发电"
   icon: "anvilcraft:charge_collector"
   position: 100
   parent: anvilcraft_guideme:power.md

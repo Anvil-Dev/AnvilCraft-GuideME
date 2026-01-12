@@ -1,8 +1,8 @@
 ---
 navigation:
-  title: "龙杖"
+  title: "§a龙杖"
   icon: "anvilcraft:dragon_rod"
-  position: 10
+  position: 101
   parent: anvilcraft_guideme:tool.md
 categories:
   - tools
@@ -59,6 +59,6 @@ item_ids:
 
 # 相关
 
-- [皇家金属](../material/royal_steel.md)
-- [余烬金属](../material/ember_metal.md)
-- [超限金属](../material/transcendium.md)
+- [皇家钢工具](../material/royal_steel.md)
+- [余烬金属工具](../material/ember_metal.md)
+- [超限金属工具](../material/transcendium.md)

@@ -1,8 +1,8 @@
 ---
 navigation:
-  title: "虚空物质"
+  title: "§a虚空物质"
   icon: "anvilcraft:void_matter"
-  position: 110
+  position: 140
   parent: anvilcraft_guideme:material.md
 item_ids:
   - anvilcraft:void_matter

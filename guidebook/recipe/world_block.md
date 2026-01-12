@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "量产世界基底方块"
+  title: "§6量产世界基底方块"
   icon: "minecraft:dirt"
   position: 200
   parent: anvilcraft_guideme:recipe.md

@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "琥珀"
+  title: "§6琥珀"
   icon: "anvilcraft:amber"
   position: 200
   parent: anvilcraft_guideme:material.md

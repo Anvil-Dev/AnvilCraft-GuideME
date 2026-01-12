@@ -43,7 +43,9 @@ item_ids:
 | <ItemLink id="anvilcraft:chocolate_cake_block" />  | 20  | 12  |
 |      <ItemLink id="anvilcraft:large_cake" />       | 15  | 12  |
 
-> 原料方块可以被铲子可加速破坏，都需要使用铲子右键将其整块吃掉
+> 原料方块适用铲子挖掘
+> 
+> 使用铲子右键将其整块吃掉
 
 # 制造
 

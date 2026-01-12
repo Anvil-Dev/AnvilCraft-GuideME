@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "重戟"
+  title: "§d重戟"
   icon: "anvilcraft:ember_metal_heavy_halberd"
   position: 301
   parent: anvilcraft_guideme:tool.md

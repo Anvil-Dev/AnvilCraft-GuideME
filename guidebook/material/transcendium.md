@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "超限合金"
+  title: "§d超限合金"
   icon: "anvilcraft:transcendium_ingot"
   position: 312
   parent: anvilcraft_guideme:material.md

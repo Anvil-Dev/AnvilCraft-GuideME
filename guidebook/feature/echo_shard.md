@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "回响碎片再生"
+  title: "§a回响碎片再生"
   icon: "minecraft:echo_shard"
   position: 101
   parent: anvilcraft_guideme:feature.md

@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "多相物质"
+  title: "§d多相物质"
   icon: "anvilcraft:multiphase_matter"
   position: 301
   parent: anvilcraft_guideme:material.md

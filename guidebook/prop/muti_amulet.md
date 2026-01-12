@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "多合一护符"
+  title: "§6多合一护符"
   icon: "anvilcraft:gem_amulet"
   position: 230
   parent: anvilcraft_guideme:prop.md

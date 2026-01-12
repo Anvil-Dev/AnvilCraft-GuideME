@@ -1,8 +1,8 @@
 ---
 navigation:
-  title: "皇家铁砧"
+  title: "§a皇家铁砧"
   icon: "anvilcraft:royal_anvil"
-  position: 13
+  position: 103
   parent: anvilcraft_guideme:block.md
 item_ids:
   - anvilcraft:royal_anvil

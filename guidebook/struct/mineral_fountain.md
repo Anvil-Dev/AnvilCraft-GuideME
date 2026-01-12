@@ -1,8 +1,8 @@
 ---
 navigation:
-  title: "矿物涌泉"
+  title: "§a矿物涌泉"
   icon: "anvilcraft:mineral_fountain"
-  position: 100
+  position: 130
   parent: anvilcraft_guideme:struct.md
 item_ids:
   - anvilcraft:impact_pile

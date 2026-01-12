@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "飘升机"
+  title: "§a飘升机"
   icon: "anvilcraft:ionocraft"
   position: 101
   parent: anvilcraft_guideme:prop.md

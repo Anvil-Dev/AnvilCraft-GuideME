@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "量产海洋之心"
+  title: "§6量产海洋之心"
   icon: "anvilcraft:sea_heart_shell"
   position: 202
   parent: anvilcraft_guideme:recipe.md

@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "余烬金属"
+  title: "§6余烬金属"
   icon: "anvilcraft:ember_metal_ingot"
   position: 211
   parent: anvilcraft_guideme:material.md

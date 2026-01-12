@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "推进活塞"
+  title: "§6推进活塞"
   icon: "anvilcraft:propel_piston"
   position: 202
   parent: anvilcraft_guideme:block.md

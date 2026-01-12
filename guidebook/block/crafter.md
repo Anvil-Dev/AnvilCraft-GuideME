@@ -1,8 +1,8 @@
 ---
 navigation:
-  title: "批量合成器"
+  title: "§a批量合成器"
   icon: "anvilcraft:batch_crafter"
-  position: 11
+  position: 101
   parent: anvilcraft_guideme:block.md
 item_ids:
   - anvilcraft:batch_crafter

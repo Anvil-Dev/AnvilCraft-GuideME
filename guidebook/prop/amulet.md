@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "护符"
+  title: "§a护符"
   icon: "anvilcraft:emerald_amulet"
   position: 100
   parent: anvilcraft_guideme:prop.md

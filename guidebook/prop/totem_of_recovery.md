@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "回溯图腾"
+  title: "§a回溯图腾"
   icon: "anvilcraft:totem_of_recovery"
   position: 152
   parent: anvilcraft_guideme:prop.md
