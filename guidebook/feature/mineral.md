@@ -26,5 +26,5 @@ item_ids:
 
 
 - 不同于大多数mod，正常情况下本模组的矿石不会自然生成
-- 为了在前期获得本模组的金属，你需要使用类似于“无中生有”的方式——[物品过筛](../struct/block_processing.md)
+- 为了在前期获得本模组的金属，你需要使用类似于“无中生有”的方式——[物品过筛](../struct/item_processing.md#过筛)
 - 以此法获得的金属粒[点我查看](../material/common_nugget.md)

@@ -39,15 +39,15 @@ item_ids:
 
 # 合成
 
-将<ItemLink id="anvilcraft:neutron_irradiator" />用铁砧压入<ItemLink id="anvilcraft:overheated_ember_metal_block" />，
-根据<ItemLink id="anvilcraft:neutron_irradiator" />上的附魔数量，决定输出超限合金的产量
+将<ItemLink id="anvilcraft:charged_neutronium_ingot" />用铁砧压入<ItemLink id="anvilcraft:overheated_ember_metal_block" />，
+根据<ItemLink id="anvilcraft:charged_neutronium_ingot" />上的附魔数量，决定输出超限合金的产量
 
-|  附魔数量 n  | 返还<ItemLink id="anvilcraft:neutronium_ingot" />概率 |   超限合金的产量   |
-|:--------:|:-------------------------------------------------:|:-----------:|
-| [0, 10]  |                      n * 10%                      | 4 锭 + 3*n 粒 |
-| [11, 14] |                       100%                        | 4 锭 + 3*n 粒 |
-|    15    |                       100%                        |     1 块     |
-| [16, +∞) |                       100%                        |  1 块 + n 粒  |
+|  附魔数量 n  | 返还<ItemLink id="anvilcraft:neutronium_ingot" />概率 |                                                                 产量                                                                 |
+|:--------:|:-------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
+| [0, 10]  |                      n * 10%                      | 4 <ItemImage id="anvilcraft:transcendium_ingot" scale="0.6" /> + 3*n <ItemImage id="anvilcraft:transcendium_nugget" scale="0.6" /> |
+| [11, 14] |                       100%                        | 4 <ItemImage id="anvilcraft:transcendium_ingot" scale="0.6" /> + 3*n <ItemImage id="anvilcraft:transcendium_nugget" scale="0.6" /> |
+|    15    |                       100%                        |                                   1 <ItemImage id="anvilcraft:transcendium_block" scale="0.6" />                                   |
+| [16, +∞) |                       100%                        |  1 <ItemImage id="anvilcraft:transcendium_block" scale="0.6" /> + n <ItemImage id="anvilcraft:transcendium_nugget" scale="0.6" />  |
 
 > 锭和粒以掉落物形式产生；块生成于原方块的位置
 
