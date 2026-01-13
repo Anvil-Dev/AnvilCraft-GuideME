@@ -17,7 +17,7 @@ import java.util.Set;
 public class KeyMapTagCompiler extends FlowTagCompiler {
     @Override
     public Set<String> getTagNames() {
-        return Set.of("Key", "KeyBind");
+        return Set.of("Key");
     }
 
     @Override

@@ -6,7 +6,7 @@ anvillib = "2.0.0+build.186"
 anvilcraft = "1.6.0+snapshot.1594"
 modDevGradle = "2.0.78"
 lombok = "8.7.1"
-guideme = "21.1.9"
+guideme = "21.1.15"
 ae2 = "19.2.10"
 jei = "19.25.1.332"
 
