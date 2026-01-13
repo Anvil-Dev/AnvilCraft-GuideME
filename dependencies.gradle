@@ -17,7 +17,7 @@ dependencies {
 
     // GuideME
     compileOnly("org.appliedenergistics:guideme:${libs.versions.guideme.get()}:api")
-    runtimeOnly(libs.guideme)
+    implementation(libs.guideme)
 
     // AE2
     implementation(libs.ae2)

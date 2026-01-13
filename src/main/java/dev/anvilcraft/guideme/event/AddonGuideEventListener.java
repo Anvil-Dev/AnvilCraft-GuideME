@@ -4,6 +4,7 @@ import dev.anvilcraft.guideme.AnvilCraftGuideME;
 import dev.dubhe.anvilcraft.api.event.CheckIntegrationLoadedEvent;
 import dev.dubhe.anvilcraft.api.event.GuideBookEvent;
 import guideme.GuidesCommon;
+import guideme.internal.GuideME;
 import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -25,7 +26,7 @@ public class AddonGuideEventListener {
 
     @SubscribeEvent
     public static void onHasGuide(CheckIntegrationLoadedEvent event) {
-        if (event.getId().equals("guideme")) {
+        if (event.getId().equals(GuideME.MOD_ID)) {
             event.setLoaded();
         }
     }
