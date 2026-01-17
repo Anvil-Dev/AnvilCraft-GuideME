@@ -88,7 +88,7 @@ jobs:
 
           dependencies: |
             guideme@21.1.15(required){modrinth:Ck4E7v7R}{curseforge:1173950}
-            anvilcraft@1.21.1-1.5.0(required){modrinth:vuISAWPc}{curseforge:986251}
+            anvilcraft@1.21.1-1.6.0(required){modrinth:vuISAWPc}{curseforge:986251}
 
           files: |
             build/libs/${{ steps.properties.outputs.mod_id }}-neoforge-${{ steps.version.outputs.version }}.jar
