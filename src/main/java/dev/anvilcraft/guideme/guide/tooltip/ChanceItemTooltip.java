@@ -1,7 +1,7 @@
 package dev.anvilcraft.guideme.guide.tooltip;
 
 import dev.anvilcraft.lib.recipe.component.ChanceItemStack;
-import dev.anvilcraft.lib.util.NumberProviderUtil;
+import dev.anvilcraft.lib.recipe.util.NumberProviderUtil;
 import guideme.document.interaction.GuideTooltip;
 import guideme.siteexport.ResourceExporter;
 import net.minecraft.ChatFormatting;

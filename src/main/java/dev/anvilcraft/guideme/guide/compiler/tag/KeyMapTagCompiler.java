@@ -13,11 +13,11 @@ import net.minecraft.network.chat.Component;
 
 import java.util.Set;
 
-// TODO: 将来GuideME升到21.5.6-beta及以上，移除这个
+// 不移除 原因:guideme本体做的KeyBind信息不全
 public class KeyMapTagCompiler extends FlowTagCompiler {
     @Override
     public Set<String> getTagNames() {
-        return Set.of("Key", "KeyBind");
+        return Set.of("Key");
     }
 
     @Override

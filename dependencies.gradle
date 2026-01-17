@@ -3,8 +3,13 @@ dependencies {
     api(libs.registrate)
 
     // Anvil Lib
-    implementation(libs.anvillib)
-    interfaceInjectionData(libs.anvillib)
+    runtimeOnly(libs.anvillib)
+    compileOnly(libs.anvillibConfig)
+    compileOnly(libs.anvillibRecipe)
+    interfaceInjectionData(libs.anvillibRecipe)
+    compileOnly(libs.anvillibMoveableEntityBlock)
+    interfaceInjectionData(libs.anvillibMoveableEntityBlock)
+    compileOnly(libs.anvillibIntegration)
 
     // AnvilCraft
     implementation(libs.anvilcraft) { transitive = false }
@@ -12,7 +17,7 @@ dependencies {
 
     // GuideME
     compileOnly("org.appliedenergistics:guideme:${libs.versions.guideme.get()}:api")
-    runtimeOnly(libs.guideme)
+    implementation(libs.guideme)
 
     // AE2
     implementation(libs.ae2)

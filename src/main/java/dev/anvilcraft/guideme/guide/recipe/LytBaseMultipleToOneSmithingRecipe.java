@@ -42,7 +42,7 @@ public class LytBaseMultipleToOneSmithingRecipe extends LytVBox {
     public LytBaseMultipleToOneSmithingRecipe(BaseMultipleToOneSmithingRecipe recipe) {
         append(templateSlot = new LytSimpleItemSlot(Ingredient.of(recipe.getTemplate().getItems())));
         append(materialSlot = new LytSimpleItemSlot(Ingredient.of(recipe.getMaterial().getItems())));
-        append(outputSlot = new LytSimpleItemSlot(recipe.getResult().getResult()));
+        append(outputSlot = new LytSimpleItemSlot(recipe.getResult().result().getDefaultInstance()));
         for (int i = 0; i < Math.min(8, recipe.getInputs().size()); i++) {
             LytSimpleItemSlot slot;
             append(slot = new LytSimpleItemSlot(Ingredient.of(recipe.getInputs().get(i).getItems())));
