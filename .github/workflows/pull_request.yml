@@ -4,6 +4,7 @@ on:
   pull_request:
     branches:
       - releases/**
+      - dev/**
     paths:
       - gradle/scripts/**
       - guidebook/**
@@ -17,7 +18,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      CI_BUILD: true
       PR_BUILD: true
     steps:
       - name: checkout
