@@ -16,7 +16,7 @@ item_ids:
 
 # 获取
 
-请看[八合一锻造模板：模板解离](multiple_template.md#模板解离)
+请看[八合一锻造模板：模板解离](../block/ember_smithing_table.md#模板解离)
 
 # 用途
 

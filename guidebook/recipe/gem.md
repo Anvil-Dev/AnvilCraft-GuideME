@@ -18,11 +18,11 @@ navigation:
 
 # 转换宝石
 
-- 可以手动和村民交易获得一些<ItemLink id="minecraft:emerald_block" />
-- 将宝石放在装有熔融宝石的炼药锅中进行[时移](../block/corrupted_beacon.md)，消耗1000mB熔融宝石产出对应宝石块
+1. 可以手动和村民交易获得一些<ItemLink id="minecraft:emerald_block" />
+2. 将宝石放在装有熔融宝石的炼药锅中进行[时移](../block/corrupted_beacon.md)，消耗1000mB熔融宝石产出对应宝石块
 
 <Row>
-<Recipe id="anvilcraft:super_heating/melt_gem_cauldron"></Recipe>
+<Recipe id="anvilcraft:super_heating/melt_gem_cauldron_from_gem_block"></Recipe>
 <Recipe id="anvilcraft:time_warp/topaz_block"></Recipe>
 <Recipe id="anvilcraft:time_warp/sapphire_block"></Recipe>
 <Recipe id="anvilcraft:time_warp/ruby_block"></Recipe>

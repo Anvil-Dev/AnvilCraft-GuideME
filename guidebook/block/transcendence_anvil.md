@@ -20,7 +20,7 @@ item_ids:
 
 - <ItemLink id="anvilcraft:transcendence_anvil" />永远不会损坏，
 - 具有<ItemLink id="anvilcraft:ember_anvil" />的一切锻造能力
-- 合并附魔时，**无视**附魔等级上限
+- 合并附魔时，**无视**附魔等级上限，铁砧惩罚增长更缓慢，每次+1
 
 # 相关
 - [铁砧挖掘](../feature/anvil_destroy.md)

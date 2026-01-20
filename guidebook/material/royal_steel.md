@@ -39,6 +39,11 @@ item_ids:
 <Recipe id="anvilcraft:super_heating/royal_steel_block_bonus_2"></Recipe>
 </Row>
 
+- 可以被<ItemLink id="minecraft:amethyst_shard" />增产
+- 皇家喜好：根据地图种子随机选取除了<ItemLink id="minecraft:emerald" />外的一种[宝石](gems.md)，当使用该宝石参与皇家钢合成时，产量翻倍！
+
+> 注意：无法通过JEI查看，只能尝试出来
+
 # 功能
 
 - 用于合成机器

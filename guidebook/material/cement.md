@@ -17,6 +17,7 @@ item_ids:
 # 获取
 
 <Recipe id="anvilcraft:bulging/cement_cauldron"></Recipe>
+
 - 制作出的水泥默认为灰色，向锅中投入染料并砸击可改变颜色
 
 # 功能

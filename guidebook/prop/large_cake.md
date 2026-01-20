@@ -1,8 +1,8 @@
 ---
 navigation:
-  title: "巨型蛋糕"
+  title: "§6巨型蛋糕"
   icon: "anvilcraft:large_cake"
-  position: 8
+  position: 211
   parent: anvilcraft_guideme:prop.md
 item_ids:
   - anvilcraft:large_cake

@@ -55,9 +55,9 @@ item_ids:
 
 # 食用
 
-- <ItemLink id="anvilcraft:chocolate" />：2 饥饿值 + 16 饱和度
-- <ItemLink id="anvilcraft:chocolate_black" />：2 饥饿值 + 8 饱和度 + 30s 急迫II
-- <ItemLink id="anvilcraft:chocolate_white" />：2 饥饿值 + 8 饱和度 + 30s 跳跃提升II
+- <ItemLink id="anvilcraft:chocolate" />：2 饥饿值 + 16 饱和度 + 30s 迅捷10
+- <ItemLink id="anvilcraft:chocolate_black" />：2 饥饿值 + 8 饱和度 + 30s 迅捷5 + 30s 急迫4
+- <ItemLink id="anvilcraft:chocolate_white" />：2 饥饿值 + 8 饱和度 + 30s 迅捷5 + 30s 跳跃提升6
 
 饱了也能吃
 
@@ -79,9 +79,9 @@ item_ids:
 # 巧克力方块
 
 站在巧克力块/楼梯/台阶上可以持续获得效果：
-- <ItemLink id="anvilcraft:chocolate" />：迅捷II
-- <ItemLink id="anvilcraft:chocolate_black" />：迅捷I + 急迫I
-- <ItemLink id="anvilcraft:chocolate_white" />：迅捷I + 跳跃提升I 
+- <ItemLink id="anvilcraft:chocolate" />：迅捷IV
+- <ItemLink id="anvilcraft:chocolate_black" />：迅捷II + 急迫III
+- <ItemLink id="anvilcraft:chocolate_white" />：迅捷II + 跳跃提升IV
 
 <Row>
 <Recipe id="anvilcraft:chocolate_block"> </Recipe>

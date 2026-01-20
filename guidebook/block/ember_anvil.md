@@ -18,7 +18,7 @@ item_ids:
 
 # 功能
 
-- <ItemLink id="anvilcraft:ember_anvil" />永远不会损坏，
+- <ItemLink id="anvilcraft:ember_anvil" />永远不会损坏
 - 具有<ItemLink id="anvilcraft:royal_anvil" />的一切锻造能力
 - 即使在生存模式下，也可以给物品强行添加一些不兼容的附魔
 

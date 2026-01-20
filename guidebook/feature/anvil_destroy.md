@@ -25,5 +25,6 @@ navigation:
 - <ItemLink id="minecraft:anvil" />：常规挖掘
 - <ItemLink id="anvilcraft:spectral_anvil" />：常规挖掘
 - <ItemLink id="anvilcraft:royal_anvil" />：精准采集
-- <ItemLink id="anvilcraft:ember_anvil" />：熔炼
+- <ItemLink id="anvilcraft:frost_anvil" />：[崩解](enchantment.md#崩解)
+- <ItemLink id="anvilcraft:ember_anvil" />：[熔炼](enchantment.md#熔炼)
 - <ItemLink id="anvilcraft:transcendence_anvil" />：时运V
