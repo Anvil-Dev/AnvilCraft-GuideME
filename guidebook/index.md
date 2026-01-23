@@ -2,7 +2,7 @@
 navigation:
   title: "介绍"
   icon: "anvilcraft:guide_book"
-  position: 0
+  position: -1
 ---
 
 ![Logo](ac_assets/logo.png)
