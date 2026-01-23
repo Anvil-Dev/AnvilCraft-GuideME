@@ -42,5 +42,5 @@ item_ids:
 
 ## 用途
 
-<Recipe id="anvilcraft:item_crush/chromatic_stone"></Recipe>
+- 粉碎后随机产出1*宝石 + 3*<ItemLink id="minecraft:quartz" />
 <Recipe id="anvilcraft:super_heating/melt_gem_cauldron_from_chromatic_stone"></Recipe>
