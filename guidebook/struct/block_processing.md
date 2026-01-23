@@ -16,7 +16,10 @@ navigation:
 # 方块 + 切石机：方块破坏
 
 <Row>
-<GameScene zoom="2"><ImportStructure src="../ac_assets/structure/break.snbt" /></GameScene>
+<GameScene zoom="2">
+    <ImportStructure src="../ac_assets/structure/break.snbt" />
+    <ItemEntity pos="1.5 0.5 0.5" id="minecraft:cobblestone"></ItemEntity>
+</GameScene>
 <Column>
 
 可以破坏无法被普通TNT爆炸破坏的方块，如<ItemLink id="minecraft:obsidian" />，但是普通铁砧将固定损坏一个耐久等级。
