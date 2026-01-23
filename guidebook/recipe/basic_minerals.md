@@ -30,9 +30,7 @@ navigation:
 
 # 刷石机——万物之源
 
-<GameScene zoom="2" interactive={true}>
-    <ImportStructure src="../ac_assets/structure/stone_machine.snbt" />
-</GameScene>
+[~~预制菜~~预制机器](../machine/stone.md)
 
 # <ItemLink id="minecraft:gold_ingot" />-<ItemLink id="minecraft:clay_ball" />产线
 
