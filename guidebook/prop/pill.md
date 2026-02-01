@@ -12,25 +12,37 @@ item_ids:
 # 药片与药盒
 
 <Row>
-<ItemImage id="anvilcraft:pill" scale="2"></ItemImage>
-<ItemImage id="anvilcraft:pill_box" scale="2"></ItemImage>
+<ItemImage id="anvilcraft:pill" scale="3"></ItemImage>
+<ItemImage id="anvilcraft:pill_box" scale="3"></ItemImage>
 </Row>
 
-## 药片
+# 药片
 
-- 没有效果的药片和任意药水（无视其是否为喷溅以及滞留）在合成栏合成时，将药水转化为空瓶，将药水的效果赋予药片，得到对应药水效果的药片
-- 药片可以右键使用，使用时消耗一个
+## 合成
 
 <Recipe id="anvilcraft:stamping/pill"> </Recipe>
 
+- 将空白<ItemLink id="anvilcraft:pill" />和药水在合成栏合成，得到对应药水效果的药片
+
+## 作用
+
+- 可以堆叠
+- 右键，快速消耗并使用
+
 ---
 
-## 药盒
+# 药盒
 
-- 配置方式类似[护符盒](amulet_box.md)，但是更简单没有大小格子之分
-- 鼠标放上去有高2宽4的悬浮gui
-    - 光标持有药片时可以往里放入，滚轮选择里面的位置，可以取出药片
-- 拿在手上时右键可以一次性吃掉里面每种不同的药片各一片,冷却2秒
-- 可以设置快捷键:<Key id="key.anvilcraft.use_pill_box"></Key>在背包中使用，背包中有多个药盒时，用快捷键只使用更靠前的
+## 合成
 
 <Recipe id="anvilcraft:pill_box"> </Recipe>
+
+## 存取
+
+- 左键拿起<ItemLink id="anvilcraft:pill" />后，再左键点击<ItemLink id="anvilcraft:pill_box" />可以存放
+- 光标悬浮于<ItemLink id="anvilcraft:pill_box" />上，通过滚轮选取<ItemLink id="anvilcraft:pill" />，右键拿出
+
+## 使用
+
+- 右键可以一次性吃掉里面每种不同的<ItemLink id="anvilcraft:pill" />各一片，冷却2秒
+- 可以设置快捷键:<Key id="key.anvilcraft.use_pill_box"></Key>在背包中使用（背包中有多个<ItemLink id="anvilcraft:pill" />时，用快捷键只使用更靠前的）

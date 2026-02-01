@@ -23,7 +23,7 @@ item_ids:
 <Recipe id="anvilcraft:impact_pile"></Recipe>
 
 1. 制作<ItemLink id="anvilcraft:impact_pile" />
-2. 将<ItemLink id="anvilcraft:impact_pile" />放置在<ItemLink id="minecraft:bedrock" />或<ItemLink id="minecraft:bedrock" />上，
+2. 将<ItemLink id="anvilcraft:impact_pile" />放置在<ItemLink id="minecraft:bedrock" />或<ItemLink id="minecraft:deepslate" />上，
    并确保其位置**不高于**世界底部 8 格
 3. 用至少 20 格的高度下落的**完好的**<ItemLink id="minecraft:anvil" />砸击它
 4. 最终<ItemLink id="anvilcraft:impact_pile" />和<ItemLink id="minecraft:anvil" />都会消失，
