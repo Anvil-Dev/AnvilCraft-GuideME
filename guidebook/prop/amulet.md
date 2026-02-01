@@ -39,28 +39,30 @@ item_ids:
 # 获取
 
 - 获取第一个护符需要<ItemLink id="anvilcraft:amulet_box" />：
-  - 背包内有<ItemLink id="anvilcraft:amulet_box" />，且盒内有不死图腾
-  - 受到特定致密伤害并消耗不死图腾抵挡
-  - 20%的概率获得相应护符。若失败，额外增加10%
-- 之后可在珠宝加工台中仿制，必须先得到第一个才可仿制
+    - 背包内有<ItemLink id="anvilcraft:amulet_box" />，且盒内有不死图腾
+    - 受到特定致密伤害并消耗不死图腾抵挡
+    - 20%的概率获得相应护符。若失败，额外增加10%
+- 之后可在<ItemLink id="anvilcraft:jewelcrafting_table" />中仿制，必须先得到第一个才可仿制
 
 以下是各普通护符、致命伤害和效果的列表
 
-| 护符                                          | 致命伤害来源                     | 效果                               |
-|---------------------------------------------|----------------------------|----------------------------------|
-| <ItemLink id="anvilcraft:emerald_amulet"/>  | 铁傀儡、灾厄村民                   | 与村民交易自带类似村庄英雄的打折                 |
-| <ItemLink id="anvilcraft:topaz_amulet"/>    | 闪电、特斯拉塔                    | 免疫所有雷电伤害                         |
-| <ItemLink id="anvilcraft:ruby_amulet"/>     | 火焰、熔岩、岩浆块等烫脚方块、激光          | 抗火药水的抗火效果                        |
-| <ItemLink id="anvilcraft:sapphire_amulet"/> | 水中缺氧窒息、守卫者、远古守卫者           | 潮涌核心的潮涌能量效果                      |
-| <ItemLink id="anvilcraft:anvil_amulet"/>    | 铁砧砸、巨型铁砧撼地、铁砧锤攻击、飞行头戴铁砧锤撞击 | 完全免疫铁砧造成的伤害                      |
-| <ItemLink id="anvilcraft:comrade_amulet"/>  | 其他玩家（无小队或同小队，不同队伍的玩家伤害不触发） | 可以被多名玩家右键签名，其他玩家携带并生效时，免疫签名玩家的伤害 |
-| <ItemLink id="anvilcraft:feather_amulet"/>  | 摔落伤害                       | 生效时可以免疫摔落伤害                      |
-| <ItemLink id="anvilcraft:cat_amulet"/>      | 苦力怕、幻翼                     | 苦力怕和幻翼会远离                        |
-| <ItemLink id="anvilcraft:dog_amulet"/>      | 骷髅、流浪者、凋零骷髅、沼骇             | 骷髅类生物会远离并且不会射击该玩家                |
-| <ItemLink id="anvilcraft:silence_amulet"/>  | 监守者                        | 玩家不会发出能被幽匿感测体或监守者检测到的震动          |
-| <ItemLink id="anvilcraft:abnormal_amulet"/> | 携带有异常状态的物品导致的凋零            | 玩家不再因携带有异常状态的物品获得异常效果            |
+| 护符                                          | 致命伤害来源                                                             | 效果                               |
+|---------------------------------------------|--------------------------------------------------------------------|----------------------------------|
+| <ItemLink id="anvilcraft:emerald_amulet"/>  | 铁傀儡、灾厄村民                                                           | 与村民交易自带类似村庄英雄的打折                 |
+| <ItemLink id="anvilcraft:topaz_amulet"/>    | 闪电、特斯拉塔                                                            | 免疫所有雷电伤害                         |
+| <ItemLink id="anvilcraft:ruby_amulet"/>     | 火焰、熔岩、岩浆块等烫脚方块、激光                                                  | 抗火药水的抗火效果                        |
+| <ItemLink id="anvilcraft:sapphire_amulet"/> | 水中窒息、守卫者、远古守卫者                                                     | 潮涌核心的潮涌能量效果                      |
+| <ItemLink id="anvilcraft:anvil_amulet"/>    | 铁砧、巨型铁砧撼地、铁砧锤                                                      | 完全免疫铁砧造成的伤害                      |
+| <ItemLink id="anvilcraft:comrade_amulet"/>  | 其他玩家（需要无小队或同小队。不同队伍的玩家伤害不触发）                                       | 可以被多名玩家右键签名，其他玩家携带并生效时，免疫签名玩家的伤害 |
+| <ItemLink id="anvilcraft:feather_amulet"/>  | 摔落伤害                                                               | 生效时可以免疫摔落伤害                      |
+| <ItemLink id="anvilcraft:cat_amulet"/>      | 苦力怕、幻翼                                                             | 苦力怕和幻翼会远离                        |
+| <ItemLink id="anvilcraft:dog_amulet"/>      | 骷髅、流浪者、凋零骷髅、沼骇                                                     | 骷髅类生物会远离并且不会射击该玩家                |
+| <ItemLink id="anvilcraft:silence_amulet"/>  | 监守者                                                                | 玩家不会发出能被幽匿感测体或监守者检测到的震动          |
+| <ItemLink id="anvilcraft:abnormal_amulet"/> | 凋零buff（需同时携带四个产生对应异常效果的物品：1*诅咒金 + 64*漂浮粉或块 + 中子锭 + 1152*辐射物品(钚/铀)） | 玩家不再因携带有异常状态的物品获得异常效果            |
 
 # 仿制配方
+
+获得第一个护符后，可以通过<ItemLink id="anvilcraft:jewelcrafting_table" />仿制
 
 <Row>
 <Recipe id="anvilcraft:jewel_crafting/emerald_amulet"></Recipe>
@@ -81,5 +83,5 @@ item_ids:
 # 生效
 
 - 主副手持有的护符生效（两手都有就生效两个）
-- <ItemLink id="anvilcraft:amulet_box"></ItemLink>可以容纳护符，主副手持有护符盒，盒中的护符全生效
-- 饰品栏模组的饰品栏中的护符全生效
+- <ItemLink id="anvilcraft:amulet_box"></ItemLink>可以容纳护符，主副手持有护符盒，盒中的护符可以生效
+- 饰品栏模组的饰品栏中的护符可以生效
