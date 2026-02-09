@@ -29,6 +29,5 @@ item_ids:
 
 # 功能
 
-- 主手或副手手持时，为携带者增加3格触及距离
-- 右键可以强制撬开**潜影贝**
+- 可用于制作 <ItemLink id="anvilcraft:controllable_sand" />
 
