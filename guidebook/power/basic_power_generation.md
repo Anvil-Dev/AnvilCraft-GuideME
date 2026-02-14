@@ -33,7 +33,7 @@ item_ids:
 以下方块行为会产生电荷：
 
 - <ItemLink id="minecraft:anvil" />砸到<ItemLink id="anvilcraft:piezoelectric_crystal" />
-- 活塞推拉紧邻<ItemLink id="minecraft:anvil" />的<ItemLink id="anvilcraft:magnet_block" />
+- 活塞推拉紧邻<ItemLink id="minecraft:copper_block" />的<ItemLink id="anvilcraft:magnet_block" />
 - <ItemLink id="minecraft:lightning_rod" />被雷劈。
 
 ## 压电晶体生产电荷
@@ -66,12 +66,12 @@ item_ids:
     <ImportStructure src="../ac_assets/structure/triboelectric_power.snbt" />
 </GameScene>
 
-- <ItemLink id="anvilcraft:magnet_block" />被活塞推拉时，如果紧贴着铜块，可以产生电荷
-- 铜块生锈会使电荷生产量减少，每次移动产生的电荷见下表
-  
-| 铜块种类 | <ItemLink id="minecraft:copper_block" /> | <ItemLink id="minecraft:exposed_copper" /> | <ItemLink id="minecraft:weathered_copper" /> | <ItemLink id="minecraft:oxidized_copper" /> | 任何<ItemLink id="minecraft:waxed_copper_block" /> |
-|:----:|:-----------------------------------------|:-------------------------------------------|:---------------------------------------------|:--------------------------------------------|:-------------------------------------------------|
-| 电荷量  | 1/4                                      | 1/8                                        | 1/16                                         | 0                                           | 0                                                |
+- <ItemLink id="anvilcraft:magnet_block" />被活塞推拉时，如果紧贴着<ItemLink id="minecraft:copper_block" />，可以产生电荷
+- <ItemLink id="minecraft:copper_block" />生锈会使电荷生产量减少，每次移动产生的电荷见下表
+
+| 种类  | <ItemLink id="minecraft:copper_block" /> | <ItemLink id="minecraft:exposed_copper" /> | <ItemLink id="minecraft:weathered_copper" /> | <ItemLink id="minecraft:oxidized_copper" /> | 任何<ItemLink id="minecraft:waxed_copper_block" /> |
+|:---:|:-----------------------------------------|:-------------------------------------------|:---------------------------------------------|:--------------------------------------------|:-------------------------------------------------|
+| 电荷量 | 1/4                                      | 1/8                                        | 1/16                                         | 0                                           | 0                                                |
 
 ## 收集雷电电荷
 
