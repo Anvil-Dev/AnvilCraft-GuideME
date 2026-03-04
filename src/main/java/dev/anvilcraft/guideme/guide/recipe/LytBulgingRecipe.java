@@ -30,7 +30,7 @@ public class LytBulgingRecipe extends LytVBox {
         } else if (recipe.isProduceFluid()) {
             state = Blocks.CAULDRON.defaultBlockState();
         } else {
-            state = recipe.getHasCauldron().getTransformCauldron().defaultBlockState();
+            state = CauldronUtil.fullState(recipe.getHasCauldron().getFluidCauldron());
         }
         append(inputBlockSlot = new LytBlockSlot(state));
         append(outputBlockSlot = new LytBlockSlot(BlockStateUtil.getCauldron(recipe.getHasCauldron())));

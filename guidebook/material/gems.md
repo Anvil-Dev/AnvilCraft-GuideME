@@ -19,10 +19,10 @@ item_ids:
 # 更多宝石
 
 <Row>
-<ItemImage id="minecraft:emerald" scale="2"></ItemImage>
-<ItemImage id="anvilcraft:topaz" scale="2"></ItemImage>
-<ItemImage id="anvilcraft:sapphire" scale="2"></ItemImage>
-<ItemImage id="anvilcraft:ruby" scale="2"></ItemImage>
+<ItemImage id="minecraft:emerald" scale="3"></ItemImage>
+<ItemImage id="anvilcraft:topaz" scale="3"></ItemImage>
+<ItemImage id="anvilcraft:sapphire" scale="3"></ItemImage>
+<ItemImage id="anvilcraft:ruby" scale="3"></ItemImage>
 </Row>
 
 # 宝石
