@@ -28,7 +28,7 @@ navigation:
         在此安置铁傀儡，玻璃板会限制其移动
     </DiamondAnnotation>
     <BlockAnnotation x="2" y="3" z="1" color="#ff0000">
-        两个中继器调为4档，否则，频率过高会使得发射器发射出的多余铁锭来不及被溜槽收回，从而流失；脉冲通过快速开关拉杆启动；打破红石线即可终止
+        中继器调为3档，否则，频率过高会使得发射器发射出的多余铁锭来不及被溜槽收回
     </BlockAnnotation>
     <BlockAnnotation x="0" y="1" z="2" color="#ffffff">
         设置过滤：铁锭
